@@ -13,3 +13,5 @@ First install [Homebrew](https://brew.sh); next install TeX typesetting environm
 ```
 > brew install mactex texmaker
 ```
+
+To open texmaker IDE goto Applications folder 
