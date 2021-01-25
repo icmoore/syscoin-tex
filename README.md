@@ -1,6 +1,6 @@
 # Syscoin documents
 
-This repos contains all syscoin TeX documents; the following documents are available:
+This repos contains all Syscoin TeX documents; the following documents are available:
 - Syscoin 4.0 whitepaper
 
 ## Build & Install (MacOS)
