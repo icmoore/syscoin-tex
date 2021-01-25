@@ -8,10 +8,10 @@ This repos contains all syscoin latex documents; the following documents are ava
 
 ### Build & Install (MacOS)
 
-First install [Homebrew](https://brew.sh); next install TeX typesetting environment (mactex) and IDE (texmaker)
+First install [Homebrew](https://brew.sh), then install TeX typesetting environment (mactex) and corresponding IDE (texmaker)
 
 ```
 > brew install mactex texmaker
 ```
 
-To open texmaker IDE goto Applications folder 
+Goto Applications folder to open texmaker and navigate to select tex file in repos via File | Open in main menu
