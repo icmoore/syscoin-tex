@@ -11,4 +11,4 @@ First install [Homebrew](https://brew.sh), then install TeX typesetting environm
 > brew install mactex texmaker
 ```
 
-Goto Applications folder to open texmaker and navigate to select tex file in repos (ie, via File | Open in main menu)
+To open texmaker, goto Applications folder and navigate to select tex file in repos (ie, via File | Open in main menu)
