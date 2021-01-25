@@ -1,10 +1,7 @@
 # Syscoin documents
-## Latex + research
-
 
 This repos contains all syscoin TeX documents; the following documents are available:
 - Syscoin 4.0 whitepaper
-
 
 ## Build & Install (MacOS)
 
