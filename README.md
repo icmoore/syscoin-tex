@@ -1,4 +1,4 @@
-# Syscoin documents
+# Syscoin TeX documents
 
 This repos contains all Syscoin TeX documents; the following documents are available:
 - Syscoin 4.0 whitepaper
