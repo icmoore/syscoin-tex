@@ -6,7 +6,7 @@ This repos contains all syscoin TeX documents; the following documents are avail
 - Syscoin 4.0 whitepaper
 
 
-### Build & Install (MacOS)
+## Build & Install (MacOS)
 
 First install [Homebrew](https://brew.sh), then install TeX typesetting environment (mactex) and corresponding IDE (texmaker)
 
