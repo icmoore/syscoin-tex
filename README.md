@@ -3,7 +3,7 @@
 
 
 This repos contains all syscoin latex documents; the following documents are available:
-- Syscoin whitepaper
+- Syscoin 4.0 whitepaper
 
 
 ### Build & Install (MacOS)
