@@ -2,6 +2,7 @@
 
 This repos contains all Syscoin TeX documents; the following documents are available:
 - Syscoin 4.0 whitepaper (uses customized variant of [IEEEtran](https://www.cs.cmu.edu/~steffan/personal/tmp/IEEEtran_HOWTO.pdf) class file for LaTex)
+IEEEtran is under the [LateX Project Public License](https://ctan.org/license/lppl1.3)
 
 ## Build & Install (MacOS)
 
