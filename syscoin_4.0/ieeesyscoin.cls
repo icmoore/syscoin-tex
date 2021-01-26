@@ -354,8 +354,8 @@
 \def\@pubid{}
 \def\markboth#1#2{\def\leftmark{#1}\def\rightmark{#2}}
 \def\thevol{4}
-\def\theyear{2016}
-\def\vol#1{\gdef\thevol{#1}}
+\def\theyear{2021}
+%\def\vol#1{\gdef\thevol{#1}}%
 \def\year#1{\gdef\theyear{#1}}
 \def\pubid#1{\gdef\@pubid{#1}}
 \def\headname#1{\gdef\headName{#1}}
@@ -403,14 +403,14 @@
     \def\@oddhead{\parbox[t]{\textwidth}{\mbox{}\\[-6.3mm]\mbox{}\nheaderfont\color{syscoinblue}\headName\hfill\headerlogo{\raisebox{-2pt}{\,}}\color{black}\vspace*{-1.5mm}\par\hrulefill}}
     \def\@evenhead{\parbox[t]{\textwidth}{\mbox{}\\[-6.3mm]\mbox{}\headerlogo\hfill\nheaderfont\color{syscoinblue}\headName{\raisebox{-2pt}{\,}}\color{black}\vspace*{-1.5mm}\par\hrulefill}}
      \def\@oddfoot{\raisebox{3pt}{%%
-       \hbox to 0pc{\hbox to \textwidth{{\footervolfont VOLUME\ \thevol, 2016}\hfill\mbox{}}}%
+       \hbox to 0pc{\hbox to \textwidth{{\footervolfont Syscoin 4.0, 2021}\hfill\mbox{}}}%
        \hbox to 0pc{\hbox to \textwidth{\mbox{}\hfill{\footervolfont\@pubid}\hfill\mbox{}}}%
        \hbox to 0pc{\hbox to \textwidth{\mbox{}\hfill{\footerpagefont\thepage}}}%\hspace*{1.8pc}
        }}
      \def\@evenfoot{\raisebox{3pt}{%
        \hbox to 0pc{\hbox to \textwidth{{\footerpagefont\thepage}\hfill}\mbox{}}\hspace*{1.8pc}%\hspace*{1.8pc}
        \hspace*{-1.8pc}\hbox to 0pc{\hbox to \textwidth{\mbox{}\hfill{\footervolfont\@pubid}\hfill\mbox{}}}%
-       \hbox to 0pc{\hbox to \textwidth{\mbox{}\hfill{\footervolfont VOLUME\ \thevol, 2016}}}\hspace*{1.8pc}% [updated here]
+       \hbox to 0pc{\hbox to \textwidth{\mbox{}\hfill{\footervolfont Syscoin 4.0, 2021}}}\hspace*{1.8pc}% [updated here]
      }}
   }
 % normal page
@@ -418,12 +418,12 @@
      \def\@oddhead{\parbox[t]{\textwidth}{\mbox{}\\[-6.3mm]{\raisebox{-2pt}{\headerfont\rightmark}}\hfill\headerlogoall\mbox{}\vspace*{-1.5mm}\par\hrulefill}}
      \def\@evenhead{\parbox[t]{\textwidth}{\mbox{}\\[-6.3mm]\mbox{}\headerlogoall\hfill{\raisebox{-2pt}{\headerfont\leftmark}}\vspace*{-1.5mm}\par\hrulefill}}
      \def\@oddfoot{\raisebox{8pt}{%
-       \hbox to 0pc{\hbox to \textwidth{{\footervolfont VOLUME\ \thevol, 2016}\hfill\mbox{}}}%
+       \hbox to 0pc{\hbox to \textwidth{{\footervolfont Syscoin 4.0, 2021}\hfill\mbox{}}}%
        \hbox to 0pc{\hbox to \textwidth{\mbox{}\hfill{\footerpagefont\thepage}}}%\hspace*{1.8pc}
        }}
      \def\@evenfoot{\raisebox{8pt}{%
        \hbox to 0pc{\hbox to \textwidth{{\footerpagefont\thepage}\mbox{}\hfill}}\hspace*{1.8pc}%\hspace*{-1.8pc}
-       \hspace*{-1.8pc}\hbox to 0pc{\hbox to \textwidth{\mbox{}\hfill{\footervolfont VOLUME\ \thevol, 2016}}}\hspace*{1.8pc}% [updated here]
+       \hspace*{-1.8pc}\hbox to 0pc{\hbox to \textwidth{\mbox{}\hfill{\footervolfont Syscoin 4.0, 2021}}}\hspace*{1.8pc}% [updated here]
      }}
   }
 \fi

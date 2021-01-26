@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  25 JAN 2021 15:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  26 JAN 2021 12:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -272,60 +272,92 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \ALC@tlm=\skip56
 \algorithmicindent=\skip57
 )
+(/usr/local/texlive/2020/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\enitkv@toks@=\toks24
+\labelindent=\skip58
+\enit@outerparindent=\dimen170
+\enit@toks=\toks25
+\enit@inbox=\box53
+\enit@count@id=\count269
+\enitdp@description=\count270
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
-\Gin@req@height=\dimen170
-\Gin@req@width=\dimen171
+\Gin@req@height=\dimen171
+\Gin@req@width=\dimen172
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count269
-\l__pdf_internal_box=\box53
+\l__kernel_color_stack_int=\count271
+\l__pdf_internal_box=\box54
 )
-(./article.aux)
+(./article.aux
+
+LaTeX Warning: Label `sec:protocol' multiply defined.
+
+)
 \openout1 = `article.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 
 -- Lines per column: 56 (exact).
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 9.
-
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
+.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 
 LaTeX Font Warning: Font shape `T1/ptm/n/n' undefined
-(Font)              using `T1/ptm/m/n' instead on input line 9.
+(Font)              using `T1/ptm/m/n' instead on input line 11.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count270
-\scratchdimen=\dimen172
-\scratchbox=\box54
-\nofMPsegments=\count271
-\nofMParguments=\count272
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count273
-\MPscratchDim=\dimen173
-\MPnumerator=\count274
-\makeMPintoPDFobject=\count275
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count272
+\scratchdimen=\dimen173
+\scratchbox=\box55
+\nofMPsegments=\count273
+\nofMParguments=\count274
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count275
+\MPscratchDim=\dimen174
+\MPnumerator=\count276
+\makeMPintoPDFobject=\count277
+\everyMPtoPDFconversion=\toks27
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -338,11 +370,14 @@ e
 <bullet.png, id=3, 12.045pt x 35.38219pt>
 File: bullet.png Graphic file (type png)
 <use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 26.
+Package pdftex.def Info: bullet.png  used on input line 28.
 (pdftex.def)             Requested size: 5.0pt x 14.6871pt.
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 26
-.
 
+
+Package xcolor Warning: Incompatible color definition on input line 28.
+
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 28
+.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 
@@ -369,80 +404,83 @@ LaTeX Warning: Font shape declaration has incorrect series value `mc'.
 )
 
 LaTeX Font Warning: Font shape `T1/phv/n/n' undefined
-(Font)              using `T1/phv/m/n' instead on input line 26.
+(Font)              using `T1/phv/m/n' instead on input line 28.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
+File: bullet.png Graphic file (type png)
+<use bullet.png>
+Package pdftex.def Info: bullet.png  used on input line 32.
+(pdftex.def)             Requested size: 5.0pt x 14.6871pt.
+
+Package xcolor Warning: Incompatible color definition on input line 32.
+
+
+Package xcolor Warning: Incompatible color definition on input line 38.
+
+LaTeX Font Info:    Calculating math sizes for size <9.9> on input line 38.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-File: bullet.png Graphic file (type png)
-<use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 49.
-(pdftex.def)             Requested size: 5.0pt x 14.6871pt.
-LaTeX Font Info:    Calculating math sizes for size <9.9> on input line 55.
-LaTeX Font Info:    Calculating math sizes for size <6.6> on input line 55.
+LaTeX Font Info:    Calculating math sizes for size <6.6> on input line 38.
 
-Overfull \hbox (9.2679pt too wide) in paragraph at lines 55--55
+Overfull \hbox (9.2679pt too wide) in paragraph at lines 38--38
 []  
  []
 
 
-Overfull \hbox (9.2679pt too wide) in paragraph at lines 55--55
+Overfull \hbox (9.2679pt too wide) in paragraph at lines 38--38
 []  
  []
 
 
-Overfull \hbox (4.55284pt too wide) in paragraph at lines 59--67
-\T1/ptm/n/n/10 site at $[]$
+Package xcolor Warning: Incompatible color definition on input line 40.
+
+
+Package xcolor Warning: Incompatible color definition on input line 44.
+
+
+Package xcolor Warning: Incompatible color definition on input line 47.
+
+
+Package xcolor Warning: Incompatible color definition on input line 50.
+
+
+Package xcolor Warning: Incompatible color definition on input line 54.
+
+
+Package xcolor Warning: Incompatible color definition on input line 58.
+
+
+Underfull \hbox (badness 4765) in paragraph at lines 87--88
+[]\T1/ptm/m/n/8 1 erg/(G$\OMS/cmsy/m/n/8 ^^A$\T1/ptm/m/n/8 g) $\OT1/cmr/m/n/8 =
+$ \T1/ptm/m/n/8 1 emu/g $\OMS/cmsy/m/n/8 !$ \T1/ptm/m/n/8 1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--67
-[]$
+Overfull \hbox (14.32645pt too wide) in paragraph at lines 61--121
+[][]
  []
 
 
-Underfull \hbox (badness 2173) in paragraph at lines 59--67
-\T1/ptm/n/n/10 If you would pre-fer to use La-TeX, down-load IEEE's
- []
+Package xcolor Warning: Incompatible color definition on input line 126.
 
 
-Underfull \hbox (badness 5787) in paragraph at lines 59--67
-\T1/ptm/n/n/10 La-TeX style and sam-ple files from the same Web
- []
+Package xcolor Warning: Incompatible color definition on input line 129.
 
 
-Underfull \hbox (badness 2134) in paragraph at lines 59--67
-\T1/ptm/n/n/10 page. You can also ex-plore us-ing the Over-leaf ed-i-tor
- []
-
-
-Underfull \hbox (badness 1817) in paragraph at lines 59--67
-\T1/ptm/n/n/10 at $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--67
-[]$
- []
-
-
-Underfull \hbox (badness 1448) in paragraph at lines 84--89
-\T1/ptm/n/n/10 mod-i-fiers: ``zero-field-cooled mag-ne-ti-za-tion.'' Avoid dan-
-
- []
+Package xcolor Warning: Incompatible color definition on input line 131.
 
 <Logo.png, id=4, 355.3275pt x 86.3225pt>
 File: Logo.png Graphic file (type png)
 <use Logo.png>
-Package pdftex.def Info: Logo.png  used on input line 104.
+Package pdftex.def Info: Logo.png  used on input line 131.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -468,45 +506,44 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 
  <./Logo.png> <./bullet.png>]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 13
-1.
 
-(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-71.
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-
-LaTeX Font Warning: Font shape `TS1/ptm/n/n' undefined
-(Font)              using `TS1/ptm/m/n' instead
-(Font)              for symbol `textonehalf' on input line 171.
-
-<fig1.png, id=19, 249.3315pt x 189.22694pt>
-File: fig1.png Graphic file (type png)
-<use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 201.
-(pdftex.def)             Requested size: 249.33087pt x 189.22647pt.
-File: fig1.png Graphic file (type png)
-<use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 201.
-(pdftex.def)             Requested size: 249.33087pt x 189.22647pt.
-
-LaTeX Font Warning: Font shape `T1/ptm/n/it' undefined
-(Font)              using `T1/ptm/n/n' instead on input line 212.
+Package xcolor Warning: Incompatible color definition on input line 132.
 
 
-Overfull \hbox (11.37274pt too wide) in paragraph at lines 216--217
-[]\T1/ptm/n/n/10 A gen-eral IEEE styleguide is avail-able at $[]$
- []
+Package xcolor Warning: Incompatible color definition on input line 136.
 
-<notaglineLogo.png, id=20, 355.3275pt x 86.3225pt>
+
+Package xcolor Warning: Incompatible color definition on input line 139.
+
+
+Package xcolor Warning: Incompatible color definition on input line 142.
+
+
+Underfull \vbox (badness 1584) has occurred while \output is active []
+
+
+
+Package xcolor Warning: Incompatible color definition on input line 145.
+
+
+Package xcolor Warning: Incompatible color definition on input line 149.
+
+
+Package xcolor Warning: Incompatible color definition on input line 153.
+
+
+Package xcolor Warning: Incompatible color definition on input line 156.
+
+
+Package xcolor Warning: Incompatible color definition on input line 159.
+
+
+Package xcolor Warning: Incompatible color definition on input line 163.
+
+<notaglineLogo.png, id=19, 355.3275pt x 86.3225pt>
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 221.
+Package pdftex.def Info: notaglineLogo.png  used on input line 165.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -524,24 +561,86 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [2 <./notaglineLogo.png>]
-Underfull \hbox (badness 4765) in paragraph at lines 272--273
-[]\T1/ptm/m/n/8 1 erg/(G$\OMS/cmsy/m/n/8 ^^A$\T1/ptm/m/n/8 g) $\OT1/cmr/m/n/8 =
-$ \T1/ptm/m/n/8 1 emu/g $\OMS/cmsy/m/n/8 !$ \T1/ptm/m/n/8 1
+
+Package xcolor Warning: Incompatible color definition on input line 169.
+
+
+Package xcolor Warning: Incompatible color definition on input line 181.
+
+
+Package xcolor Warning: Incompatible color definition on input line 184.
+
+
+Package xcolor Warning: Incompatible color definition on input line 187.
+
+
+Package xcolor Warning: Incompatible color definition on input line 190.
+
+
+Package xcolor Warning: Incompatible color definition on input line 193.
+
+
+Package xcolor Warning: Incompatible color definition on input line 198.
+
+
+Package xcolor Warning: Incompatible color definition on input line 202.
+
+
+Package xcolor Warning: Incompatible color definition on input line 204.
+
+
+Underfull \hbox (badness 3977) in paragraph at lines 205--206
+\T1/ptm/n/n/10 Curabitur tor-tor. Pel-len-tesque nibh. Ae-nean quam. In
+ []
+
+<fig1.png, id=31, 249.3315pt x 189.22694pt>
+File: fig1.png Graphic file (type png)
+<use fig1.png>
+Package pdftex.def Info: fig1.png  used on input line 209.
+(pdftex.def)             Requested size: 249.33087pt x 189.22647pt.
+File: fig1.png Graphic file (type png)
+<use fig1.png>
+Package pdftex.def Info: fig1.png  used on input line 209.
+(pdftex.def)             Requested size: 249.33087pt x 189.22647pt.
+
+Package xcolor Warning: Incompatible color definition on input line 209.
+
+
+Package xcolor Warning: Incompatible color definition on input line 209.
+
+
+Package xcolor Warning: Incompatible color definition on input line 211.
+
+
+Package xcolor Warning: Incompatible color definition on input line 215.
+
+
+Package xcolor Warning: Incompatible color definition on input line 218.
+
+
+Package xcolor Warning: Incompatible color definition on input line 224.
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 227--228
+[]\T1/ptm/m/n/7.61 M. Craw-ford, \T1/ptm/m/it/7.61 Catch-ing the Sun\T1/ptm/m/n
+/7.61 , Amer-i-can So-ci-ety of Me-chan-i-cal
  []
 
 
-Overfull \hbox (14.32645pt too wide) in paragraph at lines 246--306
-[][]
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+\T1/ptm/m/n/7.61 En-gi-neers, Feb. 2013. Ac-cessed on: Nov. 2, 2017. [On-line].
+
  []
 
 
-Underfull \hbox (badness 2020) in paragraph at lines 324--331
-\T1/ptm/n/n/10 Most charts, graphs, and ta-bles are one col-umn wide
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+\T1/ptm/m/n/7.61 Avail-able: https://www.asme.org/engineering-topics/articles/r
+enewable-
  []
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 331.
+Package pdftex.def Info: notaglineLogo.png  used on input line 228.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -558,250 +657,59 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[3 <./fig1.png (PNG copy)>]
-Underfull \hbox (badness 1946) in paragraph at lines 361--366
-\T1/ptm/n/n/10 color space. Grayscale im-ages should be sub-mit-ted in
+[3]
+LaTeX Font Info:    Calculating math sizes for size <7.61> on input line 230.
+
+Underfull \hbox (badness 7667) in paragraph at lines 230--231
+[]\T1/ptm/m/n/7.61 J. Sidhu, \T1/ptm/m/it/7.61 Syscoin 3.0: A Peer-to-Peer Elec
+-tronic Cash Sys-tem
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 429--440
-\T1/ptm/n/n/10 The IEEE Graph-ics An-a-lyzer en-ables au-thors to pre-
- []
-
-File: notaglineLogo.png Graphic file (type png)
-<use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 440.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
+\T1/ptm/m/it/7.61 Built For Busi-ness Ap-pli-ca-tions\T1/ptm/m/n/7.61 , Blockch
+ain Foundry Inc,
  []
 
 
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
+\T1/ptm/m/n/7.61 Feb. 2018. Ac-cessed on: Dec 2020. [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
+LaTeX Font Warning: Font shape `T1/ptm/n/it' undefined
+(Font)              using `T1/ptm/n/n' instead on input line 244.
 
-[4]
-File: notaglineLogo.png Graphic file (type png)
-<use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 536.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
+Underfull \hbox (badness 2302) in paragraph at lines 249--250
+[]\T1/ptm/n/it/7.61 V. Bu-terin, \T1/ptm/m/it/7.61 Us-ing poly-no-mial com-mit-
+ments to re-place state roots\T1/ptm/n/it/7.61 ,
  []
 
 
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
+Underfull \hbox (badness 7777) in paragraph at lines 249--250
+\T1/ptm/n/it/7.61 Ethereum Re-search, Mar. 2020. Ac-cessed on: Jan 2021. [On-
  []
 
 
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[5]
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 5
-45.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1phv.fd
-File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 17.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 20.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 34.
-
-)
-Underfull \hbox (badness 4779) in paragraph at lines 546--554
-\T1/ptm/n/it/10 Contributions to the Trans-ac-tions, Jour-nals, and Let-
+Underfull \hbox (badness 2478) in paragraph at lines 251--252
+[]\T1/ptm/n/it/7.61 G., \T1/ptm/m/it/7.61 Proof of Stake Ver-sus Proof of Work.
+ Tech-ni-cal Re-port\T1/ptm/n/it/7.61 , Bit-
  []
 
 
-Underfull \hbox (badness 4940) in paragraph at lines 546--554
-\T1/ptm/n/it/10 ters may be sub-mit-ted elec-tron-i-cally on IEEE's on-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 546--554
-\T1/ptm/n/it/10 line manuscript sub-mis-sion and peer-review sys-tem,
- []
-
-
-Underfull \hbox (badness 4886) in paragraph at lines 546--554
-\T1/ptm/n/it/10 Schol-arOne\TS1/ptm/n/n/10 ® \T1/ptm/n/it/10 Manuscripts. You c
-an get a list-ing of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 546--554
-\T1/ptm/n/it/10 the pub-li-ca-tions that par-tic-i-pate in Schol-arOne at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 546--554
-[]$
- []
-
-
-Underfull \hbox (badness 7397) in paragraph at lines 594--601
-\T1/ptm/n/it/10 Authors must sub-mit an elec-tronic IEEE Copy-right
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 594--601
-\T1/ptm/n/it/10 Form (eCF) upon sub-mit-ting their fi-nal manuscript
- []
-
-
-Underfull \hbox (badness 4242) in paragraph at lines 594--601
-\T1/ptm/n/it/10 files. You can ac-cess the eCF sys-tem through your
- []
-
-
-Underfull \hbox (badness 3872) in paragraph at lines 594--601
-\T1/ptm/n/it/10 manuscript sub-mis-sion sys-tem or through the Au-thor
- []
-
-
-Underfull \hbox (badness 3189) in paragraph at lines 594--601
-\T1/ptm/n/it/10 Gate-way. You are re-spon-si-ble for ob-tain-ing any nec-
- []
-
-
-Underfull \hbox (badness 3189) in paragraph at lines 594--601
-\T1/ptm/n/it/10 es-sary ap-provals and/or se-cu-rity clear-ances. For ad-di-
- []
-
-
-Underfull \hbox (badness 3492) in paragraph at lines 594--601
-\T1/ptm/n/it/10 at $[]$
- []
-
-File: notaglineLogo.png Graphic file (type png)
-<use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 631.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[6]
-Underfull \hbox (badness 2050) in paragraph at lines 668--671
-\T1/ptm/n/it/10 J. K. Au-thor, ``Name of pa-per,'' Ab-brev. Ti-tle of
- []
-
-
-Underfull \hbox (badness 4168) in paragraph at lines 668--671
-\T1/ptm/n/it/10 Pe-ri-od-i-cal, vol. $\OML/cmm/m/it/10 x$\T1/ptm/n/it/10 , no. 
-$\OML/cmm/m/it/10 x$\T1/ptm/n/it/10 , pp. xxx--xxx, Ab-brev.
- []
-
-
-Underfull \hbox (badness 1394) in paragraph at lines 672--675
-\T1/ptm/n/it/10 J.K. Au-thor. (year, month). Ti-tle. pre-sented at ab-
- []
-
-
-Underfull \hbox (badness 1406) in paragraph at lines 709--710
-[]\T1/ptm/n/it/10 J. K. Au-thor, pri-vate com-mu-ni-ca-tion, Ab-brev.
- []
-
-File: notaglineLogo.png Graphic file (type png)
-<use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 722.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[7]
-LaTeX Font Info:    Calculating math sizes for size <7.61> on input line 732.
-
-Underfull \hbox (badness 2856) in paragraph at lines 734--735
-[]\T1/ptm/n/it/7.61 W.-K. Chen, Lin-ear Net-works and Sys-tems. Bel-mont, CA, U
-SA:
- []
-
-
-Underfull \hbox (badness 2181) in paragraph at lines 750--755
-[]\T1/ptm/n/it/7.61 G. O. Young, ``Syn-thetic struc-ture of in-dus-trial plas-t
-ics,'' in Plas-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 760--763
-\T1/ptm/n/it/7.61 Avail-able: $[]$.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 775--779
-[]\T1/ptm/n/it/7.61 PROCESS Cor-po-ra-tion, Boston, MA, USA. In-tranets: In-ter
--net
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 775--779
-\T1/ptm/n/it/7.61 Pre-sented at INET96 An-nual Meet-ing. [On-line]. Avail-able:
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 782--785
-[]\T1/ptm/n/it/7.61 Teralyzer. Lytera UG, Kirch-hain, Ger-many [On-line]. Avail
--able:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 782--785
-[]$\T1/ptm/n/it/7.61 ,
+Underfull \hbox (badness 4531) in paragraph at lines 251--252
+\T1/ptm/n/it/7.61 Fury Group, 2015. Ac-cessed on: Jan 2021. [On-line]. Avail-ab
+le:
  []
 
 File: bullet.png Graphic file (type png)
 <use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 819.
+Package pdftex.def Info: bullet.png  used on input line 259.
 (pdftex.def)             Requested size: 5.0pt x 14.6871pt.
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 821.
+Package pdftex.def Info: notaglineLogo.png  used on input line 261.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -818,23 +726,28 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[8] (./article.aux)
+[4
+
+ <./fig1.png (PNG copy)>] (./article.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 4209 strings out of 480608
- 60827 string characters out of 5903631
- 311569 words of memory out of 5000000
- 19998 multiletter control sequences out of 15000+600000
- 641621 words of font info for 172 fonts, out of 8000000 for 9000
+ 4828 strings out of 480608
+ 69593 string characters out of 5903631
+ 334568 words of memory out of 5000000
+ 20630 multiletter control sequences out of 15000+600000
+ 620592 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,13n,52p,312b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,13n,45p,845b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texl
-ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texliv
+xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texl
+ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texliv
 e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/
 2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/20
 20/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/
@@ -842,19 +755,16 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fo
-nts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
-1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/h
-elvetic/uhvbo8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helveti
-c/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvro
-8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
-sr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/
-texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on article.pdf (8 pages, 268882 bytes).
+t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/
+fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
+ype1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/u
+rw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helv
+etic/uhvro8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr
+8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on article.pdf (4 pages, 219687 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
