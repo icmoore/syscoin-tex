@@ -21,7 +21,7 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 	* Academic Introduction to NIZP
 
 * [Coladangelo et. al., Non-Interactive Zero-Knowledge Arguments for QMA, with preprocessing](https://www.youtube.com/watch?v=24mN-_d5LVo)
-        * Caltech conference paper on NIZK arguments
+	* Caltech conference paper on NIZK arguments
 
 ## ZK-STARKS
 
