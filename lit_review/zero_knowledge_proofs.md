@@ -15,7 +15,7 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 ## Non-interactive Zero Knowledge Proofs
 
 * [Yun, Implementing a Zero Knowledge Proof](https://www.youtube.com/watch?v=sOKh7WQgwpw)
-	* Nuts and bolts outline of Bulletproof implementation
+	* Technical nuts and bolts outline of Bulletproof implementation
 
 * [Groth, Non-interactive Zero Knowledge](https://www.youtube.com/watch?v=BLqvqTjDZok)
 	* Academic Introduction to NIZP
@@ -29,10 +29,13 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 	* Inaugural academic paper on zk-STARKS
 
 * [Ben-Sasson, SNARKs and STARKs](https://www.youtube.com/watch?v=7BQqb8S1FA8&feature=youtu.be)
-	* Excellent lecture on SNARKS
+	* Lecture contrasting PCP, IOP, STIK, and STARKS and how they work together
 
 * [Zero-knowledge Scalable Transparent Arguments of Knowledge](http://cryptowiki.net/index.php?title=Zero-knowledge_Scalable_Transparent_Arguments_of_Knowledge_(zk-STARKs))
 	* Introduction to ZK-STARKS (academic)
+
+* [Ben-Sasson, From PCP to ZK-STARK](https://cyber.biu.ac.il/wp-content/uploads/2019/02/2-BarIlan_Feb_2019.pdf)
+	* Contrasts PCP, IOP, STIK, and STARKS and how they work together
 
 ## Verifiable Delay Functions
 
@@ -50,7 +53,7 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 	* MIT survey paper
 	* Appliying zero knowledge proof systems to online auctions
 	* Distinguishes between Interactive vs Non-interactive
-	
+	* Compares STARKS, SNARKS and Bulletproofs
 
 
 
