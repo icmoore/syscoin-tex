@@ -14,7 +14,7 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 
 ## Non-interactive Zero Knowledge Proofs
 
-* [Yun, Implementing a Zero Knowledge Proof] (https://www.youtube.com/watch?v=sOKh7WQgwpw)
+* [Yun, Implementing a Zero Knowledge Proof](https://www.youtube.com/watch?v=sOKh7WQgwpw)
 	* Nuts and bolts outline of Bulletproof implementation
 
 * [Groth, Non-interactive Zero Knowledge](https://www.youtube.com/watch?v=BLqvqTjDZok)
@@ -28,7 +28,7 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 * [Ben-Sasson et. al, Scalable, transparent, and post-quantum secure computational integrity](https://eprint.iacr.org/2018/046.pdf)
 	* Inaugural academic paper on zk-STARKS
 
-* [Ben-Sasson, SNARKs and STARKs]
+* [Ben-Sasson, SNARKs and STARKs](https://www.youtube.com/watch?v=7BQqb8S1FA8&feature=youtu.be)
 	* Excellent lecture on SNARKS
 
 * [Zero-knowledge Scalable Transparent Arguments of Knowledge](http://cryptowiki.net/index.php?title=Zero-knowledge_Scalable_Transparent_Arguments_of_Knowledge_(zk-STARKs))
