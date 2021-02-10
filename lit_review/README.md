@@ -1,6 +1,6 @@
 # Syscoin 4.0 Literature Review on ZKP
 
-## Introductory Surveys
+## KNP Introductory Surveys
 
 * [Clark et. al., Zero-knowledge proofs (ZKP): Privacy Preserving
 Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/sessionsFiles/13672/IDY-W02-Zero-Knowledge-ZK-Proofs_Privacy_Preserving-Authentication.pdf)
@@ -46,7 +46,7 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 ## Ethereum and the EVM
 
 * [Vitalik, Understanding the Ethereum Blockchain Protocol](https://www.youtube.com/watch?v=gjwr-7PgpN8)
-	* Best into EVM
+	* Nice intro to the EVM
 
 * [Robinson et. al., EVM: From Solidity to byte code, memory and storage](https://www.youtube.com/watch?v=RxL_1AfV7N4)
 	* Overview of how Solidity is deployed and EVM opersting system
@@ -63,7 +63,10 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 * [Wood, Ethereum: So now we've built it, WTF is it!](https://www.youtube.com/watch?v=U_LK0t_qaPo)
 	* Good reminder on Ethereuem's vision
 
-## Applications
+* [Saini, Getting Deep Into Ethereum: How Data Is Stored In Ethereum?](https://hackernoon.com/getting-deep-into-ethereum-how-data-is-stored-in-ethereum-e3f669d96033)
+	* Explores the three Tries in ETH block header
+
+## ZKP Applications
 
 * [Bloemen, Scalling DEXes](https://www.youtube.com/watch?v=qwtOJvFo6vs)
 	* 0X technical fellow
