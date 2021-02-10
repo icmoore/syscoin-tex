@@ -43,6 +43,25 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 * [Boheh, Verifiable Delay Functions](https://www.youtube.com/watch?v=dN-1q8c50q0&feature=youtu.be)
 	* Introductory talk on VDF
 
+## Ethereum and the EVM
+
+* [Vitalik, Understanding the Ethereum Blockchain Protocol](https://www.youtube.com/watch?v=gjwr-7PgpN8)
+	* Best into EVM
+
+* [Robinson et. al., EVM: From Solidity to byte code, memory and storage](https://www.youtube.com/watch?v=RxL_1AfV7N4)
+	* Overview of how Solidity is deployed and EVM opersting system
+
+* [Mackay, Ethereum Virtual Machine](https://www.youtube.com/watch?v=ihHdvulWW40)
+	* Discusses fundamentals behind the EVM
+
+* [Wood, Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf)
+	* Formal definition of the Ethereum protocol (this will humble you)
+
+* [Saldanha, Ethereum Yellow Paper Walkthrough](https://www.lucassaldanha.com/ethereum-yellow-paper-walkthrough-1/)
+	* Step-by-step walkthrough of ETH yellow paper
+
+* [Wood, Ethereum: So now we've built it, WTF is it!](https://www.youtube.com/watch?v=U_LK0t_qaPo)
+	* Good reminder on Ethereuem's vision
 
 ## Applications
 
