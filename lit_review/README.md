@@ -55,7 +55,7 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 	* Discusses fundamentals behind the EVM
 
 * [Wood, Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf)
-	* Formal definition of the Ethereum protocol (this will humble you)
+	* Formal definition of the Ethereum protocol
 
 * [Saldanha, Ethereum Yellow Paper Walkthrough](https://www.lucassaldanha.com/ethereum-yellow-paper-walkthrough-1/)
 	* Step-by-step walkthrough of ETH yellow paper
