@@ -64,7 +64,10 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 	* Good reminder on Ethereuem's vision
 
 * [Saini, Getting Deep Into Ethereum: How Data Is Stored In Ethereum?](https://hackernoon.com/getting-deep-into-ethereum-how-data-is-stored-in-ethereum-e3f669d96033)
-	* Explores the three Tries in ETH block header
+	* Explores storage in Ethereum via various Tries in Ethereum (state, transactions, and storage)
+
+* [Akhunov, Turbo Geth: What is it all about?](https://www.youtube.com/watch?v=oEpY4NkkeYQ&t=2663s)
+	* Useful for understanding Ethereum storage Tries
 
 ## ZKP Applications
 
@@ -78,7 +81,13 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 	* Distinguishes between Interactive vs Non-interactive
 	* Compares STARKS, SNARKS and Bulletproofs
 
+## ZKP Implementation
 
+* [Gluchowski, zkPorter: Composable Scalability in L2 Beyond zkRollup](https://medium.com/matter-labs/zkporter-composable-scalability-in-l2-beyond-zkrollup-2a30c4d69a75)
+	* Presents a L2 scaling technique via zkRollup and sharding
+
+* [CARIO, cairo-lang.org](https://www.cairo-lang.org/)
+	* Turing-complete language for creating provable programs
 
 
 
