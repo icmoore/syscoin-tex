@@ -38,6 +38,11 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 * [Ben-Sasson, From PCP to ZK-STARK](https://cyber.biu.ac.il/wp-content/uploads/2019/02/2-BarIlan_Feb_2019.pdf)
 	* Contrasts PCP, IOP, STIK, and STARKS and how they work together
 
+## ZK-SNARKS
+
+* [Drakes, Polynomial Commitments with Justin Drakes](https://www.youtube.com/watch?v=bz16BURH_u8&feature=emb_logo)
+        * Another study on polynomial committments
+
 ## Verifiable Delay Functions
 
 * [Boheh, Verifiable Delay Functions](https://www.youtube.com/watch?v=dN-1q8c50q0&feature=youtu.be)
@@ -51,8 +56,11 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 * [Robinson et. al., EVM: From Solidity to byte code, memory and storage](https://www.youtube.com/watch?v=RxL_1AfV7N4)
 	* Overview of how Solidity is deployed and EVM opersting system
 
-* [Ramesh,Polynomial Commitments for Witness Compression for Ethereum 1.x](https://www.youtube.com/watch?v=1Iaxr6FP3VU)
-	* How Polynomial Commitments can be used with Witnesses for Eth 1.x
+* [Hotchkiss, The 1.x Files: The State of Stateless Ethereum](https://blog.ethereum.org/2019/12/30/eth1x-files-state-of-stateless-ethereum/)
+	* Good explaination of stateless Ethereum
+
+* [Ramesh, Polynomial Commitments for Witness Compression for Ethereum 1.x](https://www.youtube.com/watch?v=1Iaxr6FP3VU)
+	* Break down of Vitalik's post (Summer, 2020) on desired approach for witness compression
 
 * [Mackay, Ethereum Virtual Machine](https://www.youtube.com/watch?v=ihHdvulWW40)
 	* Discusses fundamentals behind the EVM
