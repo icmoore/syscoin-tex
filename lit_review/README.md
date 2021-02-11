@@ -1,4 +1,4 @@
-# Syscoin 4.0 Literature Review on ZKP
+# Syscoin 4.0 Literature Review
 
 ## KNP Introductory Surveys
 
@@ -61,7 +61,7 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 	* Step-by-step walkthrough of ETH yellow paper
 
 * [Wood, Ethereum: So now we've built it, WTF is it!](https://www.youtube.com/watch?v=U_LK0t_qaPo)
-	* Good reminder on Ethereuem's vision
+	* Good refresher on Ethereuem's vision
 
 * [Saini, Getting Deep Into Ethereum: How Data Is Stored In Ethereum?](https://hackernoon.com/getting-deep-into-ethereum-how-data-is-stored-in-ethereum-e3f669d96033)
 	* Explores storage in Ethereum via various Tries in Ethereum (state, transactions, and storage)
