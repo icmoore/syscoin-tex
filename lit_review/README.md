@@ -51,6 +51,9 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 * [Robinson et. al., EVM: From Solidity to byte code, memory and storage](https://www.youtube.com/watch?v=RxL_1AfV7N4)
 	* Overview of how Solidity is deployed and EVM opersting system
 
+* [Ramesh,Polynomial Commitments for Witness Compression for Ethereum 1.x](https://www.youtube.com/watch?v=1Iaxr6FP3VU)
+	* How Polynomial Commitments can be used with Witnesses for Eth 1.x
+
 * [Mackay, Ethereum Virtual Machine](https://www.youtube.com/watch?v=ihHdvulWW40)
 	* Discusses fundamentals behind the EVM
 
