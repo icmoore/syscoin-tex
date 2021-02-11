@@ -41,7 +41,7 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 ## ZK-SNARKS
 
 * [Drakes, Polynomial Commitments with Justin Drakes](https://www.youtube.com/watch?v=bz16BURH_u8&feature=emb_logo)
-        * Another study on polynomial committments
+	* Another study on polynomial committments
 
 ## Verifiable Delay Functions
 
