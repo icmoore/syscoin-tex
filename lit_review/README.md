@@ -1,5 +1,8 @@
 # Syscoin 4.0 Literature Review
 
+* [Sidhu, Syscoin and its vision for the future](https://docs.google.com/document/d/1SC69GVFKhjeHu-Q6jam1VeooeW4z8WZeMOhbKrchDaI/edit?ts=6026d598#heading=h.ynvi12mdhgqf)
+	* Working document for future blog post
+
 ## KNP Introductory Surveys
 
 * [Clark et. al., Zero-knowledge proofs (ZKP): Privacy Preserving
