@@ -46,6 +46,16 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 * [Drakes, Polynomial Commitments with Justin Drakes](https://www.youtube.com/watch?v=bz16BURH_u8&feature=emb_logo)
 	* Another study on polynomial committments
 
+## ZK-rollups
+
+* [Scaling Ethereum on L2: Optimistic Rollups and ZK-Rollups](https://medium.com/interdax/ethereum-l2-optimistic-and-zk-rollups-dffa58870c93)
+	* Good Optimistic Rollups and ZK-Rollups
+
+## ZK-Sync
+
+* [Matter Labs ,L2 scalability and zkSync](https://www.youtube.com/watch?v=el-9YYGN1nw)
+	* Slides [here](https://docs.google.com/presentation/d/1DTLcEJVHWEx8XkoD6RVLhQBMgkpuUW8rSv4e5H7xbdc/edit#slide=id.p)
+
 ## Verifiable Delay Functions
 
 * [Boheh, Verifiable Delay Functions](https://www.youtube.com/watch?v=dN-1q8c50q0&feature=youtu.be)
@@ -83,6 +93,10 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 * [Akhunov, Turbo Geth: What is it all about?](https://www.youtube.com/watch?v=oEpY4NkkeYQ&t=2663s)
 	* Useful for understanding Ethereum storage Tries
 
+* [Ethereum Data Strcuture](https://i.stack.imgur.com/afWDt.jpg)
+	* Detailed breakdown of the ETH blockchain mechanisim
+
+
 ## ZKP Applications
 
 * [Bloemen, Scalling DEXes](https://www.youtube.com/watch?v=qwtOJvFo6vs)
@@ -104,5 +118,7 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 	* Turing-complete language for creating provable programs
 
 
+## Misc
 
+* [Buchanan, How To Create a General Election With a Single Signature for All Votes: Meet Boneh–Lynn–Shacham (BLS) signatures](https://medium.com/asecuritysite-when-bob-met-alice/boneh-lynn-shacham-bls-signatures-d053cf049aa8)
 
