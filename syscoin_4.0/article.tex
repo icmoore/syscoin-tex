@@ -30,11 +30,11 @@ and \uppercase{Ian C. Moore, PhD\authorrefmark{2}}}
 \corresp{}
 
 \begin{abstract}
-Syscoin 4.0 introduces a novel implementation of a decentralized identityz masternodes providing bonded validators for a PoW/PoS hybrid consensus model (Nakamoto DAG) / zero knowledge proofs and instant pseudo-interactive zero-confirmation cryptocurrency transactions with double-spend protection.
+Syscoin 4.0 introduces a novel implementation of a decentralized identityz masternodes providing bonded validators for a PoW/PoS hybrid consensus model (DAG) / zero knowledge proofs and instant pseudo-interactive zero-confirmation cryptocurrency transactions with double-spend protection.
 \end{abstract}
 
 \begin{keywords}
-Nakamoto DAG, Decentralized Identity, Zero Knowledge Proofs
+Network EVM, DAG, Decentralized Identity, Zero Knowledge Proofs
 \end{keywords}
 
 \titlepgskip=-15pt
@@ -43,20 +43,16 @@ Nakamoto DAG, Decentralized Identity, Zero Knowledge Proofs
 
 \section{Introduction}
 \label{sec:introduction}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis parturient montes. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Tristique nulla aliquet enim tortor at auctor urna. Amet dictum sit amet justo. Morbi non arcu risus quis. Dictum at tempor commodo ullamcorper. Tortor pretium viverra suspendisse potenti nullam ac. Mi eget mauris pharetra et ultrices neque. Sit amet facilisis magna etiam tempor orci. Amet mauris commodo quis imperdiet.
 
-\subsection{Vision and Value Proposition}
-Consequat semper viverra nam libero. Duis at tellus at urna condimentum mattis. Viverra vitae congue eu consequat. Tristique nulla aliquet enim tortor. Sed tempus urna et pharetra pharetra massa massa ultricies. Faucibus turpis in eu mi. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae. Fermentum posuere urna nec tincidunt praesent semper. Posuere ac ut consequat semper viverra nam. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. Velit laoreet id donec ultrices tincidunt arcu non sodales. Odio euismod lacinia at quis risus sed vulputate. Blandit cursus risus at ultrices mi. Phasellus faucibus scelerisque eleifend donec. Rutrum tellus pellentesque eu tincidunt. Tempor id eu nisl nunc mi.
+Syscoin 4.0 builds upon Syscoin 3.0 with additional implementation of an Ethereum Bridge, Offers/Escrow, Lightening Networks, and Decentralized Identity. As previously featured, anything pertaining to the market place (eg, digital sales, auctions, marketplace modification, etc.) has been deprecated. The full release will included the Syscoin Network-Enhanced Virtual Machine (NEVM) which will utilize the Ethereum Virtual Machine (EVM) together with a Zero Knowledge Proof (ZKP) system to build scalable applications and the introduction of a decentralized cost model around Ethereum Gas fees (Table \ref{table:ugrades}).
 
-\subsection{What's New in 4.0}
-Eu ultrices vitae auctor eu augue ut. Non enim praesent elementum facilisis leo vel. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Eget egestas purus viverra accumsan in. Nec sagittis aliquam malesuada bibendum arcu vitae elementum. Eu sem integer vitae justo eget magna fermentum iaculis eu. Dui ut ornare lectus sit amet est placerat in egestas. Sed arcu non odio euismod lacinia at quis risus. Interdum velit euismod in pellentesque massa placerat duis. Vitae tortor condimentum lacinia quis vel. Libero enim sed faucibus turpis in eu mi bibendum neque.
+High Gas fees and low transaction throughput are some of the key issues that are hindering ERC-20 projects from running at scale. However, Ethereum 2.0 is currently under development to address these issues, where its final release is anticipated to be completed several years from now. Instead of building a competing smart contract system, we have decided to work with the EVM protocol, and to provide a faster and cost effective alternative to what Ethereum 2.0 is proposing. The roadmap for Syscoin 4.0 proposes a four-layer tech stack to address this using: (a) Syscoin as the base layer to provide security; (b) EVM for programmability; (c) ZKP for scalability; and (d) applications to provide decentralized usability for the next phase of the Internet's evolution, known as Web 3.0. 
 
-\subsubsection{Tables}
-{Etiam ultrices. Suspendisse in justo eu magna luctus suscipit}
+In Section \ref{sec:protocol} we address the protocol attributes, which include ZDAG, order-of-events, point-of-sale applications, assets, non-fungible tokens, lightning networks, offers/escrow, and masternodes. In Section \ref{section:roadmap} we lay out the roadmap for Syscoin 4.0, which includes scalability, design proposal, evidence, and applications. In Section \ref{section:specs} we outline the protocol specifications, followed by the conclusion in Section \ref{section:conclusion}.
 
-\begin{table}
-\caption{Syscoin 4.0 Upgrades}
-\label{table}
+\begin{table}[h!]
+\caption{Syscoin 4.0 Upgrades and Modifications}
+\label{table:ugrades}
 \setlength{\tabcolsep}{3pt}
 \begin{tabular}{|p{135pt}|p{75pt}|}
 \hline
@@ -84,10 +80,10 @@ Decentralized Identity &  new feature \\
 ~~~~~ Certificates &  modified \\
 Lightning networks &  new feature \\
 Offers / Escrow &  new feature\\
-Roadmap to Web 3.0 \\
-~~~~~ Network EVM (NEVM) &  roadmap  \\
-~~~~~ Zero Knowledge Proofs &  roadmap \\
-~~~~~ NEVM Applications &  roadmap \\
+Roadmap to Web 3.0 & \\
+~~~~~ Network EVM (NEVM) &  proposed  \\
+~~~~~ Zero Knowledge Proofs &  proposed \\
+~~~~~ NEVM Applications &  proposed \\
 
 \hline
 \multicolumn{2}{p{251pt}}{depreciated  $\rightarrow$ removed from 4.0; modified  $\rightarrow$ repurposed from 3.0; new feature  $\rightarrow$ upgrade from 3.0; no update $\rightarrow$ carry-over from 3.0}\\
@@ -100,20 +96,100 @@ Roadmap to Web 3.0 \\
 \section{Protocol Characteristics}
 \label{sec:protocol}
 
-\subsection{Nakamoto ZDAG}
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. 
+\subsection{Z-DAG}
+Z-DAG (Zero-Confirmation Directed
+Acyclic Graph) is an instant settlement protocol functioning
+across all Syscoin services. Syscoin services consist of
+Alias Identities, Certificates, Escrow, Offers and Assets.
+Each service is controlled via an Alias, in which ownership
+is proven through a private key that matches each
+unique address. Z-DAG organizes transactions based on
+dependencies to build the state in a deterministic fashion.
+This helps protect against double spends where an Asset is
+transferred falsely by creating multiple transactions through
+multiple nodes within a short time.
+
+Figure 1 shows the difference between a regular
+blockchain and Syscoin’s Z-DAG implementation. Syscoin
+now has two consensus layers: In the first layer, a ZDAG graph of transactions are represented in the mempool
+without a block, providing settlement in real-time. The secondary layer provides confirmation and conflict resolution
+preventing double-spend events through existing Proof of
+Work consensus.
+
+Verifying client nodes creates a graph of transactions
+by looking at the sender/receiver list of Asset transfers. A
+circuit detection algorithm is applied (read below Hawick
+cycle detection) and used to remove cycles from within the
+graph to create a DAG (Directed Acyclic Graph). Once the
+DAG is created it is topologically sorted with an Asset
+transfer consensus code being processed in sequence, to
+form a deterministic state among the entire network in
+consensus.
+
+Z-DAG can be applied to state changes (similar to
+UTXO updates to Bitcoin). If any discrepancy occurs, Proofof-Work (PoW) will override and replay the correct order
+of events according to the miner; this is ensured by saving
+the previous state on every block and rolling back to the
+previous state prior to every block.
+
+A User Interface layer will notify the user of conflicts
+in real-time, making the transaction occur between 3-5
+seconds (statistically the amount of time needed to ensure
+that network takes to notice that 2 double spend transactions
+are conflicting with each other). This is possible through
+Syscoin’s Masternode layer. Every Masternode is connected
+to 25 or more peers providing high-throughput relay across
+the network, averaging one or more network hops to transmit
+from the sender to the receiver nodes.
+
+The partition tolerance of the protocol is the PoW block
+timing which is set to 60 seconds on Syscoin 3. Every block,
+a new DAG is constructed from the transactions within that
+block. Unlike other implementations that have no PoW to
+fall back on, there is no case where the DAG tends toward an
+incorrect state over time.To accurately detect double-spends,
+other implementations such as Phantom[SZ] or Spectre[Zoh]
+must use an algorithm to replace the longest chain rule to
+derive the order of events and attacker sequences in a graph.
+These implementations end up in a more complex gametheoretical situation that has not mathematically been proven
+to be accurate in all cases. Syscoin relies on the thoroughly
+tested Nakamoto consensus model to arrive at a consensus
+over time rather than simply relying on a DAG.
 
 \subsection{Order-of-events preservation and Conflict Resolution}
 Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. 
 
 
 \subsection{CAP Theorem}
-Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. 
+The CAP theorem[Bre] states that it is impossible for
+a distributed data store to simultaneously provide more
+than two out of the following three guarantees: consistency,
+availability or partition tolerance. Bitcoin tries to provide a
+guarantee that transactions are settled, but mathematically
+it is not able to do so. Z-DAG trades some consistency for
+some availability. Since it is unlikely that a double-spend or
+re-organization will change the state of someone’s balance,
+we do not wait for settlement finality by waiting for blocks
+to confirm. This drastically increases the usability in pointof-sale applications.
+
+The allowance of instant settlements and increased availability requires paying additional attention to users simply
+trying to double-spend or send transactions too quickly,
+which may cause the miner view to change from the general
+network view. The DAG will order the dependency graph
+of transactions and process in sequence, allowing for better
+availability when it comes to instant state changes. The
+same CAP constraints as Proof-of-Work will provide a more
+responsive money transfer mechanism that may be used as
+a transaction processor instead of simply a settlement layer.
 
 \subsection{Point-of-sale applications}
-Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. 
+The combination of using Assets with Z-DAG will allow for point-of-sale applications, providing service in real-time exchange for cryptocurrency Asset tokens.
 
 \subsection{Assets}
+Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. 
+
+\subsection{Non-Fungible Tokens}
+
 Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. 
 
 \subsection{Decentralized Identity}
@@ -125,7 +201,11 @@ Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Inte
 
 \subsubsection{Chain locks}
 
-Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. 
+With a subset of nodes offering sybil resistance through the requirement of bonding 100,000 SYS to become active, plus the upcoming deterministic masternode feature in Syscoin 4.2, we have enabled Chain Locks which attempts to solve a long-standing security problem in Bitcoin [3], where Dashcore was the first project to implement this idea [4] which the industry has since widely accepted as a viable solution [5]. Our implementation is an optimized version of this, in that we do not implement Instant Send or Private Send transactions and thus Syscoin’s Chain Lock implementation is much more simpler. Because of merged-mining functionality with Bitcoin, we believe our chain coupled with Chain Locks becomes the most secure via solving Bitcoin’s most vulnerable attack vector, selfish mining. 
+
+These Chain Locks are made part of Long-Living Quorums (LLMQ) which leverage aggregatable Boneh–Lynn–Shacham (BLS) signatures that have the property of being able to combine multiple signers in a Distributed Key Generation (DKG) event to sign on decisions. In this setup, a signature can be signed on a group of parties under threshold constraints without any one of those parties holding the private key associated with that signature. In our case, the signed messages would be a ChainLock Signature (CLSIG) which represent claims on what the block hashes represent of the canonical chain [4]. This model suggests a very efficient   threshold signature design was needed to be able to quickly come to consensus across the Masternode layer to decide on chain tips and lock chains preventing selfish mining attacks. See [6] to understand the qualities of BLS signatures in the context of multi-sig use cases.
+
+Ethereum 2.0 design centers around the use of BLS signatures through adding precompile opcodes in the Ethereum Virtual Machine (EVM) for the BLS12-381 curve [7] which Syscoin has adopted. This curve was first introduced in 2017 by Bowe  [8] to the ZCash protocol. Masternodes on Syscoin use this curve and have a BLS key that is associated with each validator. There is the performance comparison to ECDSA (Secp256k1) [9] that shows its usefulness in contrast to what Bitcoin and Syscoin natively use for signature verification.
 
 \subsubsection{Reselling and Whitelists}
 
@@ -139,9 +219,10 @@ Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luc
 
 \subsection{Masternodes}
 
-Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. 
+With 2400+ masternodes running fullnodes, Z-DAG becomes much more dependable, as does the propagation of blocks and potential forks. The masternodes are bonded through a loss-less strategy of putting 100000 Syscoin in an output and running full nodes in exchange for block rewards. A seniority model incentivizes the masternodes to share long-term growth by paying them more for the longer period of service. Half of the transaction fees are also shared between the PoW miners and masternodes to ensure long term alignment once subsidy becomes negligible. The coins are not locked at any point, and there is no slashing condition if masternodes decide to move their coins, the rewards to those masternodes simply stop. Sharing Bitcoin’s compact block design, it consumes very little bandwidth to propagate blocks assuming the memory pool of all these nodes is roughly synchronized [2]. The traffic on the network primarily consists of propagating the missing transactions to validate these blocks. Having a baseline for a large number of full-nodes that are paid to be running allows us to create a very secure environment for users. It proposes higher costs to would-be attackers who either have to attempt a 51\% attack of Syscoin (effectively also trying to attack the Bitcoin network), or try to game the mesh network by propagating bad information which is made more difficult by incentivized full-nodes. The health of a decentralized network consists of the following; (a) the mining component or consensus to produce blocks, and (b) the network topology to disseminate information in a timely manner in conditions where adversaries might be lurking. Other attacks related to race conditions in networking or consensus code are mostly negligible as Syscoin follows a rigorous and thorough continuous development process. This includes deterministic builds, Fuzz tests, ASAN/MSAN/TSAN, functional/unit tests, multiple clients and adequate code coverage. Syscoin and Bitcoin protocol code bases are merged daily such that the build/signing/test processes are all identical, allowing us to leverage the massive developer base of Bitcoin. The quality of code is reflective of taking worst case situations into account. The most critical engineers and IT specialists need confidence that value is secure should they decide to move their business to that infrastructure. It’s true that there are numerous new ideas, new consensus protocols and mechanisms for achieving synchronization among users in a system through light/full node implementations. However, in our experience in the blockchain industry over the last eight years, we understand that it takes years, sometimes generations to bring those functionalities to production level quality useful for commercial applications. 
 
 \section{Roadmap to Web 3.0}
+\label{section:roadmap}
 
 Bitcoin was the first to attempt to offer a practical outcome in the General's Dilemma using Crypto Economic rationale and incentives. Ethereum was the first to abstract the concept of turing completeness within similar frameworks assumed by Bitcoin. What Syscoin presents is a combination of both Bitcoin and Ethereum with intuitions built on top to achieve a more efficient financial computing platform which leverages coordination to achieve consensus using Crypto Economic rationale and incentives. We propose a four-layer tech stack using Syscoin as the base (host) layer, which provides an efficient (ie, low gas cost per transaction) platform. Some of the main advantages include building scalable decentralized applications, the introduction of a decentralized cost model around Ethereum Gas fees. This new model proposes state-less parallelized execution and verification models while taking advantage of the security offered by the Bitcoin protocol. We may also refer to this as Web 3.0.
 
@@ -395,7 +476,7 @@ Chain & Gas  Limit & Block Time & Mode & Cost  & Amortized  & Total TPS & \multi
 \hline
 
 \end{tabular}
-\caption{Table to test captions and labels}
+\caption{Comparison of Gas and USD costs between ETH and SYSX}
 \label{table:1}
 \end{table*}
 
@@ -410,19 +491,32 @@ The utmost interesting propositions are the verticals that become possible by al
 
 
 \section{Specifications}
-\label{sec:specs}
+\label{section:specs}
 
-Quisque volutpat condimentum velit:
+
+General specifications for Syscoin 4.0:
 
 \begin{description}[font=$\bullet$~\normalfont\scshape\color{blue!50!black}]
-\item [Maecenas dolor] mauris, efficitur nec scelerisque vel
-\item [Curabitur] vehicula velit lectus, quis pretium
-\item [Quisque] in enim vitae augue posuere vulputate
-\item [Praesent] quis viverra ex
+\item \textbf{Max Coins:} 888 Million
+\item \textbf{Deflation:}  5 percent per year until Max Coins
+\item \textbf{Consensus:} PoW/PoS Hybrid. PoW is SHA256
+Merge-mined with Bitcoin
+\item \textbf{Block time:} 60 seconds 
+\item \textbf{Rewards:} 38.5 Syscoin deflated 5 percent per year
+of which 10 percent is allocated to governance proposals (3.85 Syscoin). 75 percent of the result goes
+to masternode and 25 percent to miner.
+\item \textbf{Difficulty algorithm:} Dark Gravity Wave
+\item \textbf{Masternode collateral requirement:} 100000 Syscoin
+\item \textbf{Masternode seniority}: 3 percent every 4 months until
+27 percent over 3 years
+\item \textbf{Governance proposals payout schedule}: every month
+\item \textbf{Governance funding per round}: 168630 Syscoin per
+month
 \end{description}
 
 
 \section{Conclusion}
+\label{section:conclusion}
 Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. 
 
 \appendices
@@ -430,12 +524,11 @@ Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibul
 \section*{Acknowledgment}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. 
 
-
 \section{Security: PoW vs PoS}
 
 Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. 
 
-\section{Nakamoto DAG Fundamentals}
+\section{DAG Fundamentals}
 
 Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci. Ut eu diam at pede suscipit sodales. Aenean lectus elit, fermentum non, convallis id, sagittis at, neque. 
 
@@ -444,22 +537,49 @@ Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl 
 \subsection{Transmission Path}
 Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. 
 
+\begin{equation}
+E\{cp_{k}\} = pk -m \left(1 - \left(1 - \frac{p}{m}\right)^{k}\right)
+\end{equation}
+
+\begin{equation}
+P(|cp| = n) = \frac{\binom{M}{c} \binom{M-c}{p-c} \binom{M-p}{p-c} }{\binom{M}{p}}
+\end{equation}
+
+
 \subsection{Transmission Delay}
 Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. 
 
 \subsection{Processing Capacity}
 Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. 
 
-\begin{equation}E=mc^2.\label{eq}\end{equation}
-
-
-\section{Syscoin Indexer Dataflow}
+\section{Zero Knowledge Proofs Fundamentals}
 
 Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. 
 
-\section{Masternode P2P Dataflow}
+\section{Block Occupancy Cost (BLOC) Model}
 
-Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. 
+\section{Gas Simulations}
+
+\subsection{Marginal Likelihood}
+
+\begin{equation}
+f(x) \sim GP(\mu(x), k(x,x'))
+\end{equation}
+
+\begin{eqnarray}
+\epsilon \sim N(0,\Sigma) \\
+y = f(x) + \epsilon 
+\end{eqnarray}
+
+\begin{equation}
+p(y|x) = \int p(y | f,x) p (f, |x) df
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\log p(y | x) = \frac{1}{2}(\mathbf{y}-\mathbf{m}_{x})^{T}(\mathbf{K}_{xx} + \mathbf{\Sigma})^{-1}(\textbf{y} - \mathbf{m}_{x}) -\\ \frac{1}{2}|\mathbf{K}_{xx} - \mathbf{\Sigma}| - \frac{n}{2}\log(2\pi)
+\end{split}
+\end{equation}
 
 \begin{thebibliography}{00}
 
