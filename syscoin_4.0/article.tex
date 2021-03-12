@@ -556,30 +556,69 @@ Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum.
 
 Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. 
 
-\section{Block Occupancy Cost (BLOC) Model}
+\section{Block Occupancy Cost (BLOC) Function}
 
-\section{Gas Simulations}
+We considered two approaches to model the gas costs, $y_{c}$, using model 1:
+\begin{equation}
+y_{c} = \dfrac{1}{k}\log\left(\dfrac{1+x_{o}}{1-x_{o}}\right) + y_{0};
+\end{equation}
+and model 2:
+\begin{equation}
+y_{c} = \left| \dfrac{1}{k(x_{o}-1)} \right| + y_{c,0} - \dfrac{1}{k},
+\end{equation}
+where $x_{o} \in [0,1]$ is the block occupancy, $y_{c,0}$ is the base cost, and $k$ is an adjustable scaling term. We call $y_{c}$ the BLock Occupancy Cost (BLOC) function.
+
+Other variants of $y_{c}$ can be utilized highlighting various characteristics. For instance, Model 1 has the characteristic of being less volatile, but with a higher expected base cost than Model 2.
+
+\section{Block Occupancy and Gas Simulations}
+
+To simulate arbitrary block occupancies, we use the Beta distribution:
+
+ \begin{equation}
+\textbf{x}_{o,t} \sim Beta(\alpha_{t},\beta_{t})
+ \end{equation}
+ where $t$ is time, and $\beta_{t} = 1-\alpha_{t}$
+ 
+To exhibit slow upward growth over time for $\alpha_{t}$, we used a MinMax scaled ARIMA(0,1,1) model, otherwise known as a simple exponential smoothing model with growth, which is of the form:
+
+\begin{equation}
+\hat{\alpha'}_{t} = \mu + \alpha'_{t-1} - \theta_{1}\epsilon_{t},
+\end{equation}
+and then applied MinMax scaling to ensure $\alpha_{t} \in [0,1]$:
+\begin{equation}
+\hat{\alpha_{t}} = \dfrac{\alpha'_{t} - min(\alpha'_{t})}{  max(\alpha'_{t}) - min(\alpha'_{t}) }.
+\end{equation}
+
+Block Occupancy simulations, \textbf{x}$_{o,t}$, were fed into the BLOC function, to achieve a set of gas simulations, \textbf{y}$_{c,t}$, at each instance of time $t$.
 
 \subsection{Marginal Likelihood}
 
-\begin{equation}
-f(x) \sim GP(\mu(x), k(x,x'))
-\end{equation}
+Assume observed data, $y$, are the sum of a Gaussian Process (GP) and Gaussian noise, given by:
 
 \begin{eqnarray}
-\epsilon \sim N(0,\Sigma) \\
-y = f(x) + \epsilon 
+y = f(x) + \epsilon \\
+\epsilon \sim N(0,\Sigma) 
 \end{eqnarray}
+The unknown function, $f(x)$, is modelled as
 
 \begin{equation}
-p(y|x) = \int p(y | f,x) p (f, |x) df
+f(x) \sim GP(\mu(x), k(x,x')),
 \end{equation}
+where $\mu(x)$ and $k(x,x')$ are the mean and covariance function respectively; the covariance function is often called the kernel function, and can take on several forms based on the structure of the input data, $x$. In this work, we use the Matern 5/2 kernel, which is of the form:
 
 \begin{equation}
-\begin{split}
-\log p(y | x) = \frac{1}{2}(\mathbf{y}-\mathbf{m}_{x})^{T}(\mathbf{K}_{xx} + \mathbf{\Sigma})^{-1}(\textbf{y} - \mathbf{m}_{x}) -\\ \frac{1}{2}|\mathbf{K}_{xx} - \mathbf{\Sigma}| - \frac{n}{2}\log(2\pi)
-\end{split}
+k(x,x') = \left( 1 + \dfrac{\sqrt{g(x,x')}}{\ell} + \dfrac{g(x,x')}{3\ell^2}\right)\exp\left[ \dfrac{g(x,x')}{\ell} \right]\ 
 \end{equation}
+where
+ \begin{equation}
+ g(x,x') = 5(x-x')^2.
+ \end{equation}
+
+For this work, we looked at observations, $y$, probabilistically, which can be determined via:
+\begin{equation}
+p(y|x) = \int p(y | f,x) p (f, |x) df;
+\end{equation}
+this is otherwise known as the marginal likelihood; from a Bayesian context, this may be referred to as the evidence, which is the normalizing part of Bayes rule. Typically, due to the computational complexity, this is the tough part in Bayesian analytics, so we use Markov Chain Monte Carlo (MCMC) sampling using the PyMC3 python package.  
 
 \begin{thebibliography}{00}
 
@@ -608,6 +647,67 @@ Y Li, \textit{Performance analysis and comparison of PoW, PoS and DAG based bloc
 \bibitem{Bit15} G., \textit{Proof of Stake Versus Proof of Work. Technical Report}, BitFury Group, 2015. Accessed on: Jan 2021. [Online]. Available: http://bitfury.com/content/5-white-papers-research/pos-vs-pow-1.0.2.pdf 
 
 \bibitem{Duf18} E. Duffield, and D. Diaz, \textit{Dash: A Payments-Focused Cryptocurrency}, Dash, Aug 2018. Accessed on: Jan 2021. [Online]. Available: https://github.com/dashpay/dash/wiki/Whitepaper
+
+
+\bibitem{BitCore} \textit{Bitcoin Core FAQ, Compact Blocks FAQ}, Accessed on: Feb 2021. [Online]. Available: https://bitcoincore.org/en/2016/06/07/compact-blocks-faq/
+
+\bibitem{Blo18} ] A. Block, \textit{Mitigating 51\% attacks with LLMQ-based ChainLocks}. Accessed on: Feb 2021. [Online], Nov 2018. Available: https://blog.dash.org/mitigating-51-attacks-with-llmq-based-chainlocks-7266aa648ec9
+
+\bibitem{Val19} J. Valenzuela, Andreas Antonopoulos, \textit{Calls Dash Chain Locks “a Smart Way of” Preventing 51\% Attacks}. Aug 22, 2019. Accessed on: Feb 2021. [Online]. Available: https://dashnews.org/andreas-antonopoulos-calls-dash-chainlocks-a-smart-way-of-preventing-51-attacks/
+
+\bibitem{Bon18} D. Boneh, M. Drijvers, and G. Neven, \textit{BLS Multi-Signatures With Public-Key Aggregation}, Mar 2018. Accessed on: Feb 2021. [Online]. Available: https://crypto.stanford.edu/~dabo/pubs/papers/BLSmultisig.html
+
+\bibitem{Dra18} J. Drake. \textit{Pragmatic signature aggregation with BLS}, May 2018. Accessed on: Feb 2021. [Online]. Available:  https://ethresear.ch/t/pragmatic-signature-aggregation-with-bls/2105
+
+\bibitem{Bow17} S. Bowe, \textit{BLS12-381: New zk-SNARK Elliptic Curve Construction}, Mar 2017. Accessed on: Feb 2021. [Online]. Available: https://electriccoin.co/blog/new-snark-curve/
+
+\bibitem{Blo18}  A. Block, \textit{BLS: Is it really that slow?}, Jul 2018. Accessed on: Feb 2021. [Online]. Available: https://blog.dash.org/bls-is-it-really-that-slow-4ca8c1fcd38e
+
+\bibitem{Rou17}  S. de la Rouvier. \textit{Interplanetary Linked Computing: Separating Merkle Computing from Blockchain Computational Courts}, Jan 2017. Accessed on: Feb 2021. [Online]. Available: https://media.consensys.net/interplanetary-linked-computing-separating-merkle-computing-from-blockchain-computational-courts-1ade201ecf8a
+
+\bibitem{Ano18} Anonymous Kid, Why the fuck did Satoshi implement the 1 MB blocksize limit? [Online forum comment], Jan 2018, Accessed on: Feb 2021. [Online]. Available:  https://bitcointalk.org/index.php?topic=2786690.0
+
+\bibitem{Zer21} \textit{Zero-Knowledge Proofs What are they, how do they work, and are they fast yet?} Accessed on: Feb 2021. [Online]. Available: https://zkp.science/
+
+\bibitem{Ben18} E. Ben-Sasson, I. Bentov, Y. Horesh, and M. Riabzev, \textit{Scalable, transparent, and post-quantum secure computational integrity}, IACR Cryptol, 2018, pp 46 
+
+\bibitem{Dry19} Dryja, T, Utreexo: A dynamic hash-based accumulator optimized for the bitcoin UTXO set, IACR Cryptol. ePrint Arch., 2019, p. 611.
+
+\bibitem{Hot19} G.I. Hotchkiss, \textit{The 1.x Files: The State of Stateless Ethereum}, Dec 2019. Accessed on: Feb 2021. [Online]. Available:   https://blog.ethereum.org/2019/12/30/eth1x-files-state-of-stateless-ethereum/
+
+\bibitem{Bow18} S. Bowe, A. Chiesa, M. Green, I. Miers, P. Mishra, H. Wu: \textit{Zexe: Enabling decentralized private computation}. Cryptology ePrint Archive, Report 2018/962 (2018). Accessed on: Feb 2021. [Online]. Available:  https://par.nsf.gov/servlets/purl/10175111
+
+\bibitem{Nil20} A. Nilsson, P.N. Bideh, J. Brorsson, \textit{A survey of published attacks on Intel SGX}. 2020, arXiv:2006.13598
+
+\bibitem{Nel18} C. Nelson, \textit{Zero-Knowledge Proofs: Privacy-Preserving Digital Identity}, Oct 2018. Feb 2021. Accessed on: [Online]. Available: https://www.slideshare.net/SSIMeetup/zeroknowledge-proofs-privacypreserving-digital-identity-with-clare-nelson
+
+\bibitem{Bon19} D. Boneh, \textit{Discrete Log based Zero-Knowledge Proofs}, Apr 2019,  Accessed on: Feb 2021 [Online].  Available: https://www.youtube.com/watch?v=wB3DlND7KEw
+
+\bibitem{Qua18} \textit{Quantum Computing’s Implications for Cryptography (Chapter 4)}, National Academies of Sciences, Engineering, and Medicine: Quantum Computing: Progress and Prospects. The National Academies Press, Washington, DC, 2018.
+
+\bibitem{Nai19} S. Naihin, \textit{Goodbye Bitcoin… Hello Quantum}, Apr 2019, Accessed on: Feb 2021 [Online].   https://www.linkedin.com/pulse/goodbye-bitcoin-helloquantum-silen-naihin
+
+\bibitem{Nas19} L.T. do Nascimento, S. Kumari, and V. Ganesan, \textit{Zero Knowledge Proofs Applied to Auctions}, May 2019, Accessed on: Feb 2021 [Online].   Available: https://courses.csail.mit.edu/6.857/2019/project/18-doNascimento-Kumari-Ganesan.pdf
+
+\bibitem{But17} V. Buterin and V. Griffith, Casper the Friendly Finality Gadget. CoRR, Vol. abs/1710.09437, 2017. arxiv: 1710.09437, http://arxiv.org/abs/1710.09437
+
+\bibitem{Neu21} M. Neuder, D.J. Moroz, R. Rao, and D.C. Parkes, \textit{Low-cost attacks on Ethereum 2.0 by sub-1/3 stakeholders}, 2021. arXiv:2102.02247,  https://arxiv.org/abs/2102.02247
+
+\bibitem{Sta19} Starkware, \textit{Validity Proofs vs. Fraud Proofs}, Jan 2019, Accessed on: Feb 2021, [Online]. Available: https://medium.com/starkware/validity-proofs-vs-fraud-proofs-4ef8b4d3d87a
+
+\bibitem{Glu20} A. Gluchowski, \textit{World’s first practical hardware for zero-knowledge proofs acceleration}, Jul 2020, Accessed on: Feb 2021 [Online]. Available:  https://medium.com/matter-labs/worlds-first-practical-hardware-for-zero-knowledge-proofs-acceleration-72bf974f8d6e
+
+\bibitem{NFT21}  \textit{Introducing an NFT Platform Like No Other}, Accessed on: Feb 2021. [Online]. Available: https://syscoin.org/news/introducing-an-nft-platform-like-no-other
+
+\bibitem{Bhu21} A. Bhuptani, \textit{Vector 0.1.0 Mainnet Release, The beginning of a multi-chain Ethereum ecosystem}, Jan 2021, Accessed on: Feb 2021.  [Online]. Available:  https://medium.com/connext/vector-0-1-0-mainnet-release-9496ae52c422
+
+\bibitem{But20}  V. Buterin, \textit{With fraud-proof-free data availability proofs, we can have scalable data chains without committees}, Jan 2020, Accessed on: Feb 2021.  [Online]. Available:  https://ethresear.ch/t/with-fraud-proof-free-data-availability-proofs-we-can-have-scalable-data-chains-without-committees/6725
+
+\bibitem{Al20} M. Al-Bassam,\textit{ A data availability blockchain with sub-linear full block validation}, Jan 2020, Accessed on: Feb 2021.  [Online]. Available:  https://ethresear.ch/t/with-fraud-proof-free-data-availability-proofs-we-can-have-scalable-data-chains-without-committees/6725
+
+\bibitem{Che17}  T. Chen, X. Li, Y. Wang, J. Chen, Z Li, X. Luo, M. H. Au, and X. Zhang. \textit{An adaptive gas cost mechanism for Ethereum to defend against under-priced DoS attacks}. Proceedings of Information Security Practice and Experience - 13th International Conference ISPEC, 2017
+
+\bibitem{Sta20}  Starkware Team, Rescue STARK Documentation – Version 1.0, Jul 2020
 
 
 \end{thebibliography}

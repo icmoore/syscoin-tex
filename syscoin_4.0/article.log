@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  8 MAR 2021 22:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  11 MAR 2021 16:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -397,6 +397,12 @@ LaTeX Warning: Label `fig_sim' multiply defined.
 
 
 LaTeX Warning: Label `fig_sim' multiply defined.
+
+
+LaTeX Warning: Label `Blo18' multiply defined.
+
+
+LaTeX Warning: Label `But20' multiply defined.
 
 )
 \openout1 = `article.aux'.
@@ -1024,72 +1030,50 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 Package xcolor Warning: Incompatible color definition on input line 559.
 
 
-Package xcolor Warning: Incompatible color definition on input line 561.
+Package xcolor Warning: Incompatible color definition on input line 573.
 
 
-Package xcolor Warning: Incompatible color definition on input line 563.
+Package xcolor Warning: Incompatible color definition on input line 594.
 
 
-Package xcolor Warning: Incompatible color definition on input line 584.
+Package xcolor Warning: Incompatible color definition on input line 623.
 
-LaTeX Font Info:    Calculating math sizes for size <7.61> on input line 587.
+LaTeX Font Info:    Calculating math sizes for size <7.61> on input line 626.
 
-Underfull \hbox (badness 7667) in paragraph at lines 587--588
+Underfull \hbox (badness 7667) in paragraph at lines 626--627
 []\T1/ptm/m/n/7.61 J. Sidhu, \T1/ptm/m/it/7.61 Syscoin 3.0: A Peer-to-Peer Elec
 -tronic Cash Sys-tem
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 587--588
+Underfull \hbox (badness 10000) in paragraph at lines 626--627
 \T1/ptm/m/it/7.61 Built For Busi-ness Ap-pli-ca-tions\T1/ptm/m/n/7.61 , Blockch
 ain Foundry Inc,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 587--588
+Underfull \hbox (badness 10000) in paragraph at lines 626--627
 \T1/ptm/m/n/7.61 Feb. 2018. Ac-cessed on: Dec 2020. [On-line]. Avail-able:
  []
 
 
 LaTeX Font Warning: Font shape `T1/ptm/n/it' undefined
-(Font)              using `T1/ptm/n/n' instead on input line 601.
+(Font)              using `T1/ptm/n/n' instead on input line 640.
 
 
-Underfull \hbox (badness 2302) in paragraph at lines 606--607
+Underfull \hbox (badness 2302) in paragraph at lines 645--646
 []\T1/ptm/n/it/7.61 V. Bu-terin, \T1/ptm/m/it/7.61 Us-ing poly-no-mial com-mit-
 ments to re-place state roots\T1/ptm/n/it/7.61 ,
  []
 
 
-Underfull \hbox (badness 7777) in paragraph at lines 606--607
+Underfull \hbox (badness 7777) in paragraph at lines 645--646
 \T1/ptm/n/it/7.61 Ethereum Re-search, Mar. 2020. Ac-cessed on: Jan 2021. [On-
  []
 
-
-Underfull \hbox (badness 2478) in paragraph at lines 608--609
-[]\T1/ptm/n/it/7.61 G., \T1/ptm/m/it/7.61 Proof of Stake Ver-sus Proof of Work.
- Tech-ni-cal Re-port\T1/ptm/n/it/7.61 , Bit-
- []
-
-
-Underfull \hbox (badness 4531) in paragraph at lines 608--609
-\T1/ptm/n/it/7.61 Fury Group, 2015. Ac-cessed on: Jan 2021. [On-line]. Avail-ab
-le:
- []
-
-
-Underfull \hbox (badness 2903) in paragraph at lines 610--611
-[]\T1/ptm/n/it/7.61 E. Duffield, and D. Diaz, \T1/ptm/m/it/7.61 Dash: A Payment
-s-Focused Cryp-tocur-
- []
-
-File: bullet.png Graphic file (type png)
-<use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 616.
-(pdftex.def)             Requested size: 5.0pt x 14.6871pt.
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 618.
+Package pdftex.def Info: notaglineLogo.png  used on input line 646.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1106,7 +1090,210 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[13] (./article.aux)
+[13]
+Underfull \hbox (badness 2478) in paragraph at lines 647--648
+[]\T1/ptm/n/it/7.61 G., \T1/ptm/m/it/7.61 Proof of Stake Ver-sus Proof of Work.
+ Tech-ni-cal Re-port\T1/ptm/n/it/7.61 , Bit-
+ []
+
+
+Underfull \hbox (badness 4531) in paragraph at lines 647--648
+\T1/ptm/n/it/7.61 Fury Group, 2015. Ac-cessed on: Jan 2021. [On-line]. Avail-ab
+le:
+ []
+
+
+Underfull \hbox (badness 2903) in paragraph at lines 649--650
+[]\T1/ptm/n/it/7.61 E. Duffield, and D. Diaz, \T1/ptm/m/it/7.61 Dash: A Payment
+s-Focused Cryp-tocur-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 654--655
+\T1/ptm/n/it/7.61 Ac-cessed on: Feb 2021. [On-line], Nov 2018. Avail-able:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 654--655
+\T1/ptm/n/it/7.61 https://blog.dash.org/mitigating-51-attacks-with-llmq-based-c
+hainlocks-
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 656--657
+\T1/ptm/n/it/7.61 2021. [On-line]. Avail-able: https://dashnews.org/andreas-ant
+onopoulos-
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 662--663
+[]\T1/ptm/n/it/7.61 S. Bowe, \T1/ptm/m/it/7.61 BLS12-381: New zk-SNARK El-lip-t
+ic Curve Con-struc-tion\T1/ptm/n/it/7.61 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 662--663
+\T1/ptm/n/it/7.61 Mar 2017. Ac-cessed on: Feb 2021. [On-line]. Avail-able:
+ []
+
+
+Underfull \hbox (badness 6792) in paragraph at lines 666--667
+[]\T1/ptm/n/it/7.61 S. de la Rou-vier. \T1/ptm/m/it/7.61 In-ter-plan-e-tary Lin
+ked Com-put-ing: Sep-a-rat-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 666--667
+\T1/ptm/m/it/7.61 Merkle Com-put-ing from Blockchain Com-pu-ta-tional Courts\T1
+/ptm/n/it/7.61 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 666--667
+\T1/ptm/n/it/7.61 Jan 2017. Ac-cessed on: Feb 2021. [On-line]. Avail-able:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 666--667
+\T1/ptm/n/it/7.61 https://media.consensys.net/interplanetary-linked-computing-s
+eparating-
+ []
+
+
+Underfull \hbox (badness 4084) in paragraph at lines 676--677
+[]\T1/ptm/n/it/7.61 G.I. Hotchkiss, \T1/ptm/m/it/7.61 The 1.x Files: The State 
+of State-less Ethereum\T1/ptm/n/it/7.61 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 676--677
+\T1/ptm/n/it/7.61 Dec 2019. Ac-cessed on: Feb 2021. [On-line]. Avail-able:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 676--677
+\T1/ptm/n/it/7.61 https://blog.ethereum.org/2019/12/30/eth1x-files-state-of-sta
+teless-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 682--683
+[]\T1/ptm/n/it/7.61 C. Nel-son, \T1/ptm/m/it/7.61 Zero-Knowledge Proofs: Privac
+y-Preserving Dig-i-tal
+ []
+
+
+Underfull \hbox (badness 3861) in paragraph at lines 682--683
+\T1/ptm/m/it/7.61 Iden-tity\T1/ptm/n/it/7.61 , Oct 2018. Feb 2021. Ac-cessed on
+: [On-line]. Avail-able:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 682--683
+\T1/ptm/n/it/7.61 https://www.slideshare.net/SSIMeetup/zeroknowledge-proofs-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 684--685
+[]\T1/ptm/n/it/7.61 D. Boneh, \T1/ptm/m/it/7.61 Dis-crete Log based Zero-Knowle
+dge Proofs\T1/ptm/n/it/7.61 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 684--685
+\T1/ptm/n/it/7.61 Apr 2019, Ac-cessed on: Feb 2021 [On-line]. Avail-able:
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 690--691
+[]\T1/ptm/n/it/7.61 L.T. do Nasci-mento, S. Ku-mari, and V. Gane-san, \T1/ptm/m
+/it/7.61 Zero Knowl-edge
+ []
+
+
+Underfull \hbox (badness 3547) in paragraph at lines 690--691
+\T1/ptm/m/it/7.61 Proofs Ap-plied to Auc-tions\T1/ptm/n/it/7.61 , May 2019, Ac-
+cessed on: Feb 2021
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 690--691
+\T1/ptm/n/it/7.61 [On-line]. Avail-able: https://courses.csail.mit.edu/6.857/20
+19/project/18-
+ []
+
+
+Underfull \hbox (badness 1708) in paragraph at lines 694--695
+\T1/ptm/m/it/7.61 on Ethereum 2.0 by sub-1/3 stake-hold-ers\T1/ptm/n/it/7.61 , 
+2021. arXiv:2102.02247,
+ []
+
+
+Underfull \hbox (badness 3579) in paragraph at lines 702--703
+[]\T1/ptm/n/it/7.61 A. Bhup-tani, \T1/ptm/m/it/7.61 Vec-tor 0.1.0 Main-net Re-l
+ease, The be-gin-ning of a
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 702--703
+\T1/ptm/n/it/7.61 [On-line]. Avail-able: https://medium.com/connext/vector-0-1-
+0-mainnet-
+ []
+
+
+Underfull \hbox (badness 2418) in paragraph at lines 704--705
+\T1/ptm/m/it/7.61 scal-able data chains with-out com-mit-tees\T1/ptm/n/it/7.61 
+, Jan 2020, Ac-cessed on:
+ []
+
+
+Underfull \hbox (badness 2261) in paragraph at lines 704--705
+\T1/ptm/n/it/7.61 Feb 2021. [On-line]. Avail-able: https://ethresear.ch/t/with-
+fraud-proof-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--705
+\T1/ptm/n/it/7.61 free-data-availability-proofs-we-can-have-scalable-data-chain
+s-without-
+ []
+
+
+Underfull \hbox (badness 2012) in paragraph at lines 706--707
+[]\T1/ptm/n/it/7.61 M. Al-Bassam, \T1/ptm/m/it/7.61 A data avail-abil-ity block
+chain with sub-linear full
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 706--707
+\T1/ptm/n/it/7.61 able: https://ethresear.ch/t/with-fraud-proof-free-data-avail
+ability-proofs-
+ []
+
+File: bullet.png Graphic file (type png)
+<use bullet.png>
+Package pdftex.def Info: bullet.png  used on input line 716.
+(pdftex.def)             Requested size: 5.0pt x 14.6871pt.
+File: notaglineLogo.png Graphic file (type png)
+<use notaglineLogo.png>
+Package pdftex.def Info: notaglineLogo.png  used on input line 718.
+(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[14] (./article.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1115,36 +1302,35 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6723 strings out of 480608
- 102857 string characters out of 5903631
- 366862 words of memory out of 5000000
- 22470 multiletter control sequences out of 15000+600000
- 626383 words of font info for 156 fonts, out of 8000000 for 9000
+ 6744 strings out of 480608
+ 102959 string characters out of 5903631
+ 367045 words of memory out of 5000000
+ 22495 multiletter control sequences out of 15000+600000
+ 625147 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,16n,96p,2807b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,96p,2807b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
-ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texliv
-e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/
-2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/20
-20/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist
-/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/
-type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
-urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/hel
-vetic/uhvro8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utm
-b8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
-usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on article.pdf (13 pages, 1244971 bytes).
+exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texli
+ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive
+/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2
+020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dis
+t/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts
+/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
+/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/he
+lvetic/uhvro8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/ut
+mb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
+/usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on article.pdf (14 pages, 1252646 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 147 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  64 words of extra memory for PDF output out of 10000 (max. 10000000)
 
