@@ -521,18 +521,40 @@ Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibul
 
 \appendices
 
-\section*{Acknowledgment}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. 
-
 \section{Security: PoW vs PoS}
 
-Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. 
+Proof of Stake (PoS) systems have security threats that are not inherent in Proof of Work (PoW) systems as outlined in Table \ref{table:pow_vs_pos}, of which Bitcoin employs. Hence, PoS is less secure than PoW. In terms of security, we call the Bitcoin PoW protocol the gold standard, which is the same security mechanisim that Syscoin uses.
 
-\section{DAG Fundamentals}
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c|c|c| } 
+\hline
+ & \multicolumn{3}{|c|}{ Vulnerability } \\
+ Attack type & PoW & PoS & Delegated PoS \\
+\hline
+Short range attack & - & + & - \\
+Long range attack & - & + & + \\
+Coin age accumulation attack & - & maybe & - \\
+Precomputing attack & - & + & - \\
+Denial of service & + & + & + \\
+Sybil attack & + & + & + \\
+Selfish mining & maybe & - & - \\
+\hline
+\end{tabular}
+\caption{Comparing PoW to PoS consensus mechanism; plus sign (+) indicates vulnerability; see \cite{Bit15}. As shown, PoW system has the least number of vulnerabilities}
+\label{table:pow_vs_pos}
+\end{table}
 
-Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci. Ut eu diam at pede suscipit sodales. Aenean lectus elit, fermentum non, convallis id, sagittis at, neque. 
+\section{ZDAG Fundamentals}
 
-\section{Network Transmission and Processing}
+Zero-Confirmation Directed Acyclic Graph (ZDAG) is an instant settlement protocol that solves the 'fast-transaction' problem. It functions by using a directed acyclic graph (DAG) where validating nodes verify the sequential ordering of transactions that are received in their memory pools. More specifically, Syscoin approach is centred around the verification of signatures and relaying of transactions. It does this by prioritizing the relay of transactions over signature verification and recipient receives funds faster; see Table \ref{fig:dag_tx}. For algorithm see Appendix A in \cite{Sidb18} for the verification process.
+
+\begin{figure}[h!]
+\includegraphics[width=3in]{img/dag_tx.png}
+\caption{Traditional blockchain networks require each node to first check the signatures of incoming transactions before relaying them; this blocking technique bottlenecks broadcasting speed. The Z-DAG process as displayed above immediately relays transactions before checking signatures, resulting in significantly faster movement across the network} 
+\label{fig:dag_tx}
+\end{figure} 
+
 
 \subsection{Transmission Path}
 
@@ -557,12 +579,31 @@ Using a dataset (containing 2086 samples) of average transmission times of ten t
 \label{fig:tx_delay}
 \end{figure} 
 
-\subsection{Processing Capacity}
-Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. 
-
 \section{Zero Knowledge Proofs Fundamentals}
 
-Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. 
+The motivation of a Zero Knowledge Proof (ZKP) is to allow for one party (ie, prover) to convince another party (ie, verifier) of facts without revealing information (ie, zero knowledge). An example of a ZKP would be: allowing a subscriber (ie, prover) to gain access to an online service (ie, verifier) without revealing any personal data, other than the fact than that party is a paid subscriber.
+
+A ZKP must satisfy three conditions:
+
+\begin{enumerate}
+\item \textbf{Completeness:} If statement is true, verifier will be convinced by prover
+\item\textbf{Soundness:} If statement is false, a cheating prover cannot (except with some small probability) convince verifier it is true
+\item \textbf{Zero-knowledge:} If statement is true, verifier knows nothing else
+\end{enumerate}
+
+\begin{figure}[h!]
+\includegraphics[width=3in]{img/zkp.png}
+\caption{Data exchange in a Zero-knowledge proof system} 
+\label{fig:zkp}
+\end{figure} 
+
+There are two types of ZKP:
+
+\begin{enumerate}
+\item \textbf{Interactive ZKP:} Comprised of multiple challenge / response messages (commitment, challenge and response); requires a stable communication channel
+\item \textbf{Non-interactive ZKP:} Only needs single message and is more efficient; can be run offline
+\end{enumerate}
+zk-SNARK and zk-STARKS are types of Non-interactive ZKP , where no interaction is required between prover and verifier.
 
 \section{Block Occupancy Cost (BLOC) Function}
 
@@ -618,9 +659,9 @@ where $\mu(x)$ and $k(x,x')$ are the mean and covariance function respectively; 
 k(x,x') = \left( 1 + \dfrac{\sqrt{g(x,x')}}{\ell} + \dfrac{g(x,x')}{3\ell^2}\right)\exp\left[ \dfrac{g(x,x')}{\ell} \right]\ 
 \end{equation}
 where
- \begin{equation}
- g(x,x') = 5(x-x')^2.
- \end{equation}
+\begin{equation}
+	g(x,x') = 5(x-x')^2.
+\end{equation}
 
 For this work, we looked at observations, $y$, probabilistically, which can be determined via:
 \begin{equation}
