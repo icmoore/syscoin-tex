@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  16 MAR 2021 10:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  16 MAR 2021 11:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -553,9 +553,25 @@ Package xcolor Warning: Incompatible color definition on input line 96.
 
 Package xcolor Warning: Incompatible color definition on input line 99.
 
+<img/current_vs_zdag.png, id=4, 496.85625pt x 489.83pt>
+File: img/current_vs_zdag.png Graphic file (type png)
+<use img/current_vs_zdag.png>
+Package pdftex.def Info: img/current_vs_zdag.png  used on input line 113.
+(pdftex.def)             Requested size: 216.81pt x 213.747pt.
 
-Underfull \hbox (badness 5893) in paragraph at lines 112--118
-[]\T1/ptm/n/n/10 Figure 1 shows the dif-fer-ence be-tween a reg-u-lar
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package caption Warning: \label without proper reference on input line 114.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:current_vs_zdag' on page 1 undefined on input lin
+e 118.
+
+
+Underfull \hbox (badness 3989) in paragraph at lines 118--124
+[]\T1/ptm/n/n/10 Figure [][] shows the dif-fer-ence be-tween a reg-u-lar
  []
 
 
@@ -563,12 +579,12 @@ Underfull \vbox (badness 1389) has occurred while \output is active []
 
 
 
-Package xcolor Warning: Incompatible color definition on input line 118.
+Package xcolor Warning: Incompatible color definition on input line 124.
 
-<Logo.png, id=4, 355.3275pt x 86.3225pt>
+<Logo.png, id=6, 355.3275pt x 86.3225pt>
 File: Logo.png Graphic file (type png)
 <use Logo.png>
-Package pdftex.def Info: Logo.png  used on input line 118.
+Package pdftex.def Info: Logo.png  used on input line 124.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -595,27 +611,21 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  <./Logo.png> <./bullet.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 159.
+Package xcolor Warning: Incompatible color definition on input line 165.
 
 
-Package xcolor Warning: Incompatible color definition on input line 163.
-
-
-Package xcolor Warning: Incompatible color definition on input line 185.
-
-
-Package xcolor Warning: Incompatible color definition on input line 188.
+Package xcolor Warning: Incompatible color definition on input line 169.
 
 
 Package xcolor Warning: Incompatible color definition on input line 191.
 
 
-Package xcolor Warning: Incompatible color definition on input line 195.
+Package xcolor Warning: Incompatible color definition on input line 194.
 
-<notaglineLogo.png, id=17, 355.3275pt x 86.3225pt>
+<notaglineLogo.png, id=18, 355.3275pt x 86.3225pt>
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 197.
+Package pdftex.def Info: notaglineLogo.png  used on input line 196.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -632,34 +642,40 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[2 <./notaglineLogo.png>]
+[2 <./notaglineLogo.png> <./img/current_vs_zdag.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 198.
-
-
-Package xcolor Warning: Incompatible color definition on input line 202.
+Package xcolor Warning: Incompatible color definition on input line 197.
 
 
-Overfull \hbox (23.94415pt too wide) in paragraph at lines 206--207
+Package xcolor Warning: Incompatible color definition on input line 201.
+
+
+Package xcolor Warning: Incompatible color definition on input line 204.
+
+
+Package xcolor Warning: Incompatible color definition on input line 208.
+
+
+Overfull \hbox (23.94415pt too wide) in paragraph at lines 212--213
 \T1/ptm/n/n/10 rums (LLMQ) which lever-age ag-gre-gat-able Boneh^^ULynn^^UShach
 am
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 210.
-
-
-Package xcolor Warning: Incompatible color definition on input line 214.
-
-
-Package xcolor Warning: Incompatible color definition on input line 217.
+Package xcolor Warning: Incompatible color definition on input line 216.
 
 
 Package xcolor Warning: Incompatible color definition on input line 220.
 
+
+Package xcolor Warning: Incompatible color definition on input line 223.
+
+
+Package xcolor Warning: Incompatible color definition on input line 226.
+
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 223.
+Package pdftex.def Info: notaglineLogo.png  used on input line 229.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -678,17 +694,17 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [3]
 
-Package xcolor Warning: Incompatible color definition on input line 224.
+Package xcolor Warning: Incompatible color definition on input line 230.
 
 
-Package xcolor Warning: Incompatible color definition on input line 229.
+Package xcolor Warning: Incompatible color definition on input line 235.
 
 
-Package xcolor Warning: Incompatible color definition on input line 233.
+Package xcolor Warning: Incompatible color definition on input line 239.
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 238.
+Package pdftex.def Info: notaglineLogo.png  used on input line 242.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -707,17 +723,14 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [4]
 
-Package xcolor Warning: Incompatible color definition on input line 241.
+Package xcolor Warning: Incompatible color definition on input line 247.
 
 
-Package xcolor Warning: Incompatible color definition on input line 255.
-
-
-Package xcolor Warning: Incompatible color definition on input line 271.
+Package xcolor Warning: Incompatible color definition on input line 261.
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 271.
+Package pdftex.def Info: notaglineLogo.png  used on input line 273.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -736,19 +749,17 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [5]
 
-Package xcolor Warning: Incompatible color definition on input line 278.
+Package xcolor Warning: Incompatible color definition on input line 277.
 
 
-Package xcolor Warning: Incompatible color definition on input line 289.
+Package xcolor Warning: Incompatible color definition on input line 284.
 
-<img/tech_stack.png, id=34, 621.32124pt x 376.40625pt>
-File: img/tech_stack.png Graphic file (type png)
-<use img/tech_stack.png>
-Package pdftex.def Info: img/tech_stack.png  used on input line 301.
-(pdftex.def)             Requested size: 216.81pt x 131.34785pt.
+
+Package xcolor Warning: Incompatible color definition on input line 295.
+
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 307.
+Package pdftex.def Info: notaglineLogo.png  used on input line 303.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -765,18 +776,49 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[6 <./img/tech_stack.png>]
+[6]
+<img/tech_stack.png, id=39, 621.32124pt x 376.40625pt>
+File: img/tech_stack.png Graphic file (type png)
+<use img/tech_stack.png>
+Package pdftex.def Info: img/tech_stack.png  used on input line 307.
+(pdftex.def)             Requested size: 216.81pt x 131.34785pt.
 
-Package xcolor Warning: Incompatible color definition on input line 322.
+
+Package xcolor Warning: Incompatible color definition on input line 328.
 
 
-Underfull \hbox (badness 1629) in paragraph at lines 335--336
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: notaglineLogo.png Graphic file (type png)
+<use notaglineLogo.png>
+Package pdftex.def Info: notaglineLogo.png  used on input line 332.
+(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[7 <./img/tech_stack.png>]
+Underfull \hbox (badness 1629) in paragraph at lines 341--342
 []\T1/ptm/n/n/10 Starkware is built us-ing a gen-eral pur-pose lan-guage
  []
 
+
+Package xcolor Warning: Incompatible color definition on input line 346.
+
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 338.
+Package pdftex.def Info: notaglineLogo.png  used on input line 362.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -793,54 +835,32 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[7]
-
-Package xcolor Warning: Incompatible color definition on input line 340.
-
-<img/nevm.png, id=46, 2006.49625pt x 1303.87125pt>
+[8]
+<img/nevm.png, id=51, 2006.49625pt x 1303.87125pt>
 File: img/nevm.png Graphic file (type png)
 <use img/nevm.png>
-Package pdftex.def Info: img/nevm.png  used on input line 360.
+Package pdftex.def Info: img/nevm.png  used on input line 366.
 (pdftex.def)             Requested size: 216.81pt x 140.87965pt.
 
-Package xcolor Warning: Incompatible color definition on input line 365.
 
-File: notaglineLogo.png Graphic file (type png)
-<use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 365.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
+Package xcolor Warning: Incompatible color definition on input line 371.
 
 
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
+Package xcolor Warning: Incompatible color definition on input line 395.
 
 
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[8 <./img/nevm.png>]
-
-Package xcolor Warning: Incompatible color definition on input line 389.
-
-
-Underfull \hbox (badness 3701) in paragraph at lines 391--392
+Underfull \hbox (badness 3701) in paragraph at lines 397--398
 \T1/ptm/n/n/10 Simple pay-ments: since pay-ment chan-nels work with
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 393--394
+Underfull \hbox (badness 2617) in paragraph at lines 399--400
 []\T1/ptm/n/n/10 Complex trans-ac-tions such as smart con-tracts us-ing
  []
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 401.
+Package pdftex.def Info: notaglineLogo.png  used on input line 402.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -857,54 +877,60 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[9]
-<img/eth_tx_vs_gas.png, id=54, 867.24pt x 361.35pt>
+[9 <./img/nevm.png>]
+<img/eth_tx_vs_gas.png, id=56, 867.24pt x 361.35pt>
 File: img/eth_tx_vs_gas.png Graphic file (type png)
 <use img/eth_tx_vs_gas.png>
-Package pdftex.def Info: img/eth_tx_vs_gas.png  used on input line 413.
+Package pdftex.def Info: img/eth_tx_vs_gas.png  used on input line 419.
 (pdftex.def)             Requested size: 216.81pt x 90.33728pt.
-<img/eth_gas_costs.png, id=55, 867.24pt x 361.35pt>
+<img/eth_gas_costs.png, id=57, 867.24pt x 361.35pt>
 File: img/eth_gas_costs.png Graphic file (type png)
 <use img/eth_gas_costs.png>
-Package pdftex.def Info: img/eth_gas_costs.png  used on input line 419.
+Package pdftex.def Info: img/eth_gas_costs.png  used on input line 425.
 (pdftex.def)             Requested size: 216.81pt x 90.33728pt.
-<img/eth_usd_density.png, id=56, 867.24pt x 361.35pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/eth_usd_density.png, id=58, 867.24pt x 361.35pt>
 File: img/eth_usd_density.png Graphic file (type png)
 <use img/eth_usd_density.png>
-Package pdftex.def Info: img/eth_usd_density.png  used on input line 425.
+Package pdftex.def Info: img/eth_usd_density.png  used on input line 431.
 (pdftex.def)             Requested size: 216.81pt x 90.33728pt.
-<img/blk_occupancy_simulations.png, id=57, 867.24pt x 361.35pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/blk_occupancy_simulations.png, id=59, 867.24pt x 361.35pt>
 File: img/blk_occupancy_simulations.png Graphic file (type png)
 <use img/blk_occupancy_simulations.png>
 Package pdftex.def Info: img/blk_occupancy_simulations.png  used on input line 
-431.
+437.
 (pdftex.def)             Requested size: 216.81pt x 90.33728pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/sysx_gas_costs_m1.png, id=58, 867.24pt x 361.35pt>
+<img/sysx_gas_costs_m1.png, id=60, 867.24pt x 361.35pt>
 File: img/sysx_gas_costs_m1.png Graphic file (type png)
 <use img/sysx_gas_costs_m1.png>
-Package pdftex.def Info: img/sysx_gas_costs_m1.png  used on input line 437.
+Package pdftex.def Info: img/sysx_gas_costs_m1.png  used on input line 443.
 (pdftex.def)             Requested size: 216.81pt x 90.33728pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/sysx_usd_density.png, id=59, 867.24pt x 361.35pt>
+<img/sysx_usd_density.png, id=61, 867.24pt x 361.35pt>
 File: img/sysx_usd_density.png Graphic file (type png)
 <use img/sysx_usd_density.png>
-Package pdftex.def Info: img/sysx_usd_density.png  used on input line 443.
+Package pdftex.def Info: img/sysx_usd_density.png  used on input line 449.
 (pdftex.def)             Requested size: 216.81pt x 90.33728pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Package xcolor Warning: Incompatible color definition on input line 450.
+Package xcolor Warning: Incompatible color definition on input line 456.
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 453.
+Package pdftex.def Info: notaglineLogo.png  used on input line 459.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -921,20 +947,16 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[10 <./img/eth_tx_vs_gas.png> <./img/eth_gas_costs.png> <./img/eth_usd_density.
-png>]
+[10 <./img/eth_tx_vs_gas.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Package xcolor Warning: Incompatible color definition on input line 484.
-
-
-Package xcolor Warning: Incompatible color definition on input line 493.
+Package xcolor Warning: Incompatible color definition on input line 490.
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 505.
+Package pdftex.def Info: notaglineLogo.png  used on input line 497.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -951,31 +973,37 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[11 <./img/blk_occupancy_simulations.png> <./img/sysx_gas_costs_m1.png> <./img/
-sysx_usd_density.png>]
+[11 <./img/eth_gas_costs.png> <./img/eth_usd_density.png> <./img/blk_occupancy_
+simulations.png> <./img/sysx_gas_costs_m1.png> <./img/sysx_usd_density.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 518.
+Package xcolor Warning: Incompatible color definition on input line 499.
 
 
 Package xcolor Warning: Incompatible color definition on input line 524.
 
 
-Package xcolor Warning: Incompatible color definition on input line 548.
+Package xcolor Warning: Incompatible color definition on input line 530.
 
-<img/dag_tx.png, id=72, 304.13625pt x 282.05376pt>
+
+Package xcolor Warning: Incompatible color definition on input line 554.
+
+<img/dag_tx.png, id=74, 304.13625pt x 282.05376pt>
 File: img/dag_tx.png Graphic file (type png)
 <use img/dag_tx.png>
-Package pdftex.def Info: img/dag_tx.png  used on input line 553.
+Package pdftex.def Info: img/dag_tx.png  used on input line 559.
 (pdftex.def)             Requested size: 216.81pt x 201.07297pt.
 
-Package xcolor Warning: Incompatible color definition on input line 559.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Package xcolor Warning: Incompatible color definition on input line 572.
+Package xcolor Warning: Incompatible color definition on input line 565.
+
+
+Package xcolor Warning: Incompatible color definition on input line 578.
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 572.
+Package pdftex.def Info: notaglineLogo.png  used on input line 581.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -992,33 +1020,30 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[12 <./img/dag_tx.png>]
-<img/transmission_delay.png, id=79, 867.24pt x 361.35pt>
+[12]
+<img/transmission_delay.png, id=80, 867.24pt x 361.35pt>
 File: img/transmission_delay.png Graphic file (type png)
 <use img/transmission_delay.png>
-Package pdftex.def Info: img/transmission_delay.png  used on input line 577.
+Package pdftex.def Info: img/transmission_delay.png  used on input line 583.
 (pdftex.def)             Requested size: 216.81pt x 90.33728pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 582.
+Package xcolor Warning: Incompatible color definition on input line 588.
 
-<img/zkp.png, id=80, 595.22375pt x 484.81125pt>
+<img/zkp.png, id=81, 595.22375pt x 484.81125pt>
 File: img/zkp.png Graphic file (type png)
 <use img/zkp.png>
-Package pdftex.def Info: img/zkp.png  used on input line 595.
+Package pdftex.def Info: img/zkp.png  used on input line 601.
 (pdftex.def)             Requested size: 216.81pt x 176.58844pt.
 
-Package xcolor Warning: Incompatible color definition on input line 608.
+Package xcolor Warning: Incompatible color definition on input line 614.
 
 
-Package xcolor Warning: Incompatible color definition on input line 622.
-
-
-Package xcolor Warning: Incompatible color definition on input line 643.
+Package xcolor Warning: Incompatible color definition on input line 628.
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 655.
+Package pdftex.def Info: notaglineLogo.png  used on input line 638.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1035,184 +1060,135 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[13 <./img/transmission_delay.png> <./img/zkp.png>]
+[13 <./img/dag_tx.png> <./img/transmission_delay.png> <./img/zkp.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 672.
+Package xcolor Warning: Incompatible color definition on input line 649.
 
-LaTeX Font Info:    Calculating math sizes for size <7.61> on input line 675.
 
-Underfull \hbox (badness 7667) in paragraph at lines 675--676
+Package xcolor Warning: Incompatible color definition on input line 678.
+
+LaTeX Font Info:    Calculating math sizes for size <7.61> on input line 681.
+
+Underfull \hbox (badness 7667) in paragraph at lines 681--682
 []\T1/ptm/m/n/7.61 J. Sidhu, \T1/ptm/m/it/7.61 Syscoin 3.0: A Peer-to-Peer Elec
 -tronic Cash Sys-tem
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 675--676
+Underfull \hbox (badness 10000) in paragraph at lines 681--682
 \T1/ptm/m/it/7.61 Built For Busi-ness Ap-pli-ca-tions\T1/ptm/m/n/7.61 , Blockch
 ain Foundry Inc,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 675--676
+Underfull \hbox (badness 10000) in paragraph at lines 681--682
 \T1/ptm/m/n/7.61 Feb. 2018. Ac-cessed on: Dec 2020. [On-line]. Avail-able:
  []
 
 
 LaTeX Font Warning: Font shape `T1/ptm/n/it' undefined
-(Font)              using `T1/ptm/n/n' instead on input line 689.
+(Font)              using `T1/ptm/n/n' instead on input line 695.
 
 
-Underfull \hbox (badness 2302) in paragraph at lines 694--695
+Underfull \hbox (badness 2302) in paragraph at lines 700--701
 []\T1/ptm/n/it/7.61 V. Bu-terin, \T1/ptm/m/it/7.61 Us-ing poly-no-mial com-mit-
 ments to re-place state roots\T1/ptm/n/it/7.61 ,
  []
 
 
-Underfull \hbox (badness 7777) in paragraph at lines 694--695
+Underfull \hbox (badness 7777) in paragraph at lines 700--701
 \T1/ptm/n/it/7.61 Ethereum Re-search, Mar. 2020. Ac-cessed on: Jan 2021. [On-
  []
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 696--697
+Underfull \hbox (badness 2478) in paragraph at lines 702--703
 []\T1/ptm/n/it/7.61 G., \T1/ptm/m/it/7.61 Proof of Stake Ver-sus Proof of Work.
  Tech-ni-cal Re-port\T1/ptm/n/it/7.61 , Bit-
  []
 
 
-Underfull \hbox (badness 4531) in paragraph at lines 696--697
+Underfull \hbox (badness 4531) in paragraph at lines 702--703
 \T1/ptm/n/it/7.61 Fury Group, 2015. Ac-cessed on: Jan 2021. [On-line]. Avail-ab
 le:
  []
 
 
-Underfull \hbox (badness 2903) in paragraph at lines 698--699
+Underfull \hbox (badness 2903) in paragraph at lines 704--705
 []\T1/ptm/n/it/7.61 E. Duffield, and D. Diaz, \T1/ptm/m/it/7.61 Dash: A Payment
 s-Focused Cryp-tocur-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--704
+Underfull \hbox (badness 10000) in paragraph at lines 709--710
 \T1/ptm/n/it/7.61 Ac-cessed on: Feb 2021. [On-line], Nov 2018. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--704
+Underfull \hbox (badness 10000) in paragraph at lines 709--710
 \T1/ptm/n/it/7.61 https://blog.dash.org/mitigating-51-attacks-with-llmq-based-c
 hainlocks-
  []
 
 
-Underfull \hbox (badness 2229) in paragraph at lines 705--706
+Underfull \hbox (badness 2229) in paragraph at lines 711--712
 \T1/ptm/n/it/7.61 2021. [On-line]. Avail-able: https://dashnews.org/andreas-ant
 onopoulos-
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 711--712
+Underfull \hbox (badness 1888) in paragraph at lines 717--718
 []\T1/ptm/n/it/7.61 S. Bowe, \T1/ptm/m/it/7.61 BLS12-381: New zk-SNARK El-lip-t
 ic Curve Con-struc-tion\T1/ptm/n/it/7.61 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 711--712
+Underfull \hbox (badness 10000) in paragraph at lines 717--718
 \T1/ptm/n/it/7.61 Mar 2017. Ac-cessed on: Feb 2021. [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 6792) in paragraph at lines 715--716
+Underfull \hbox (badness 6792) in paragraph at lines 721--722
 []\T1/ptm/n/it/7.61 S. de la Rou-vier. \T1/ptm/m/it/7.61 In-ter-plan-e-tary Lin
 ked Com-put-ing: Sep-a-rat-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 715--716
+Underfull \hbox (badness 10000) in paragraph at lines 721--722
 \T1/ptm/m/it/7.61 Merkle Com-put-ing from Blockchain Com-pu-ta-tional Courts\T1
 /ptm/n/it/7.61 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 715--716
+Underfull \hbox (badness 10000) in paragraph at lines 721--722
 \T1/ptm/n/it/7.61 Jan 2017. Ac-cessed on: Feb 2021. [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 715--716
+Underfull \hbox (badness 10000) in paragraph at lines 721--722
 \T1/ptm/n/it/7.61 https://media.consensys.net/interplanetary-linked-computing-s
 eparating-
  []
 
 
-Underfull \hbox (badness 4084) in paragraph at lines 725--726
+Underfull \hbox (badness 4084) in paragraph at lines 731--732
 []\T1/ptm/n/it/7.61 G.I. Hotchkiss, \T1/ptm/m/it/7.61 The 1.x Files: The State 
 of State-less Ethereum\T1/ptm/n/it/7.61 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--726
+Underfull \hbox (badness 10000) in paragraph at lines 731--732
 \T1/ptm/n/it/7.61 Dec 2019. Ac-cessed on: Feb 2021. [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--726
+Underfull \hbox (badness 10000) in paragraph at lines 731--732
 \T1/ptm/n/it/7.61 https://blog.ethereum.org/2019/12/30/eth1x-files-state-of-sta
 teless-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 731--732
-[]\T1/ptm/n/it/7.61 C. Nel-son, \T1/ptm/m/it/7.61 Zero-Knowledge Proofs: Privac
-y-Preserving Dig-i-tal
- []
-
-
-Underfull \hbox (badness 3861) in paragraph at lines 731--732
-\T1/ptm/m/it/7.61 Iden-tity\T1/ptm/n/it/7.61 , Oct 2018. Feb 2021. Ac-cessed on
-: [On-line]. Avail-able:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 731--732
-\T1/ptm/n/it/7.61 https://www.slideshare.net/SSIMeetup/zeroknowledge-proofs-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 733--734
-[]\T1/ptm/n/it/7.61 D. Boneh, \T1/ptm/m/it/7.61 Dis-crete Log based Zero-Knowle
-dge Proofs\T1/ptm/n/it/7.61 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 733--734
-\T1/ptm/n/it/7.61 Apr 2019, Ac-cessed on: Feb 2021 [On-line]. Avail-able:
- []
-
-
-Underfull \hbox (badness 1365) in paragraph at lines 739--740
-[]\T1/ptm/n/it/7.61 L.T. do Nasci-mento, S. Ku-mari, and V. Gane-san, \T1/ptm/m
-/it/7.61 Zero Knowl-edge
- []
-
-
-Underfull \hbox (badness 3547) in paragraph at lines 739--740
-\T1/ptm/m/it/7.61 Proofs Ap-plied to Auc-tions\T1/ptm/n/it/7.61 , May 2019, Ac-
-cessed on: Feb 2021
- []
-
-
-Underfull \hbox (badness 1558) in paragraph at lines 739--740
-\T1/ptm/n/it/7.61 [On-line]. Avail-able: https://courses.csail.mit.edu/6.857/20
-19/project/18-
- []
-
-
-Underfull \hbox (badness 1708) in paragraph at lines 743--744
-\T1/ptm/m/it/7.61 on Ethereum 2.0 by sub-1/3 stake-hold-ers\T1/ptm/n/it/7.61 , 
-2021. arXiv:2102.02247,
- []
-
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 748.
+Package pdftex.def Info: notaglineLogo.png  used on input line 732.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1230,54 +1206,106 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [14]
-Underfull \hbox (badness 3579) in paragraph at lines 751--752
+Underfull \hbox (badness 10000) in paragraph at lines 737--738
+[]\T1/ptm/n/it/7.61 C. Nel-son, \T1/ptm/m/it/7.61 Zero-Knowledge Proofs: Privac
+y-Preserving Dig-i-tal
+ []
+
+
+Underfull \hbox (badness 3861) in paragraph at lines 737--738
+\T1/ptm/m/it/7.61 Iden-tity\T1/ptm/n/it/7.61 , Oct 2018. Feb 2021. Ac-cessed on
+: [On-line]. Avail-able:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 737--738
+\T1/ptm/n/it/7.61 https://www.slideshare.net/SSIMeetup/zeroknowledge-proofs-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 739--740
+[]\T1/ptm/n/it/7.61 D. Boneh, \T1/ptm/m/it/7.61 Dis-crete Log based Zero-Knowle
+dge Proofs\T1/ptm/n/it/7.61 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 739--740
+\T1/ptm/n/it/7.61 Apr 2019, Ac-cessed on: Feb 2021 [On-line]. Avail-able:
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 745--746
+[]\T1/ptm/n/it/7.61 L.T. do Nasci-mento, S. Ku-mari, and V. Gane-san, \T1/ptm/m
+/it/7.61 Zero Knowl-edge
+ []
+
+
+Underfull \hbox (badness 3547) in paragraph at lines 745--746
+\T1/ptm/m/it/7.61 Proofs Ap-plied to Auc-tions\T1/ptm/n/it/7.61 , May 2019, Ac-
+cessed on: Feb 2021
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 745--746
+\T1/ptm/n/it/7.61 [On-line]. Avail-able: https://courses.csail.mit.edu/6.857/20
+19/project/18-
+ []
+
+
+Underfull \hbox (badness 1708) in paragraph at lines 749--750
+\T1/ptm/m/it/7.61 on Ethereum 2.0 by sub-1/3 stake-hold-ers\T1/ptm/n/it/7.61 , 
+2021. arXiv:2102.02247,
+ []
+
+
+Underfull \hbox (badness 3579) in paragraph at lines 757--758
 []\T1/ptm/n/it/7.61 A. Bhup-tani, \T1/ptm/m/it/7.61 Vec-tor 0.1.0 Main-net Re-l
 ease, The be-gin-ning of a
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 751--752
+Underfull \hbox (badness 1715) in paragraph at lines 757--758
 \T1/ptm/n/it/7.61 [On-line]. Avail-able: https://medium.com/connext/vector-0-1-
 0-mainnet-
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 753--754
+Underfull \hbox (badness 2418) in paragraph at lines 759--760
 \T1/ptm/m/it/7.61 scal-able data chains with-out com-mit-tees\T1/ptm/n/it/7.61 
 , Jan 2020, Ac-cessed on:
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 753--754
+Underfull \hbox (badness 2261) in paragraph at lines 759--760
 \T1/ptm/n/it/7.61 Feb 2021. [On-line]. Avail-able: https://ethresear.ch/t/with-
 fraud-proof-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 753--754
+Underfull \hbox (badness 10000) in paragraph at lines 759--760
 \T1/ptm/n/it/7.61 free-data-availability-proofs-we-can-have-scalable-data-chain
 s-without-
  []
 
 
-Underfull \hbox (badness 2012) in paragraph at lines 755--756
+Underfull \hbox (badness 2012) in paragraph at lines 761--762
 []\T1/ptm/n/it/7.61 M. Al-Bassam, \T1/ptm/m/it/7.61 A data avail-abil-ity block
 chain with sub-linear full
  []
 
 
-Underfull \hbox (badness 1838) in paragraph at lines 755--756
+Underfull \hbox (badness 1838) in paragraph at lines 761--762
 \T1/ptm/n/it/7.61 able: https://ethresear.ch/t/with-fraud-proof-free-data-avail
 ability-proofs-
  []
 
 File: bullet.png Graphic file (type png)
 <use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 765.
+Package pdftex.def Info: bullet.png  used on input line 771.
 (pdftex.def)             Requested size: 5.0pt x 14.6871pt.
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 767.
+Package pdftex.def Info: notaglineLogo.png  used on input line 773.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1301,17 +1329,20 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6775 strings out of 480608
- 103530 string characters out of 5903631
- 369474 words of memory out of 5000000
- 22523 multiletter control sequences out of 15000+600000
+ 6782 strings out of 480608
+ 103704 string characters out of 5903631
+ 370523 words of memory out of 5000000
+ 22529 multiletter control sequences out of 15000+600000
  625147 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,96p,2821b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,96p,2821b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1330,10 +1361,10 @@ t/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts
 lvetic/uhvro8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/ut
 mb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
 /usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on article.pdf (15 pages, 1338332 bytes).
+Output written on article.pdf (15 pages, 1391338 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
+ 158 PDF objects out of 1000 (max. 8388607)
  93 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 79 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 84 words of extra memory for PDF output out of 10000 (max. 10000000)
 

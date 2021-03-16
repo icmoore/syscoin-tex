@@ -109,7 +109,13 @@ This helps protect against double spends where an Asset is
 transferred falsely by creating multiple transactions through
 multiple nodes within a short time.
 
-Figure 1 shows the difference between a regular
+\begin{figure}[h!]
+\includegraphics[width=3in]{img/current_vs_zdag.png}
+\label{fig:current_vs_zdag}
+\caption{Current Blockchain design vs Z-DAG} 
+\end{figure} 
+
+Figure \ref{fig:current_vs_zdag}  shows the difference between a regular
 blockchain and Syscoin’s Z-DAG implementation. Syscoin
 now has two consensus layers: In the first layer, a ZDAG graph of transactions are represented in the mempool
 without a block, providing settlement in real-time. The secondary layer provides confirmation and conflict resolution
