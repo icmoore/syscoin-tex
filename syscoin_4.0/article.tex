@@ -416,12 +416,6 @@ The aforementioned calculations demonstrate the full State Safety of the maincha
 In regards to uncle rates with higher block sizes, keep in mind we make uncle rates and re-organizations in general negligible through the use of the PoW chain mining Syscoin along with Chain Locks. We provide intuition that block sizes can be increased substantially without affecting network health. Furthermore, the gas limits can be adjusted by miners up to 0.1\% from the previous block and so a natural equilibrium can form where even if more than 4B gas is required it can be established based on demand and how well the network behaves with such increases. There is a lot to unpack with such statements and so we will cover this in a separate technical post as it is out-of-scope for this discussion.
 
 \begin{figure}[h!]
-\includegraphics[width=3in]{img/eth_tx_vs_gas.png}
-\label{fig:eth_tx_vs_gas}
-\caption{eth tx vs gas} 
-\end{figure} 
-
-\begin{figure}[h!]
 \includegraphics[width=3in]{img/eth_gas_costs.png}
 \label{fig:eth_gas_costs}
 \caption{eth gas costs} 
@@ -451,7 +445,11 @@ In regards to uncle rates with higher block sizes, keep in mind we make uncle ra
 \caption{sysx usd density} 
 \end{figure} 
 
-
+\begin{figure}[h!]
+\includegraphics[width=3in]{img/sysx_gas_costs_eip_1559.png}
+\label{fig:sysx_gas_costs_eip_1559}
+\caption{sysx gas costs eip 1559} 
+\end{figure} 
 
 \subsubsection{Decentralized Cost Model}
 
@@ -645,6 +643,19 @@ and then applied MinMax scaling to ensure $\alpha_{t} \in [0,1]$:
 \end{equation}
 
 Block Occupancy simulations, \textbf{x}$_{o,t}$, were fed into the BLOC function, to achieve a set of gas simulations, \textbf{y}$_{c,t}$, at each instance of time $t$.
+
+
+\section{EIP 1559}
+
+EIP-1559 is a new pricing mechanism for the Ethereum protocol that includes a stationary network fee during states of no congestion which dynamically adjusts during states of congestion. The original gas fee model uses a auction system where miners choose transactions with the highest bids. This has led to several inefficiencies such as instability of blockchains with no reward, needless delays, fee overpayment, and mismatch fee levels between volatility ad social cost.
+
+The basic premise of the new proposal begins with setting the base fee which increases when the network capacity exceeds the target per-block gas usage, and decreases when the capacity is below the target. The calculation of the updated basefee, $b_{k}$ at the $k^{th}$ block,  is as follows:
+
+\begin{equation}
+b_{k} = b_{k-1}\left(\dfrac{1+ \delta}{k}\right), 
+\end{equation}
+where $\delta = usage - target~gas~fee$, and $k = (target)/(basefee~max~change)$
+
 
 \subsection{Marginal Likelihood}
 
