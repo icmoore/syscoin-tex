@@ -611,17 +611,25 @@ zk-SNARK and zk-STARKS are types of Non-interactive ZKP , where no interaction i
 
 \section{Block Occupancy Cost (BLOC) Function}
 
-We considered two approaches to model the gas costs, $y_{c}$, using model 1:
+We considered two approaches to model the gas costs, $y_{c,k}$ at the $k^{th}$ block, using model 1:
 \begin{equation}
-y_{c} = \dfrac{1}{k}\log\left(\dfrac{1+x_{o}}{1-x_{o}}\right) + y_{0};
+y_{c,k} = \dfrac{1}{\gamma}\log\left(\dfrac{1+x_{o,k-1}}{1-x_{o,k-1}}\right) + y_{c,0};
 \end{equation}
 and model 2:
 \begin{equation}
-y_{c} = \left| \dfrac{1}{k(x_{o}-1)} \right| + y_{c,0} - \dfrac{1}{k},
+y_{c,k} = \left| \dfrac{1}{\gamma(x_{o,k-1}-1)} \right| + y_{c,0} - \dfrac{1}{\gamma},
 \end{equation}
-where $x_{o} \in [0,1]$ is the block occupancy, $y_{c,0}$ is the base cost, and $k$ is an adjustable scaling term. We call $y_{c}$ the BLock Occupancy Cost (BLOC) function.
+where $x_{o,k} \in [0,1] \sim \forall k$ is the block occupancy, $y_{c,0}$ is the base cost, and $\gamma$ is an adjustable scaling term. We call $y_{c}$ the BLock Occupancy Cost (BLOC) function; see Figure \ref{fig:bloc}.
+
+\begin{figure}[h!]
+\includegraphics[width=3in]{img/blk_occupancy_cost_fn.png}
+\caption{BLock Occupancy Cost functions} 
+\label{fig:bloc}
+\end{figure} 
 
 Other variants of $y_{c}$ can be utilized highlighting various characteristics. For instance, Model 1 has the characteristic of being less volatile, but with a higher expected base cost than Model 2.
+
+
 
 \section{Block Occupancy and Gas Simulations}
 
@@ -645,17 +653,23 @@ and then applied MinMax scaling to ensure $\alpha_{t} \in [0,1]$:
 Block Occupancy simulations, \textbf{x}$_{o,t}$, were fed into the BLOC function, to achieve a set of gas simulations, \textbf{y}$_{c,t}$, at each instance of time $t$.
 
 
+
+
 \section{EIP 1559}
 
-EIP-1559 is a new pricing mechanism for the Ethereum protocol that includes a stationary network fee during states of no congestion which dynamically adjusts during states of congestion. The original gas fee model uses a auction system where miners choose transactions with the highest bids. This has led to several inefficiencies such as instability of blockchains with no reward, needless delays, fee overpayment, and mismatch fee levels between volatility ad social cost.
+EIP-1559 is a new proposed pricing mechanism for the Ethereum protocol that includes a stationary network fee during states of no congestion which dynamically adjusts during states of congestion. The original gas fee model uses a auction system where miners choose transactions with the highest bids. This has led to several inefficiencies such as instability of blockchains with no reward, needless delays, fee overpayment, and mismatch fee levels between volatility ad social cost.
 
 The basic premise of the new proposal begins with setting the base fee which increases when the network capacity exceeds the target per-block gas usage, and decreases when the capacity is below the target. The calculation of the updated basefee, $b_{k}$ at the $k^{th}$ block,  is as follows:
 
-\begin{equation}
-b_{k} = b_{k-1}\left(\dfrac{1+ \delta}{k}\right), 
-\end{equation}
-where $\delta = usage - target~gas~fee$, and $k = (target)/(basefee~max~change)$
+\begin{eqnarray} \label{eq:eip1559}
+b_{k} = b_{k-1} f_{k-1}, \\
+f_{k} = \dfrac{1+ \delta_{k}}{c}
+\end{eqnarray}
+where $\delta_{k} = usage_{k} - target~gas~fee$, and $c = (target)/(basefee~max~change)$.
 
+The main challenge with (\ref{eq:eip1559}) is to ensure that $b_{k}$ operates as a stationary process for states of congestion and non-congestion. A stationary process is when $b_{k}$ and $b_{k+N}$ have the same probability distributions for all N. Hence, this research problem can be broken into these two main categories. We foresee the latter problem being significantly more difficult to mathematically model than the former, as there are many various non-stationary edge-cases that can arise from various attacks which have not been observed yet. For the sake of brevity in this discussion, we assume $f_{k}$ to be a stationary Gaussian process.
+
+It is quite possible that this problem can be addressed using a state space model or or some other kind of probabilistic graphical model. Approaching the problem this way could be an effective way of ensuring that the statistics of $f_{k}$ stay relatively stable over $k$, and a good way to mathematically define various attack vectors.
 
 \subsection{Marginal Likelihood}
 
