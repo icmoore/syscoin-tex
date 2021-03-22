@@ -667,9 +667,9 @@ f_{k} = \dfrac{1+ \delta_{k}}{c}
 \end{eqnarray}
 where $\delta_{k} = usage_{k} - target~gas~fee$, and $c = (target)/(basefee~max~change)$.
 
-The main challenge with (\ref{eq:eip1559}) is to ensure that $b_{k}$ operates as a stationary process for states of congestion and non-congestion. A stationary process is when $b_{k}$ and $b_{k+N}$ have the same probability distributions for all N. Hence, this research problem can be broken into these two main categories. We foresee the latter problem being significantly more difficult to mathematically model than the former, as there are many various non-stationary edge-cases that can arise from various attacks which have not been observed yet. For the sake of brevity in this discussion, we assume $f_{k}$ to be a stationary Gaussian process.
+The main challenge with (\ref{eq:eip1559}) is to ensure that $b_{k}$ operates as a stationary process for states of congestion and non-congestion. A stationary process is when $b_{k}$ and $b_{k+N}$ have the same probability distributions for all N. Hence, this research problem can be broken into these two main categories. We foresee the latter problem being significantly more difficult to mathematically model than the former, as there are many non-stationary edge-cases that can arise from various attacks which have not yet been defined. For the sake of brevity, we assume $\delta_{k}$ to be a stationary Gaussian process in this discussion.
 
-It is quite possible that this problem can be addressed using a state space model or or some other kind of probabilistic graphical model. Approaching the problem this way could be an effective way of ensuring that the statistics of $f_{k}$ stay relatively stable over $k$, and a good way to mathematically define various attack vectors.
+It is quite possible that this problem can be addressed using a state space model or or some other kind of probabilistic graphical model. Approaching the problem this way could be an effective way of optimally ensuring (under predefined assumptions) that the statistics of $\delta_{k}$ stay relatively stable over $k$, and a good way to mathematically define various attack vectors.
 
 \subsection{Marginal Likelihood}
 
