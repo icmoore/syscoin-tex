@@ -111,8 +111,8 @@ multiple nodes within a short time.
 
 \begin{figure}[h!]
 \includegraphics[width=3in]{img/current_vs_zdag.png}
-\label{fig:current_vs_zdag}
 \caption{Current Blockchain design vs Z-DAG} 
+\label{fig:current_vs_zdag}
 \end{figure} 
 
 Figure \ref{fig:current_vs_zdag}  shows the difference between a regular
@@ -304,9 +304,9 @@ The following describes the 4-layers (see Fig 2) of Syscoin’s proposed tech st
 \end{enumerate}
 
 \begin{figure}[h!]
-\includegraphics[width=3in]{img/tech_stack.png}
+\includegraphics[width=3in]{img/4_layer.png}
 \label{fig:tech_stack}
-\caption{sys tech stack} 
+\caption{Proposed 4-layer tech stack for Syscoin} 
 \end{figure} 
 
 Surprisingly, these ideals represent a design that is not shared with any other project in the industry, including Bitcoin or Ethereum. We recommend that these ideals, fashioned together in a singular protocol, could possibly present a grand vision for a “World Computer” blockchain infrastructure.
@@ -407,60 +407,45 @@ It is estimated that Syscoin will be able to process ~16MB of data per minute on
 
 If we were to consider using Validum on the Syscoin EVM layer, we estimate that we could achieve 800 batch-runs per minute (ie, 4B gas per minute / 5 M gas per batch-run). That would equate to an equivalent of 4M TPS (ie, 800 batch-runs per minute * 300 k transactions per batch-run / 60 seconds per minute).
 
-\textbf{Table 1}
-
-Because of the higher throughput capabilities of baseline EVM, we may look to dynamically adjust costs of the gas limits \cite{Che17} to thwart DOS attacks.
-
-The aforementioned calculations demonstrate the full State Safety of the mainchain secured by Bitcoin, and no asynchronous network assumptions which make theoretical calculations impractical in many other claims of blockchain throughput due to execution model bottlenecks. These results were extrapolated based on real results with constant overhead added that becomes negligible with optimizations. It is imperative to  note that transactions in this strategy are not re-executable; there is little to no complexity in this model other than verifying succinct proofs. The proof creation strategy is parallelized organically using this model. The verifications on the main chain can also be parallelized as they are executed on separate shards or rollup networks. Dual parallel execution and verification gives exponentially more scalability than other architectures. Additionally, privacy can be built into these models at minimal to no extra cost, depending on the business model. Lastly, we suggest  these are sustainable throughput calculations and not burst capacity numbers which would be much higher (albeit with a marginally higher fee based on fee markets). For example Ethereum is operating at 15 TPS but there are around 150k transactions pending, and the average cost is about 200 gWei currently. The fee rate is based on the calculation that it  takes around 10000 seconds to clear, assuming this many transactions, no new transactions, and there is demand to settle earlier. Extrapolating on 4M TPS the ratio would become 40B transactions pending with 4M TPS to achieve the same fee rate on Ethereum today assuming the memory pool is big enough on nodes to support that many pending transactions. Since masternodes on Syscoin are paid to provide uptime, we can expect network bandwidth to scale up naturally to support higher throughput as demand for transaction settlement increases. Today, the ability to transact at a much higher rate using the same hardware provides the ability for a greater scale than the state-of-the-art in blockchain design without the added desired caveat of avoiding asynchronous network assumptions. We believe this proposed design will become the new state-of-the-art blockchain, which is made viable due to its security, flexibility and parallelizable computational capacity.
-
-In regards to uncle rates with higher block sizes, keep in mind we make uncle rates and re-organizations in general negligible through the use of the PoW chain mining Syscoin along with Chain Locks. We provide intuition that block sizes can be increased substantially without affecting network health. Furthermore, the gas limits can be adjusted by miners up to 0.1\% from the previous block and so a natural equilibrium can form where even if more than 4B gas is required it can be established based on demand and how well the network behaves with such increases. There is a lot to unpack with such statements and so we will cover this in a separate technical post as it is out-of-scope for this discussion.
-
 \begin{figure}[h!]
 \includegraphics[width=3in]{img/eth_gas_costs.png}
+\caption{Ethereum gas gosts in GWei from Mar 2020 to Mar 2021. The region about the observed gas costs represents the posterior distribution of $f(x*)$ given observations, $y$, for a set of dates, $x*$; see Appendix G for details}  
 \label{fig:eth_gas_costs}
-\caption{eth gas costs} 
 \end{figure} 
 
 \begin{figure}[h!]
 \includegraphics[width=3in]{img/eth_usd_density.png}
+\caption{Gamma fit of Ethereum gas costs in USD using generated samples from Figure \ref{fig:eth_gas_costs} and corresponding ETHUSD prices} 
 \label{fig:eth_usd_density}
-\caption{eth usd density} 
 \end{figure} 
+
+The results from these aforementioned estimates have been tabulated in Table \ref{table:gas_cost_estimates}; more specifically, median estimates (along with its 5th and 95th percentiles) for the costs in USD terms for both ETH and SYSX. The estimates for Ethereum were determined using historical gas costs from March 2020 to March 2021 as shown in Figure \ref{fig:eth_gas_costs}, and its distribution fit in Figure \ref{fig:eth_usd_density}.
 
 \begin{figure}[h!]
 \includegraphics[width=3in]{img/blk_occupancy_simulations.png}
+\caption{Simulated block occupancies generated using methodology outlined in Appendix E; the y axis represents percentage of block occupied at given point in time. As can be seen by the gradual upward trend, this model was selected to simulate gradual growth adoption over time. } 
 \label{fig:blk_occupancy_simulations}
-\caption{sysx blk occupancy simulations} 
 \end{figure} 
 
 \begin{figure}[h!]
 \includegraphics[width=3in]{img/sysx_gas_costs_m1.png}
+\caption{Gas cost simulations of SYSX using variant 1 of BLOC function; see Appendix E} 
 \label{fig:sysx_gas_costs_m1}
-\caption{sysx gas cost simulations} 
 \end{figure} 
 
 \begin{figure}[h!]
 \includegraphics[width=3in]{img/sysx_usd_density.png}
+\caption{Gamma fit of SYSX gas cost simulations in USD using generated samples from Figure \ref{fig:sysx_gas_costs_m1} and SYSUSD prices from Mar 2020 to Mar 2021. These estimates are hypothetical, and are be subject to market price of SYS. Note that if significant adoption occurs due to future demand for cost effective alternatives, we foresee future prices being slightly higher.} 
 \label{fig:sysx_usd_density}
-\caption{sysx usd density} 
 \end{figure} 
 
 \begin{figure}[h!]
 \includegraphics[width=3in]{img/sysx_gas_costs_eip_1559.png}
+\caption{Gas cost simulations of SYSX using EIP 1559; see Appendix F. We can visual see the non-stationary decline in price over time. To our knowledge, treating this non-stationary behaviour requires better understanding of the mathematical assumptions, which have not yet been analytically researched.} 
 \label{fig:sysx_gas_costs_eip_1559}
-\caption{sysx gas costs eip 1559} 
 \end{figure} 
 
-\subsubsection{Decentralized Cost Model}
-
-Decentralized cost models lead to exponential efficiency gains in economies of scale. We set forth a more efficient design paradigm for execution models reflective of user intent. This design uses the UTXO model to reflect simple state transitions and a ZKP system for complex computations leading to state transitions. This leads to ideal scalability for a system by allowing people to actively make their trade-off within the same ecosystem, driven by the same miners securing that ecosystem backed by Bitcoin itself.
-
-Furthermore, a decentralized cost model contributes to scalability in that ZKP gates can generalize complex computation better than fee-market resources like gas or the CPU/memory markets of EOS, etc. This results in leads to more deterministic and efficient consumption of resources maximizing efficiency in calculations, and gives opportunity for those to scale up or down based on economic incentives without creating monopolistic opportunities unlike ASIC mining. In other words, the cost is dictated by what the market can offer, via the cost of compute power (as dictated by Moore's law) instead of constrained costs of doing business on the blockchain itself. This model could let the computing market dictate the price for Gas instead of being managed by miners of the blockchain. The miners would essentially only dictate the costs of the verification of these proofs when they enter the chain rather than the executions themselves.
-
-We can already begin to see computational optimization through hardware happening with ZKP and with a decentralized cost model it will be much simpler to understand costs of running prover services as well as know how the costs scale based on the number of users and parameters of systems that businesses would like to employ. All things considered, it will be more efficient to make accurate decisions on data availability policies and the consensus systems needed to keep the system censorship resistant and secure.
-
-Rollups will be friends, that is, users of one rollup system doing X TPS and users of another doing Y TPS, with the same trust model, will in effect get us to global rates of X*Y (where X is TPS of the sidechains/rollups and Y is the number of sidechains and rollups that exist). X is fairly static in that the execution models of rollups do not change drastically (and if they do, the majority of those rollup or sidechain designs end up switching to the most efficient design for execution over time).
-
+With regards to the SYSX cost estimates; simulated gas costs were generated using Ethereum's proposed EIP 1559 (Figure \ref{fig:sysx_gas_costs_eip_1559}) and an alternative pricing mechanism that Syscoin is currently exploring (Figure \ref{fig:sysx_gas_costs_m1}). This alternative approach is called the BLock Occupancy Cost (BLOC) function (\ref{fig:bloc}), and is driven by the occupancy of the previously generated block; see Figure \ref{fig:blk_occupancy_simulations} for simulations Appendix D for details.
 
 \begin{table*}[h!]
 \centering
@@ -480,10 +465,25 @@ Chain & Gas  Limit & Block Time & Mode & Cost  & Amortized  & Total TPS & \multi
 \hline
 
 \end{tabular}
-\caption{Comparison of Gas and USD costs between ETH and SYSX}
-\label{table:1}
+\caption{Comparison of Gas and USD costs between ETH and SYSX. The confidence intervals for USD estimates were determined using historical gas costs for ETH (see Figure \ref{fig:eth_gas_costs}), and simulated gas costs for SYSX (see Figure \ref{fig:sysx_gas_costs_m1})}
+\label{table:gas_cost_estimates}
 \end{table*}
 
+Because of the higher throughput capabilities of baseline EVM, we may look to dynamically adjust costs of the gas limits \cite{Che17} to thwart DOS attacks.
+
+The aforementioned calculations demonstrate the full State Safety of the mainchain secured by Bitcoin, and no asynchronous network assumptions which make theoretical calculations impractical in many other claims of blockchain throughput due to execution model bottlenecks. These results were extrapolated based on real results with constant overhead added that becomes negligible with optimizations. It is imperative to  note that transactions in this strategy are not re-executable; there is little to no complexity in this model other than verifying succinct proofs. The proof creation strategy is parallelized organically using this model. The verifications on the main chain can also be parallelized as they are executed on separate shards or rollup networks. Dual parallel execution and verification gives exponentially more scalability than other architectures. Additionally, privacy can be built into these models at minimal to no extra cost, depending on the business model. Lastly, we suggest  these are sustainable throughput calculations and not burst capacity numbers which would be much higher (albeit with a marginally higher fee based on fee markets). For example Ethereum is operating at 15 TPS but there are around 150k transactions pending, and the average cost is about 200 gWei currently. The fee rate is based on the calculation that it  takes around 10000 seconds to clear, assuming this many transactions, no new transactions, and there is demand to settle earlier. Extrapolating on 4M TPS the ratio would become 40B transactions pending with 4M TPS to achieve the same fee rate on Ethereum today assuming the memory pool is big enough on nodes to support that many pending transactions. Since masternodes on Syscoin are paid to provide uptime, we can expect network bandwidth to scale up naturally to support higher throughput as demand for transaction settlement increases. Today, the ability to transact at a much higher rate using the same hardware provides the ability for a greater scale than the state-of-the-art in blockchain design without the added desired caveat of avoiding asynchronous network assumptions. We believe this proposed design will become the new state-of-the-art blockchain, which is made viable due to its security, flexibility and parallelizable computational capacity.
+
+In regards to uncle rates with higher block sizes, keep in mind we make uncle rates and re-organizations in general negligible through the use of the PoW chain mining Syscoin along with Chain Locks. We provide intuition that block sizes can be increased substantially without affecting network health. Furthermore, the gas limits can be adjusted by miners up to 0.1\% from the previous block and so a natural equilibrium can form where even if more than 4B gas is required it can be established based on demand and how well the network behaves with such increases. There is a lot to unpack with such statements and so we will cover this in a separate technical post as it is out-of-scope for this discussion. 
+
+\subsubsection{Decentralized Cost Model}
+
+Decentralized cost models lead to exponential efficiency gains in economies of scale. We set forth a more efficient design paradigm for execution models reflective of user intent. This design uses the UTXO model to reflect simple state transitions and a ZKP system for complex computations leading to state transitions. This leads to ideal scalability for a system by allowing people to actively make their trade-off within the same ecosystem, driven by the same miners securing that ecosystem backed by Bitcoin itself.
+
+Furthermore, a decentralized cost model contributes to scalability in that ZKP gates can generalize complex computation better than fee-market resources like gas or the CPU/memory markets of EOS, etc. This results in leads to more deterministic and efficient consumption of resources maximizing efficiency in calculations, and gives opportunity for those to scale up or down based on economic incentives without creating monopolistic opportunities unlike ASIC mining. In other words, the cost is dictated by what the market can offer, via the cost of compute power (as dictated by Moore's law) instead of constrained costs of doing business on the blockchain itself. This model could let the computing market dictate the price for Gas instead of being managed by miners of the blockchain. The miners would essentially only dictate the costs of the verification of these proofs when they enter the chain rather than the executions themselves.
+
+We can already begin to see computational optimization through hardware happening with ZKP and with a decentralized cost model it will be much simpler to understand costs of running prover services as well as know how the costs scale based on the number of users and parameters of systems that businesses would like to employ. All things considered, it will be more efficient to make accurate decisions on data availability policies and the consensus systems needed to keep the system censorship resistant and secure.
+
+Rollups will be friends, that is, users of one rollup system doing X TPS and users of another doing Y TPS, with the same trust model, will in effect get us to global rates of X*Y (where X is TPS of the sidechains/rollups and Y is the number of sidechains and rollups that exist). X is fairly static in that the execution models of rollups do not change drastically (and if they do, the majority of those rollup or sidechain designs end up switching to the most efficient design for execution over time).
 
 \subsection{Applications}
 
@@ -623,7 +623,7 @@ where $x_{o,k} \in [0,1] \sim \forall k$ is the block occupancy, $y_{c,0}$ is th
 
 \begin{figure}[h!]
 \includegraphics[width=3in]{img/blk_occupancy_cost_fn.png}
-\caption{BLock Occupancy Cost functions} 
+\caption{BLock Occupancy Cost (BLOC) functions; model 1 and 2} 
 \label{fig:bloc}
 \end{figure} 
 
@@ -652,9 +652,6 @@ and then applied MinMax scaling to ensure $\alpha_{t} \in [0,1]$:
 
 Block Occupancy simulations, \textbf{x}$_{o,t}$, were fed into the BLOC function, to achieve a set of gas simulations, \textbf{y}$_{c,t}$, at each instance of time $t$.
 
-
-
-
 \section{EIP 1559}
 
 EIP-1559 is a new proposed pricing mechanism for the Ethereum protocol that includes a stationary network fee during states of no congestion which dynamically adjusts during states of congestion. The original gas fee model uses a auction system where miners choose transactions with the highest bids. This has led to several inefficiencies such as instability of blockchains with no reward, needless delays, fee overpayment, and mismatch fee levels between volatility ad social cost.
@@ -667,11 +664,12 @@ f_{k} = \dfrac{1+ \delta_{k}}{c}
 \end{eqnarray}
 where $\delta_{k} = usage_{k} - target~gas~fee$, and $c = (target)/(basefee~max~change)$.
 
-The main challenge with (\ref{eq:eip1559}) is to ensure that $b_{k}$ operates as a stationary process for states of congestion and non-congestion. A stationary process is when $b_{k}$ and $b_{k+N}$ have the same probability distributions for all N. Hence, this research problem can be broken into these two main categories. We foresee the latter problem being significantly more difficult to mathematically model than the former, as there are many non-stationary edge-cases that can arise from various attacks which have not yet been defined. For the sake of brevity, we assume $\delta_{k}$ to be a stationary Gaussian process in this discussion.
+Ideally, we would like to see $b_{k}$ behaving as a stationary process for states of congestion and non-congestion. A stationary process is when $b_{k}$ and $b_{k+N}$ have the same probability distributions for all N. Hence, this research problem can be broken into these two main categories. We foresee the latter problem being significantly more difficult to mathematically model than the former, as there are many non-stationary edge-cases that can arise from various attacks which have not yet been defined. For the sake of brevity, we assume $\delta_{k}$ to be a stationary Gaussian process in this discussion.
 
 It is quite possible that this problem can be addressed using a state space model or or some other kind of probabilistic graphical model. Approaching the problem this way could be an effective way of optimally ensuring (under predefined assumptions) that the statistics of $\delta_{k}$ stay relatively stable over $k$, and a good way to mathematically define various attack vectors.
 
-\subsection{Marginal Likelihood}
+\section{Gaussian Processes}
+\label{appendix:marginal}
 
 Assume observed data, $y$, are the sum of a Gaussian Process (GP) and Gaussian noise, given by:
 
@@ -698,7 +696,7 @@ For this work, we looked at observations, $y$, probabilistically, which can be d
 \begin{equation}
 p(y|x) = \int p(y | f,x) p (f, |x) df;
 \end{equation}
-this is otherwise known as the marginal likelihood; from a Bayesian context, this may be referred to as the evidence, which is the normalizing part of Bayes rule. Typically, due to the computational complexity, this is the tough part in Bayesian analytics, so we use Markov Chain Monte Carlo (MCMC) sampling using the PyMC3 python package.  
+this is otherwise known as the marginal likelihood; from a Bayesian context, this may be referred to as the evidence, which is the normalizing part of Bayes rule. The marginal likelihood can be utilized to generate conditional distribution for Gaussians to get the posterior distribution of $f(x*)$ given $y$. To do this we used Markov Chain Monte Carlo (MCMC) sampling using the PyMC3 python package; for more detail along with coding examples, see \cite{Fon20}.
 
 \begin{thebibliography}{00}
 
@@ -788,6 +786,11 @@ Y Li, \textit{Performance analysis and comparison of PoW, PoS and DAG based bloc
 \bibitem{Che17}  T. Chen, X. Li, Y. Wang, J. Chen, Z Li, X. Luo, M. H. Au, and X. Zhang. \textit{An adaptive gas cost mechanism for Ethereum to defend against under-priced DoS attacks}. Proceedings of Information Security Practice and Experience - 13th International Conference ISPEC, 2017
 
 \bibitem{Sta20}  Starkware Team, Rescue STARK Documentation – Version 1.0, Jul 2020
+
+\bibitem{Fon20} C. Fonnesbeck, \textit{Advanced Statistical Computing, Bios 8366}, Vanderbilt University's Department of Biostatistics, Nashville, TN, May 2020, , Accessed on: Mar 2021.  [Online]. Available:  https://github.com/fonnesbeck/Bios8366/blob/master/notebooks/Section5\_1\-Gaussian-Processes.ipynb
+
+
+
 
 
 \end{thebibliography}
