@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  23 APR 2021 14:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  29 APR 2021 22:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -378,16 +378,16 @@ LaTeX Warning: Unused global option(s):
 
 (./article.aux
 
-LaTeX Warning: Label `section:gas_demand' multiply defined.
+LaTeX Warning: Label `eq:ar1' multiply defined.
+
+
+LaTeX Warning: Label `table:pow_vs_pos' multiply defined.
 
 
 LaTeX Warning: Label `eq:ar1' multiply defined.
 
 
 LaTeX Warning: Label `Rou20' multiply defined.
-
-
-LaTeX Warning: Label `eq:ar1' multiply defined.
 
 )
 \openout1 = `article.aux'.
@@ -546,42 +546,31 @@ Overfull \hbox (9.2679pt too wide) in paragraph at lines 43--43
 Package xcolor Warning: Incompatible color definition on input line 45.
 
 
-LaTeX Warning: Reference `table:ugrades' on page 1 undefined on input line 48.
+Package xcolor Warning: Incompatible color definition on input line 52.
 
 
-Package xcolor Warning: Incompatible color definition on input line 51.
+Underfull \vbox (badness 3375) has occurred while \output is active []
 
 
-LaTeX Warning: Citation `Bit15' on page 1 undefined on input line 74.
+Underfull \hbox (badness 1983) in paragraph at lines 65--67
+\T1/ptm/n/n/10 where $\OML/cmm/m/it/10 ^^N[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10
+ demand[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 TargetGasFee$ \T1/ptm/n/n/10 an
+d $\OML/cmm/m/it/10 c \OT1/cmr/m/n/10 =
+ []
 
 
-LaTeX Warning: Citation `Bit15' on page 1 undefined on input line 74.
+Package xcolor Warning: Incompatible color definition on input line 85.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package xcolor Warning: Incompatible color definition on input line 96.
 
 
-Package xcolor Warning: Incompatible color definition on input line 78.
-
-
-Package xcolor Warning: Incompatible color definition on input line 82.
-
-
-Package xcolor Warning: Incompatible color definition on input line 88.
-
-
-Package xcolor Warning: Incompatible color definition on input line 99.
-
-
-Package xcolor Warning: Incompatible color definition on input line 111.
-
-
-Package xcolor Warning: Incompatible color definition on input line 116.
+Package xcolor Warning: Incompatible color definition on input line 106.
 
 <Logo.png, id=4, 355.3275pt x 86.3225pt>
 File: Logo.png Graphic file (type png)
 <use Logo.png>
-Package pdftex.def Info: Logo.png  used on input line 116.
+Package pdftex.def Info: Logo.png  used on input line 106.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -608,47 +597,36 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  <./Logo.png> <./bullet.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 132.
+Package xcolor Warning: Incompatible color definition on input line 107.
 
-<img/basefee_simulations.png, id=22, 867.24pt x 361.35pt>
-File: img/basefee_simulations.png Graphic file (type png)
-<use img/basefee_simulations.png>
-Package pdftex.def Info: img/basefee_simulations.png  used on input line 154.
-(pdftex.def)             Requested size: 216.81pt x 90.33728pt.
-<img/strict_stationarity.png, id=23, 578.16pt x 361.35pt>
-File: img/strict_stationarity.png Graphic file (type png)
-<use img/strict_stationarity.png>
-Package pdftex.def Info: img/strict_stationarity.png  used on input line 160.
-(pdftex.def)             Requested size: 216.81pt x 135.50592pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<img/gas.png, id=24, 867.24pt x 578.16pt>
+<img/gas.png, id=23, 867.24pt x 578.16pt>
 File: img/gas.png Graphic file (type png)
 <use img/gas.png>
-Package pdftex.def Info: img/gas.png  used on input line 166.
+Package pdftex.def Info: img/gas.png  used on input line 115.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<img/gaussian_analysis.png, id=25, 867.24pt x 289.08pt>
+<img/gaussian_analysis.png, id=24, 867.24pt x 289.08pt>
 File: img/gaussian_analysis.png Graphic file (type png)
 <use img/gaussian_analysis.png>
-Package pdftex.def Info: img/gaussian_analysis.png  used on input line 172.
+Package pdftex.def Info: img/gaussian_analysis.png  used on input line 121.
 (pdftex.def)             Requested size: 216.81pt x 72.26982pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package xcolor Warning: Incompatible color definition on input line 128.
+
+<img/basefee_simulations.png, id=25, 867.24pt x 361.35pt>
+File: img/basefee_simulations.png Graphic file (type png)
+<use img/basefee_simulations.png>
+Package pdftex.def Info: img/basefee_simulations.png  used on input line 134.
+(pdftex.def)             Requested size: 216.81pt x 90.33728pt.
+
+Package xcolor Warning: Incompatible color definition on input line 163.
 
 
-Package xcolor Warning: Incompatible color definition on input line 177.
-
-
-Package xcolor Warning: Incompatible color definition on input line 181.
+Package xcolor Warning: Incompatible color definition on input line 179.
 
 <notaglineLogo.png, id=26, 355.3275pt x 86.3225pt>
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 192.
+Package pdftex.def Info: notaglineLogo.png  used on input line 179.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -665,26 +643,39 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[2 <./notaglineLogo.png> <./img/basefee_simulations.png> <./img/strict_stationa
-rity.png> <./img/gas.png> <./img/gaussian_analysis.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+[2 <./notaglineLogo.png> <./img/gas.png> <./img/gaussian_analysis.png> <./img/b
+asefee_simulations.png>]
+<img/strict_stationarity.png, id=35, 578.16pt x 361.35pt>
+File: img/strict_stationarity.png Graphic file (type png)
+<use img/strict_stationarity.png>
+Package pdftex.def Info: img/strict_stationarity.png  used on input line 203.
+(pdftex.def)             Requested size: 216.81pt x 135.50592pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 208.
+
+
+Package xcolor Warning: Incompatible color definition on input line 217.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
 []\T1/ptm/m/n/7.61 B. Mon-not, \T1/ptm/m/it/7.61 Agent-based Sim-u-la-tion En-v
 i-ron-ment for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
 \T1/ptm/m/it/7.61 EIP 1559\T1/ptm/m/n/7.61 , Ac-cessed on: Apr 2021. [On-line].
  Avail-able:
  []
 
 File: bullet.png Graphic file (type png)
 <use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 198.
+Package pdftex.def Info: bullet.png  used on input line 234.
 (pdftex.def)             Requested size: 5.0pt x 14.6871pt.
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 200.
+Package pdftex.def Info: notaglineLogo.png  used on input line 236.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -701,27 +692,22 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[3
-
-] (./article.aux)
+[3 <./img/strict_stationarity.png>] (./article.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6628 strings out of 480608
- 101530 string characters out of 5903631
- 359230 words of memory out of 5000000
- 22385 multiletter control sequences out of 15000+600000
+ 6630 strings out of 480608
+ 101538 string characters out of 5903631
+ 358289 words of memory out of 5000000
+ 22387 multiletter control sequences out of 15000+600000
  616187 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,96p,1011b,521s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,96p,971b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -736,7 +722,7 @@ nts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
 e1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw
 /times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utm
 r8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on article.pdf (3 pages, 394686 bytes).
+Output written on article.pdf (3 pages, 401297 bytes).
 PDF statistics:
  87 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream

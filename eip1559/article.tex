@@ -15,9 +15,9 @@
 \linenumbers
 \history{}
 
-\title{\centering Stochastic Properties of EIP-1559}
+\title{\centering Stochastic Properties of EIP-1559 Basefees}
 \author{\centering  \uppercase{Ian C. Moore, PhD}\authorrefmark{1}, 
-and \uppercase{IJagdeep Sidhu, MSc\authorrefmark{2}}}
+and \uppercase{Jagdeep Sidhu, MSc\authorrefmark{2}}}
 
 \address[1]{\centering  (e-mail: ic3moore@gmail.com)}
 \tfootnote{}
@@ -25,17 +25,17 @@ and \uppercase{IJagdeep Sidhu, MSc\authorrefmark{2}}}
 
 
 \markboth
-{Sidhu \headeretal: Stochastic Properties of EIP-1559}
-{Sidhu \headeretal: Stochastic Properties of EIP-1559}
+{Sidhu \headeretal: Stochastic Properties of EIP-1559 Basefees}
+{Sidhu \headeretal: Stochastic Properties of EIP-1559 Basefees}
 
 \corresp{}
 
 \begin{abstract}
-EIP-1559 is a new proposed pricing mechanism for the Ethereum protocol developed to bring stability to fluctuating gas prices. To properly understand this as a stochastic process, it is necessary to develop the mathematical foundations to understand under what conditions does the base fee gas price outcomes behave as a stationary process, and when it does not. This understanding these mathematical under pinnings critical to properly engineering a stable system.
+EIP-1559 is a new proposed pricing mechanism for the Ethereum protocol developed to bring stability to fluctuating gas prices. To properly understand this as a stochastic process, it is necessary to develop the mathematical foundations to understand under what conditions does the base fee gas price outcomes behave as a stationary process, and when it does not. Understanding these mathematical fundamentals is critical to properly engineering a stable system.
 \end{abstract}
 
 \begin{keywords}
-EIP 1559, Stochastic Processes, Stationarity
+EIP 1559, Base Fees, Stochastic Processes, Stationarity
 \end{keywords}
 
 \titlepgskip=-15pt
@@ -45,13 +45,98 @@ EIP 1559, Stochastic Processes, Stationarity
 \section{Introduction}
 \label{sec:introduction}
 
-Syscoin 4.0 builds upon Syscoin 3.0 with additional implementation of an Ethereum Bridge, Offers/Escrow, Lightening Networks, and Decentralized Identity. As previously featured, anything pertaining to the market place (eg, digital sales, auctions, marketplace modification, etc.) has been deprecated. The full release will included the Syscoin Network-Enhanced Virtual Machine (NEVM) which will utilize the Ethereum Virtual Machine (EVM) together with a Zero Knowledge Proof (ZKP) system to build scalable applications and the introduction of a decentralized cost model around Ethereum Gas fees (Table \ref{table:ugrades}).
+The current Ethereum pricing mechanism employs the price auction model where high-value use cases are prioritized over lower ones. The problem with this approach is that as Ethereum has grown more popular, users have difficulty estimating optimal gas fees. In 2018, EIP-1559 was  proposed by Ethereum Founder, Vitalik Buterin, as a major change to Ethereum's transaction fee mechanism, and introduces two different types of fees, which is the base fee and inclusion fee. The ideas is the base fee is relatively stable while the inclusion fee serves as an additional tip offered to compensate miners. This mechanism allows for the base fee to be adjusted after every block in accordance to demand. Hence, when demand for gas is higher than the target gas price, the block size is adjusted upwards, and when demand for gas is lower than the target gas, the block size is adjusted downwards. Blocks are allowed to grow as large as double the target block size.
 
+In this study, we investigate the stochastic properties of EIP-1559 base fees. As the main motivation behind EIP-1559 is to bring stability to gas fees, we look at the mathematical conditions that this mechanism must have to achieve stationarity. We open up this discussion in Section \ref{section:eip_1559} where we go over the EIP 1559 pricing mechanism. Using these simulated gas demands, we analyze the stationary properties in Section \ref{section:analyze_stationarity}. In Section \ref{section:gas_demand} we simulate the gas demand.  Finally, we close off with our conclusions in Section \ref{section:conclusion}.
 
 \section{EIP 1559 Pricing Mechanism}
 \label{section:eip_1559}
 
-Bitcoin was the first to attempt to offer a practical outcome in the General's Dilemma using Crypto Economic rationale and incentives. Ethereum was the first to abstract the concept of turing completeness within similar frameworks assumed by Bitcoin. What Syscoin presents is a combination of both Bitcoin and Ethereum with intuitions built on top to achieve a more efficient financial computing platform which leverages coordination to achieve consensus using Crypto Economic rationale and incentives. We propose a four-layer tech stack using Syscoin as the base (host) layer, which provides an efficient (ie, low gas cost per transaction) platform. Some of the main advantages include building scalable decentralized applications, the introduction of a decentralized cost model around Ethereum Gas fees. This new model proposes state-less parallelized execution and verification models while taking advantage of the security offered by the Bitcoin protocol. We may also refer to this as Web 3.0.
+The basic premise of the new EIP 1559 proposal begins with setting the base fee which increases when the network capacity exceeds the target per-block gas usage, and decreases when the capacity is below the target. The calculation of the updated basefee, $b_{k}$ at the $k^{th}$ block, is as follows:
+
+\begin{equation}
+b_{k} = b_{k-1}f_{k-1}
+\label{eq:eip1559} \tag{1}
+\end{equation}
+
+\begin{equation}
+f_{k} = 1 + \frac{\delta_{k}}{c}
+\label{eq:fk} \tag{2}
+\end{equation}
+where $\delta_{k} = demand_{k} - Target Gas Fee$ and $c = Target ~/~ BaseFee Max Change$; for the purpose of this study, we assume $\delta_{k}$ to be a random stationary process. However before we do that, we run abm1559 simulator to show that this is the case, under the assumption that new users are Poisson distributed.
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |l|c| } 
+\hline
+ Constant & Value \\
+\hline
+Target Gas Fee & 12,500,000 \\
+Base Fee Max Change & 50 \\
+Initial Basefee & 10,000,000,000\\
+
+\hline
+\end{tabular}
+\caption{EIP 1559 constants}
+\label{table:pow_vs_pos}
+\end{table}
+
+\section{Analyze Stationarity}
+\label{section:analyze_stationarity}
+
+\textbf{Definition:} A time series ${X_{t}}$ is called strictly stationary if the random vectors $(X_{1} , ... , X_{N} )^T$ and $(X_{1+\tau} , ... , X_{N+\tau} )^T$ have the same joint distribution for all sets of indices ${t_{1} , ... , t_{n}}$ and for all integers $\tau$ and $n > 0$. It is written as 
+
+ \begin{equation}
+(X_{1} , ... , X_{N} )^T \stackrel{D}{=} (X_{1+\tau} , ... , X_{N+\tau} )^T,
+\label{eq:ar1} \tag{3}
+\end{equation}
+where $\stackrel{D}{=}$ means equal in distribution.
+
+\subsection{Augmented Dickey Fuller Test}
+\label{section:adf}
+
+Given the following higher-order autoregressive processes:
+
+\begin{equation}
+\delta y_{t} = \alpha y_{t-1} + \theta_{1} \delta Y_{t-1}  + ... + \theta_{p} \delta Y_{t-p} + \epsilon_{t},
+\label{eq:ar1} \tag{4}
+\end{equation}
+the Augmented Dickey Fuller (ADF) test checks the existence of a unit root $\alpha = 1$ (ie, H0: $\alpha = 1$) where the null hypothesis is non-stationary. The unit root in (\ref{eq:ar1}) is characteristic of a time series that makes it non-stationary.
+
+\section{Gas Demand Simulations}
+\label{section:gas_demand}
+
+To simulate gas demand $\delta_{k}$ in (\ref{eq:fk}) we use the abm1559 simulator \cite{Mon21} where the following assumptions were made: (a) users are Poisson distributed; and (b) every TX consumes 21000 Gas. For our analysis, we are interested in simulating a year's worth of gas costs, which is infeasible as running the full Ethereum chain simulator consumes a lot of overhead.
+
+Hence, we used the simulator to generate a sample, which was analysed using Exploratory Data Analysis (EDA) techniques, as shown in Figure \ref{fig:eda}. As we can see the gas demand is behaving as a normal random sample. 
+
+\begin{figure}[h!]
+\includegraphics[width=3in]{img/gas.png}
+\caption{Simulations of; (top) gas demands using random samples from a normal distribution; and (bottom) gas costs using (\ref{eq:eip1559}). As we can see, the gas cost simulations (bottom) are behaving like a random walk process} 
+\label{fig:gas}
+\end{figure} 
+
+\begin{figure}[h!]
+\includegraphics[width=3in]{img/gaussian_analysis.png}
+\caption{Testing normality of gas demands (top image of Fig. \ref{fig:gas}) using; (left) histogram with normal distribution fit of demands; and (right) Normal Q-Q plot indicates sample and theoretical quantiles match} 
+\label{fig:eda}
+\end{figure} 
+
+We also applied the ADF test to the simulated gas demands, shown in top image of Figure \ref{fig:gas}, and found it to be statistically significant (ie, p-val = 2.33e-29). Hence, rejecting HO indicating simulated gas demands to be stationary. 
+
+\section{Gas Fee Simulations}
+\label{section:gas_fees}
+
+In Section \ref{section:gas_demand} we simulated gas demand  $\delta_{k}$ in (\ref{eq:fk}) and found them to be stationary and normally distributed with $\mu$ = 13641075, and variance $\sigma^2$ = 550980. To simulate gas prices using EIP 1559 we used these parameter estimates to model out a year's worth of gas demands and fed it through the system described in (\ref{eq:eip1559}) and (\ref{eq:fk}). A series of these simulations can be seen in Figure \ref{fig:basefee_simulations}.
+
+\begin{figure}[h!]
+\includegraphics[width=3in]{img/basefee_simulations.png}
+\caption{Gas cost simulations using EIP 1559; we can visual see the non-stationary behaviour in price over time, which is indicative of a random walk.}  
+\label{fig:basefee_simulations}
+\end{figure} 
+
+We tested gas demands for stationarity. In Table \ref{fig:basefee_simulations} we fail to reject to H0 for all ten tests indicating insufficient evidence to conclude that the effect of stationarity exists in the gas fee simulations. 
 
 \begin{table}[h!]
 \centering
@@ -71,109 +156,63 @@ Bitcoin was the first to attempt to offer a practical outcome in the General's D
 10 & -1.930 & 0.318 & not stationary \\
 \hline
 \end{tabular}
-\caption{Comparing PoW to PoS consensus mechanism; plus sign (+) indicates vulnerability; see \cite{Bit15}. As shown, PoW system has the least number of vulnerabilities}
+\caption{ADF test on basefee simulations from Figure \ref{fig:basefee_simulations} to test null hypothesis (H0) that a unit root is present; when unit root is present, then sample is considered to be non-stationary. As we can see, we fail to reject H0 for all ten tests indicating insufficient evidence to conclude that the effect of stationarity exists.}
 \label{table:pow_vs_pos}
 \end{table}
 
-\section{Simulate Gas Demand}
-\label{section:gas_demand}
-xxx
-
-\section{Simulate Gas Demand}
-\label{section:gas_demand}
-xxx
-
-\section{Analyze Stationarity}
-\label{section:analyze_stationarity}
-
-\textbf{Definition:} A time series ${X_{t}}$ is called strictly stationary if the random vectors $(X_{1} , ... , X_{N} )^T$ and $(X_{1+\tau} , ... , X_{N+\tau} )^T$ have the same joint distribution for all sets of indices ${t_{1} , ... , t_{n}}$ and for all integers $\tau$ and $n > 0$. It is written as 
-
- \begin{equation}
-(X_{1} , ... , X_{N} )^T \stackrel{D}{=} (X_{1+\tau} , ... , X_{N+\tau} )^T,
-\label{eq:ar1} \tag{1}
-\end{equation}
-where $\stackrel{D}{=}$ means equal in distribution.
-
-\subsection{Augmented Dickey Fuller Test}
-\label{section:adf}
-
-Given the following higher-order autoregressive processes:
-
-\begin{equation}
-\delta y_{t} = \alpha y_{t-1} + \theta_{1} \delta Y_{t-1}  + ... + \theta_{p} \delta Y_{t-p} + \epsilon_{t},
-\label{eq:ar1} \tag{1}
-\end{equation}
-
-the Augmented Dickey Fuller (ADF) test checks the existence of a unit root $\alpha = 1$ (ie, H0: $\alpha = 1$) where the null hypothesis is non-stationary. The unit root in (\ref{eq:ar1}) is characteristic   of a time series that makes it non-stationary.
-
 \subsection{Problem Statement}
 \label{section:problem_statement}
-For sake of comparison, let's look at stationarity for an AR(1) process: 
-
-Consider a standard first-order auto-regressive process defined by the recursive equation:
+For sake of comparison, let's look at stationarity for an AR(1) process. Consider a standard first-order auto-regressive process defined by the recursive equation:
 
 \begin{equation}
 x_{t} = \mu + \alpha (x_{t-1} -\mu) + \epsilon_{t-1} ~~~~~~~~ \epsilon_{t} \sim IID~N(0,\sigma^2)
-\label{eq:ar1} \tag{3}
+\label{eq:ar1} \tag{5}
 \end{equation}
-
-The above process is stationary when $|\alpha|$<1 so that this has a single root 1/$\alpha$ outside the unit circle.  It can be shown that if $sigma$>0, then this process has the asymptotic stationary distribution:
+The above process is stationary when $|\alpha|$<1 so that this has a single root 1/$\alpha$ outside the unit circle.  It can be shown that if $\sigma$>0, then this process has the asymptotic stationary distribution:
 
 \begin{equation}
 x_{\infty} \sim N(\mu,\frac{\sigma^2}{1-\alpha^2})
-\label{eq:x_infinity} \tag{4}
+\label{eq:x_infinity} \tag{6}
 \end{equation}
-
-Considering the (state space like) simularities to the AR(1) process; the question is what are the constraints (if any) that time varying process $\delta_{t}$ must meet to ensure stationary outcomes for the basefees?
+Considering the (state space like) simularities to the AR(1) process to the system of the system of (\ref{eq:eip1559}) and (\ref{eq:fk}); the question is what are the constraints (if any) that time varying process $\delta_{t}$ must meet to ensure stationary outcomes for the basefees.
 
 \subsection{Random Coefficient Autoregressive Models}
 \label{section:rca}
-EIP 1559 (1) fits into the framework of a Random Coefficient Autoregressive (RCA) Model, which  essentially introduces a random coefficients to the AR model in (3). RCA(1) model is given by:
+
+Considering the problem statement in the previous section, we look to another relative to the AR(1) process, namely the Random Coefficient Autoregressive of order 1, or RCA(1) process. The RCA(1) is similar to the AR(1) process in the sense that the parameter $\alpha$ is allowed to vary with time. This is quite similar to the EIP 1559 system of (\ref{eq:eip1559}) and (\ref{eq:fk}). The RCA(1) model is given by:
 
 \begin{equation}
 x_{k} = \alpha + \beta_{k}x_{k-1} + \epsilon_{k},
-\label{eq:rca1} \tag{5}
+\label{eq:rca1} \tag{7}
 \end{equation}
-
 where ${\epsilon_{k}}$ is an independent sequence of random variables with 0 mean and variance $\sigma^2 > 0$; ${\beta_{k}}$ is an independent sequence of random variables with mean $\mu_{\beta}$ and variance $\sigma_{\beta}^2$ of the random coefficient $\beta_{k}$, and variance $\sigma^2$ of the error $\epsilon_{k}$. Given (3) and (4) it is obvious that when $\sigma_{\beta}^2 = 0$, the RCA(1) in (5) becomes a AR series, and becomes a random walk when $\mu_{\beta} = 1$ and $\sigma_{\beta}^2 = 0$, hence non-stationary. 
+
+EIP 1559 (1) fits into the framework of a Random Coefficient Autoregressive (RCA) model when $\epsilon$ is negligibly small. This is good news, as it allows us to apply the body of work on RCA processes to this problem. The next question is; under what conditions does an RCA(1) process exhibit stationary behaviour. If we know this, then we can apply this understanding to the EIP 1559 mechanism.
 
 \textbf{Theorem} Consider RCA(1) model (5) with ${\beta_{k},\epsilon_{k}}$, which is identically normally distributed.  Then the sufficient condition for the existence of a strictly stationary and ergodic solution is that:
 
 \begin{equation}
 \ln(\sigma_{\beta}^2) < \varsigma + \ln(2) - 2 \int_{0}^{1}\frac{1 - \exp[-\lambda(1-w^2)]}{1-w^2}dw,
-\label{eq:thm} \tag{6}
+\label{eq:thm} \tag{8}
 \end{equation}
 where $\varsigma$ $\approx$ 0.57721, denotes Euler’s constant and $\lambda$ = $\mu_{\beta}^2$/ $2\sigma_{\beta}^2$
 
 \textbf{Proof:} See Theorem 2 in [1]
 
 \begin{figure}[h!]
-\includegraphics[width=3in]{img/basefee_simulations.png}
-\caption{Basefee simulations}  
-\label{fig:basefee_simulations}
-\end{figure} 
-
-\begin{figure}[h!]
 \includegraphics[width=3in]{img/strict_stationarity.png}
-\caption{Strict stationarity} 
+\caption{Region of strict stationarity and ergodicity for RCA(1) determined via (\ref{eq:thm}). The annotated red dot represents where our setup is in relation to the region where an RCA(1) process behaves as a strictly stationary process. Based on this we can see that our setup was non-stationary.} 
 \label{fig:strict_stationarity}
-\end{figure} 
-
-\begin{figure}[h!]
-\includegraphics[width=3in]{img/gas.png}
-\caption{Gas and demand simulations} 
-\label{fig:gas}
-\end{figure} 
-
-\begin{figure}[h!]
-\includegraphics[width=3in]{img/gaussian_analysis.png}
-\caption{Analysis of Normality of Gas Demands} 
-\label{fig:gaussian_analysis}
 \end{figure} 
 
 \section{Conclusion}
 \label{section:conclusion}
-Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. 
+
+The purpose of this study was to understand under what conditions the EIP 1559 pricing mechanism would behave as a stationary process. We believe this as a critical first step to understanding the constraints to engineer stable system. Given the enormity of the Ethereum project, understanding these fundamentals are needed for setting up simulation experiments to help capture all the edge cases that may arise so that the number of updates and patches are minimized prior to release.
+
+It was determined that under the parameter setting used in this study that the outcomes behaved as Brownian motion, which is a non-stationary process. The RCA(1) was used as the mathematical framework to help understand this, as we can go to the literature to help guide our understanding of this kind of process. This conclusion was based on a series of simulations which we tested using the ADF, and Wang's Theorem indicating the region of stationarity for an RCA(1) process. 
+
+Ideally, we would like EIP-1559 to behave as a stationary process. Hence, more investigation is required to understand the setup that is necessary to achieve these conditions before proper simulation studies are implemented.
 
 \begin{thebibliography}{00}
 
