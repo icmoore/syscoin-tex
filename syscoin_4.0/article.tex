@@ -445,6 +445,18 @@ The results from these aforementioned estimates have been tabulated in Table \re
 \label{fig:sysx_gas_costs_eip_1559}
 \end{figure} 
 
+\begin{figure}[h!]
+\includegraphics[width=3in]{img/block_failure.png}
+\caption{Block resize on failure model (top left) block failure times; (bottom left) block sizings; (top right) block size transfer function; and (bottom right) Kaplain Meier curve; for this simulation we assumed a failure rate of 1\%; once a failure event occurs we estimate the probability of block failure which is fed to the transfer function to determine the block size adjustment} 
+\label{fig:block_failure}
+\end{figure} 
+
+\begin{figure}[h!]
+\includegraphics[width=3in]{img/blk_size_simulations.png}
+\caption{Block size simulations using the Block Resize on Failure Model as detailed in Figure \ref{fig:block_failure} and Appendix \ref{appendix:block_resize}; the assumed a failure rate was 2\%} 
+\label{fig:blk_size_simulations}
+\end{figure} 
+
 With regards to the SYSX cost estimates; simulated gas costs were generated using Ethereum's proposed EIP 1559 (Figure \ref{fig:sysx_gas_costs_eip_1559}) and an alternative pricing mechanism that Syscoin is currently exploring (Figure \ref{fig:sysx_gas_costs_m1}). This alternative approach is called the BLock Occupancy Cost (BLOC) function (\ref{fig:bloc}), and is driven by the occupancy of the previously generated block; see Figure \ref{fig:blk_occupancy_simulations} for simulations Appendix D for details.
 
 \begin{table*}[h!]
@@ -496,7 +508,6 @@ The utmost interesting propositions are the verticals that become possible by al
 
 \section{Specifications}
 \label{section:specs}
-
 
 General specifications for Syscoin 4.0:
 
@@ -629,8 +640,6 @@ where $x_{o,k} \in [0,1] \sim \forall k$ is the block occupancy, $y_{c,0}$ is th
 
 Other variants of $y_{c}$ can be utilized highlighting various characteristics. For instance, Model 1 has the characteristic of being less volatile, but with a higher expected base cost than Model 2.
 
-
-
 \section{Block Occupancy and Gas Simulations}
 
 To simulate arbitrary block occupancies, we use the Beta distribution:
@@ -652,6 +661,32 @@ and then applied MinMax scaling to ensure $\alpha_{t} \in [0,1]$:
 
 Block Occupancy simulations, \textbf{x}$_{o,t}$, were fed into the BLOC function, to achieve a set of gas simulations, \textbf{y}$_{c,t}$, at each instance of time $t$.
 
+\section{Block Resize on Failure Model}
+\label{appendix:block_resize}
+
+This Block Resize on Failure model dynamically adjusts the blocksize based on time to last block failure. If the time interval between failures is short then the probability of failure is high and the size for the next block gets decreased. However, when the time interval between failures is long then the probability of failure is low and the size for the next block size gets increased. This methodology is updated upon each failure, and consists of three main steps which include:
+\begin{itemize}
+\item Generate a Kaplan Meier estimator based on last N failures
+\item Using time interval between last failure get estimated probability of failure using Kaplan Meier estimator
+\item Feed the estimated probability of failure into a block size transfer function to get the block size adjustment for the next block
+\end{itemize}
+
+The goal of the Kaplan Meier estimator is to estimate the survival function, $S$, defined as:
+\begin{equation}
+S(t) = Pr(\tau > t),
+\end{equation}
+where $t$ is time, and  $\tau > 0$ be a random variable. The survivor function for the Kaplan Meier estimator function is given by:
+\begin{equation}
+\hat{S}(t) = \prod_{i; t_{i} < t} 1- \frac{d_{i}}{n_{i}}
+\end{equation}
+where $t_{i}$ is a time when at least one black failure happened, $d_{i}$ the number of failures, and $n_{i}$ the blocks that have not failed. 
+
+The block size transfer function constructed from the following logit function:
+\begin{equation}
+y_{tr} = -2*A*\frac{e^{k(x-x_{0})}}{1+e^{k(x-x_{0})}} + A
+\end{equation}
+where preconfigured parameters ${A,k}$  determine how aggressive the resizing is upon each block failure. These parameters are typically determined aprior based on simulations run on the test net. 
+
 \section{EIP 1559}
 
 EIP-1559 is a new proposed pricing mechanism for the Ethereum protocol that includes a stationary network fee during states of no congestion which dynamically adjusts during states of congestion. The original gas fee model uses a auction system where miners choose transactions with the highest bids. This has led to several inefficiencies such as instability of blockchains with no reward, needless delays, fee overpayment, and mismatch fee levels between volatility ad social cost.
@@ -659,8 +694,8 @@ EIP-1559 is a new proposed pricing mechanism for the Ethereum protocol that incl
 The basic premise of the new proposal begins with setting the base fee which increases when the network capacity exceeds the target per-block gas usage, and decreases when the capacity is below the target. The calculation of the updated basefee, $b_{k}$ at the $k^{th}$ block,  is as follows:
 
 \begin{eqnarray} \label{eq:eip1559}
-b_{k} = b_{k-1} f_{k-1}, \\
-f_{k} = \dfrac{1+ \delta_{k}}{c}
+b_{k} = b_{k-1} f_{k}, \\
+f_{k} = 1 + \dfrac{\delta_{k}}{c}
 \end{eqnarray}
 where $\delta_{k} = usage_{k} - target~gas~fee$, and $c = (target)/(basefee~max~change)$.
 
@@ -789,7 +824,7 @@ Y Li, \textit{Performance analysis and comparison of PoW, PoS and DAG based bloc
 
 \bibitem{Fon20} C. Fonnesbeck, \textit{Advanced Statistical Computing, Bios 8366}, Vanderbilt University's Department of Biostatistics, Nashville, TN, May 2020, , Accessed on: Mar 2021.  [Online]. Available:  https://github.com/fonnesbeck/Bios8366/blob/master/notebooks/Section5\_1\-Gaussian-Processes.ipynb
 
-
+\bibitem{Moo21}  I. Moore and J. Sidhu. \textit{Stochastic Properties of EIP 1559 Basefees}, 2021. arXiv:2102.02247,  https://arxiv.org/abs/2102.02247
 
 
 
