@@ -445,18 +445,6 @@ The results from these aforementioned estimates have been tabulated in Table \re
 \label{fig:sysx_gas_costs_eip_1559}
 \end{figure} 
 
-\begin{figure}[h!]
-\includegraphics[width=3in]{img/block_failure.png}
-\caption{Block resize on failure model (top left) block failure times; (bottom left) block sizings; (top right) block size transfer function; and (bottom right) Kaplain Meier curve; for this simulation we assumed a failure rate of 1\%; once a failure event occurs we estimate the probability of block failure which is fed to the transfer function to determine the block size adjustment} 
-\label{fig:block_failure}
-\end{figure} 
-
-\begin{figure}[h!]
-\includegraphics[width=3in]{img/blk_size_simulations.png}
-\caption{Block size simulations using the Block Resize on Failure Model as detailed in Figure \ref{fig:block_failure} and Appendix \ref{appendix:block_resize}; the assumed a failure rate was 2\%} 
-\label{fig:blk_size_simulations}
-\end{figure} 
-
 With regards to the SYSX cost estimates; simulated gas costs were generated using Ethereum's proposed EIP 1559 (Figure \ref{fig:sysx_gas_costs_eip_1559}) and an alternative pricing mechanism that Syscoin is currently exploring (Figure \ref{fig:sysx_gas_costs_m1}). This alternative approach is called the BLock Occupancy Cost (BLOC) function (\ref{fig:bloc}), and is driven by the occupancy of the previously generated block; see Figure \ref{fig:blk_occupancy_simulations} for simulations Appendix D for details.
 
 \begin{table*}[h!]
@@ -483,9 +471,23 @@ Chain & Gas  Limit & Block Time & Mode & Cost  & Amortized  & Total TPS & \multi
 
 Because of the higher throughput capabilities of baseline EVM, we may look to dynamically adjust costs of the gas limits \cite{Che17} to thwart DOS attacks.
 
-The aforementioned calculations demonstrate the full State Safety of the mainchain secured by Bitcoin, and no asynchronous network assumptions which make theoretical calculations impractical in many other claims of blockchain throughput due to execution model bottlenecks. These results were extrapolated based on real results with constant overhead added that becomes negligible with optimizations. It is imperative to  note that transactions in this strategy are not re-executable; there is little to no complexity in this model other than verifying succinct proofs. The proof creation strategy is parallelized organically using this model. The verifications on the main chain can also be parallelized as they are executed on separate shards or rollup networks. Dual parallel execution and verification gives exponentially more scalability than other architectures. Additionally, privacy can be built into these models at minimal to no extra cost, depending on the business model. Lastly, we suggest  these are sustainable throughput calculations and not burst capacity numbers which would be much higher (albeit with a marginally higher fee based on fee markets). For example Ethereum is operating at 15 TPS but there are around 150k transactions pending, and the average cost is about 200 gWei currently. The fee rate is based on the calculation that it  takes around 10000 seconds to clear, assuming this many transactions, no new transactions, and there is demand to settle earlier. Extrapolating on 4M TPS the ratio would become 40B transactions pending with 4M TPS to achieve the same fee rate on Ethereum today assuming the memory pool is big enough on nodes to support that many pending transactions. Since masternodes on Syscoin are paid to provide uptime, we can expect network bandwidth to scale up naturally to support higher throughput as demand for transaction settlement increases. Today, the ability to transact at a much higher rate using the same hardware provides the ability for a greater scale than the state-of-the-art in blockchain design without the added desired caveat of avoiding asynchronous network assumptions. We believe this proposed design will become the new state-of-the-art blockchain, which is made viable due to its security, flexibility and parallelizable computational capacity.
+The aforementioned calculations demonstrate the full State Safety of the mainchain secured by Bitcoin, and no asynchronous network assumptions which make theoretical calculations impractical in many other claims of blockchain throughput due to execution model bottlenecks. These results were extrapolated based on real results with constant overhead added that becomes negligible with optimizations. It is imperative to  note that transactions in this strategy are not re-executable; there is little to no complexity in this model other than verifying succinct proofs. The proof creation strategy is parallelized organically using this model. The verifications on the main chain can also be parallelized as they are executed on separate shards or rollup networks. Dual parallel execution and verification gives exponentially more scalability than other architectures. Additionally, privacy can be built into these models at minimal to no extra cost, depending on the business model. Lastly, we suggest  these are sustainable throughput calculations and not burst capacity numbers which would be much higher (albeit with a marginally higher fee based on fee markets). For example Ethereum is operating at 15 TPS but there are around 150k transactions pending, and the average cost is about 200 GWei currently. The fee rate is based on the calculation that it  takes around 10000 seconds to clear, assuming this many transactions, no new transactions, and there is demand to settle earlier. Extrapolating on 4M TPS the ratio would become 40B transactions pending with 4M TPS to achieve the same fee rate on Ethereum today assuming the memory pool is big enough on nodes to support that many pending transactions. Since masternodes on Syscoin are paid to provide uptime, we can expect network bandwidth to scale up naturally to support higher throughput as demand for transaction settlement increases. Today, the ability to transact at a much higher rate using the same hardware provides the ability for a greater scale than the state-of-the-art in blockchain design without the added desired caveat of avoiding asynchronous network assumptions. We believe this proposed design will become the new state-of-the-art blockchain, which is made viable due to its security, flexibility and parallelizable computational capacity.
 
 In regards to uncle rates with higher block sizes, keep in mind we make uncle rates and re-organizations in general negligible through the use of the PoW chain mining Syscoin along with Chain Locks. We provide intuition that block sizes can be increased substantially without affecting network health. Furthermore, the gas limits can be adjusted by miners up to 0.1\% from the previous block and so a natural equilibrium can form where even if more than 4B gas is required it can be established based on demand and how well the network behaves with such increases. There is a lot to unpack with such statements and so we will cover this in a separate technical post as it is out-of-scope for this discussion. 
+
+So far we looked at EIP 1559 and the BLOC model which both dynamically adjusted gas costs. A third option we are looking at is maintain the auctioning with a dynamic blocksize system. To facilitate this we developed a methodology driven by block failure frequency, see Appendix \ref{appendix:block_resize} for the details. Refer to Figure \ref{fig:blk_size_simulations} for simulations and refer to Figure \ref{fig:block_failure} for components of this methodology.
+
+\begin{figure}[h!]
+\includegraphics[width=3in]{img/block_failure.png}
+\caption{Block resize on failure model (top left) block failure times; (bottom left) block sizings; (top right) block size transfer function; and (bottom right) Kaplain Meier curve; for this simulation we assumed a failure rate of 1\%; once a failure event occurs we estimate the probability of block failure which is fed to the transfer function to determine the block size adjustment} 
+\label{fig:block_failure}
+\end{figure} 
+
+\begin{figure}[h!]
+\includegraphics[width=3in]{img/blk_size_simulations.png}
+\caption{Block size simulations using the Block Resize on Failure Model as detailed in Figure \ref{fig:block_failure} and Appendix \ref{appendix:block_resize}; the assumed a failure rate was 2\%} 
+\label{fig:blk_size_simulations}
+\end{figure} 
 
 \subsubsection{Decentralized Cost Model}
 
