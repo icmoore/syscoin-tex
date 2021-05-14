@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  13 MAY 2021 22:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  14 MAY 2021 13:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1081,7 +1081,7 @@ Package xcolor Warning: Incompatible color definition on input line 520.
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 531.
+Package pdftex.def Info: notaglineLogo.png  used on input line 528.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1115,6 +1115,9 @@ Overfull \hbox (24.72522pt too wide) in paragraph at lines 538--539
 
 Package xcolor Warning: Incompatible color definition on input line 543.
 
+
+Underfull \vbox (badness 1033) has occurred while \output is active []
+
 <img/zkp.png, id=89, 595.22375pt x 484.81125pt>
 File: img/zkp.png Graphic file (type png)
 <use img/zkp.png>
@@ -1130,7 +1133,7 @@ Package xcolor Warning: Incompatible color definition on input line 567.
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 578.
+Package pdftex.def Info: notaglineLogo.png  used on input line 576.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1173,7 +1176,7 @@ Underfull \hbox (badness 2269) in paragraph at lines 643--645
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 649.
+Package pdftex.def Info: notaglineLogo.png  used on input line 647.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1333,26 +1336,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 734--735
 teless-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 740--741
-[]\T1/ptm/n/it/7.61 C. Nel-son, \T1/ptm/m/it/7.61 Zero-Knowledge Proofs: Privac
-y-Preserving Dig-i-tal
- []
-
-
-Underfull \hbox (badness 3861) in paragraph at lines 740--741
-\T1/ptm/m/it/7.61 Iden-tity\T1/ptm/n/it/7.61 , Oct 2018. Feb 2021. Ac-cessed on
-: [On-line]. Avail-able:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 740--741
-\T1/ptm/n/it/7.61 https://www.slideshare.net/SSIMeetup/zeroknowledge-proofs-
- []
-
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 741.
+Package pdftex.def Info: notaglineLogo.png  used on input line 737.
 (pdftex.def)             Requested size: 91.32pt x 22.18513pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1370,6 +1356,23 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [16]
+Underfull \hbox (badness 10000) in paragraph at lines 740--741
+[]\T1/ptm/n/it/7.61 C. Nel-son, \T1/ptm/m/it/7.61 Zero-Knowledge Proofs: Privac
+y-Preserving Dig-i-tal
+ []
+
+
+Underfull \hbox (badness 3861) in paragraph at lines 740--741
+\T1/ptm/m/it/7.61 Iden-tity\T1/ptm/n/it/7.61 , Oct 2018. Feb 2021. Ac-cessed on
+: [On-line]. Avail-able:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 740--741
+\T1/ptm/n/it/7.61 https://www.slideshare.net/SSIMeetup/zeroknowledge-proofs-
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 742--743
 []\T1/ptm/n/it/7.61 D. Boneh, \T1/ptm/m/it/7.61 Dis-crete Log based Zero-Knowle
 dge Proofs\T1/ptm/n/it/7.61 ,
@@ -1470,6 +1473,10 @@ Overfull \hbox (8.71219pt too wide) in paragraph at lines 770--771
 Section5_1-
  []
 
+
+Package lineno Warning: Linenumber reference failed, 
+(lineno)                rerun to get it right.
+
 File: bullet.png Graphic file (type png)
 <use bullet.png>
 Package pdftex.def Info: bullet.png  used on input line 779.
@@ -1507,10 +1514,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6830 strings out of 480608
- 104623 string characters out of 5903631
+ 6831 strings out of 480608
+ 104640 string characters out of 5903631
  368433 words of memory out of 5000000
- 22570 multiletter control sequences out of 15000+600000
+ 22571 multiletter control sequences out of 15000+600000
  626383 words of font info for 156 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,13n,96p,2800b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1534,7 +1541,7 @@ e1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw
 ic/uhvro8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a
 .pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
 /local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on article.pdf (17 pages, 1815628 bytes).
+Output written on article.pdf (17 pages, 1815863 bytes).
 PDF statistics:
  179 PDF objects out of 1000 (max. 8388607)
  103 compressed objects within 2 object streams
