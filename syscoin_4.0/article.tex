@@ -331,7 +331,6 @@ An area that has been overlooked is interoperability. A generalized form of cros
 
 Our vision here is described using a hzkRollup centric world-view, yet it can be replaced with other technologies should they be able to serve the same purpose. As an infrastructure we are not enforcing one or the other as developers can build on what they feel best suits their needs. We believe we are close to achieving this, and that the technology is nearing the point of being ready for the vision set forth in this article.
 
-
 \subsection{Evidence}
 
 Since payment channels work with UTXO’s and also benefit from on-chain scaling via Z-DAG, 16MB blocks (with segwit weight) assumed, we will see somewhere around 8MB-12MB effectively per minute (per block). We foresee that is sufficient to serve Seven Billion people who may enter and exit the payment channel networks once a year (ie, 2 transactions on chain per person per year) for a total of 14 Billion transactions. Let’s conservatively assume 8MB blocks and 300 bytes per transaction. Once on a payment channel, the number of transactions is not limited to on-chain bandwidth, but to network related latencies and bandwidth costs. Therefore, we will conclude that our payment scalability will be able to serve billions of people doing 2 on-chain transactions per year which is arguably realistic based on the way we envision payments to unfold; whether that is an L2 or payment channel network that will hold users to pay through instant transaction mechanisms. On-chain, we have some metrics on Z-DAG throughput [1]; in those cases someone needs to transact for point-of-sale using the Syscoin chain. The solution for payments ends up looking like a hybrid mechanism of on-chain (Z-DAG) and off-chain (ie, payment channel) style payments.
@@ -340,7 +339,7 @@ Complex transactions such as smart contracts using zkRollups require a small amo
 
 A proof size will be about 300kB for about 300k transactions batched together which will take about 60-80ms to verify and roughly 5 to 10 minutes to create such proofs. These are the Reddit bake-off estimates using zk-STARKs, which present quantum resistance and no trusted setup. After speaking with Eli Ben-Sasson, we were made aware that  proving and verifications metrics are already developed compared to  what is  currently presented by Starkware \cite{Sta20}. Hence, zk-SNARKs offer even smaller proofs and verification times at the expense of trusted setups and stronger cryptography assumptions (not post-quantum safe). We foresee that these numbers will improve over time as the cryptography improves, but current estimates suggest a rough theoretical capacity of around 1 Million TPS. 
 
-\subsubsection{Gas Costs}
+\subsubsection{Gas Costs and Block Sizing}
 
 Starkware was able to process 300k transactions over 8 blocks with a total cost of 94.5M gas; final throughput was 3000 TPS (see Reddit bake-off estimates). As a result, or the following calculations, let’s assume one batch-run to be 300k transactions.
 Ethereum can process ~200kB of data per minute, with a cost limit of 50M gas per minute. Therefore, considering the Starkware benchmark test, and assuming a block interval of 13 seconds, we would achieve ~ 3000 TPS (ie,  300 k transactions per batch-run / (8 blocks per batch-run * 13 seconds per block))

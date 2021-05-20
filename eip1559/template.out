@@ -1,9 +1,0 @@
-\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{EIP 1559 Pricing Mechanism}{}% 2
-\BOOKMARK [1][-]{section.3}{Analyze Stationarity}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{Augmented Dickey Fuller Test}{section.3}% 4
-\BOOKMARK [1][-]{section.4}{Gas Demand Simulations}{}% 5
-\BOOKMARK [1][-]{section.5}{Gas Fee Simulations}{}% 6
-\BOOKMARK [2][-]{subsection.5.1}{Problem Statement}{section.5}% 7
-\BOOKMARK [2][-]{subsection.5.2}{Random Coefficient Autoregressive Models}{section.5}% 8
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 9
