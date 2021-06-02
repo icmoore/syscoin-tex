@@ -64,6 +64,15 @@ Authentication, KPMG](https://published-prd.lanyonevents.com/published/rsaus19/s
 * [Boheh, Verifiable Delay Functions](https://www.youtube.com/watch?v=dN-1q8c50q0&feature=youtu.be)
 	* Introductory talk on VDF
 
+* [Rocha, A gentle introduction to VDFs](https://adlrocha.substack.com/p/adlrocha-a-gentle-introduction-to)
+	* Intro to VDFs
+
+* [Richard Ma, VDF Randomness Beacon Chain Simulation](https://www.youtube.com/watch?v=a_o40eBW82A)
+	* https://ethresear.ch/t/minimal-vdf-randomness-beacon/3566
+
+* [Bunz, Randomness Beacons and VDFs](https://cs251.stanford.edu/lectures/lecture6.pdf)
+	* Stanford lecture
+
 ## Ethereum and the EVM
 
 * [Vitalik, Understanding the Ethereum Blockchain Protocol](https://www.youtube.com/watch?v=gjwr-7PgpN8)

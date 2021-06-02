@@ -1,0 +1,364 @@
+%  LaTeX support: latex@mdpi.com 
+%  For support, please attach all files needed for compiling as well as the log file, and specify your operating system, LaTeX version, and LaTeX editor.
+
+%=================================================================
+\documentclass[futureinternet,article,submit,moreauthors,dvi2pdf]{mdpi} 
+
+% For posting an early version of this manuscript as a preprint, you may use "preprints" as the journal and change "submit" to "accept". The document class line would be, e.g., \documentclass[preprints,article,accept,moreauthors,pdftex]{mdpi}. This is especially recommended for submission to arXiv, where line numbers should be removed before posting. For preprints.org, the editorial staff will make this change immediately prior to posting.
+
+%--------------------
+% Class Options:
+%--------------------
+%----------
+% journal
+%----------
+% Choose between the following MDPI journals:
+% acoustics, actuators, addictions, admsci, adolescents, aerospace, agriculture, agriengineering, agronomy, ai, algorithms, allergies, analytica, animals, antibiotics, antibodies, antioxidants, appliedchem, applmech, applmicrobiol, applnano, applsci, arts, asi, atmosphere, atoms, audiolres, automation, axioms, batteries, bdcc, behavsci, beverages, biochem, bioengineering, biologics, biology, biomechanics, biomedicines, biomedinformatics, biomimetics, biomolecules, biophysica, biosensors, biotech, birds, bloods, brainsci, buildings, businesses, cancers, carbon, cardiogenetics, catalysts, cells, ceramics, challenges, chemengineering, chemistry, chemosensors, chemproc, children, civileng, cleantechnol, climate, clinpract, clockssleep, cmd, coatings, colloids, compounds, computation, computers, condensedmatter, conservation, constrmater, cosmetics, crops, cryptography, crystals, curroncol, cyber, dairy, data, dentistry, dermato, dermatopathology, designs, diabetology, diagnostics, digital, disabilities, diseases, diversity, dna, drones, dynamics, earth, ebj, ecologies, econometrics, economies, education, ejihpe, electricity, electrochem, electronicmat, electronics, encyclopedia, endocrines, energies, eng, engproc, entropy, environments, environsciproc, epidemiologia, epigenomes, fermentation, fibers, fire, fishes, fluids, foods, forecasting, forensicsci, forests, fractalfract, fuels, futureinternet, futuretransp, futurepharmacol, futurephys, galaxies, games, gases, gastroent, gastrointestdisord, gels, genealogy, genes, geographies, geohazards, geomatics, geosciences, geotechnics, geriatrics, hazardousmatters, healthcare, hearts, hemato, heritage, highthroughput, histories, horticulturae, humanities, hydrogen, hydrology, hygiene, idr, ijerph, ijfs, ijgi, ijms, ijns, ijtm, ijtpp, immuno, informatics, information, infrastructures, inorganics, insects, instruments, inventions, iot, j, jcdd, jcm, jcp, jcs, jdb, jfb, jfmk, jimaging, jintelligence, jlpea, jmmp, jmp, jmse, jne, jnt, jof, joitmc, jor, journalmedia, jox, jpm, jrfm, jsan, jtaer, jzbg, kidney, land, languages, laws, life, liquids, literature, livers, logistics, lubricants, machines, macromol, magnetism, magnetochemistry, make, marinedrugs, materials, materproc, mathematics, mca, measurements, medicina, medicines, medsci, membranes, metabolites, metals, metrology, micro, microarrays, microbiolres, micromachines, microorganisms, minerals, mining, modelling, molbank, molecules, mps, mti, nanoenergyadv, nanomanufacturing, nanomaterials, ncrna, network, neuroglia, neurolint, neurosci, nitrogen, notspecified, nri, nursrep, nutrients, obesities, oceans, ohbm, onco, oncopathology, optics, oral, organics, osteology, oxygen, parasites, parasitologia, particles, pathogens, pathophysiology, pediatrrep, pharmaceuticals, pharmaceutics, pharmacy, philosophies, photochem, photonics, physchem, physics, physiolsci, plants, plasma, pollutants, polymers, polysaccharides, proceedings, processes, prosthesis, proteomes, psych, psychiatryint, publications, quantumrep, quaternary, qubs, radiation, reactions, recycling, regeneration, religions, remotesensing, reports, reprodmed, resources, risks, robotics, safety, sci, scipharm, sensors, separations, sexes, signals, sinusitis, smartcities, sna, societies, socsci, soilsystems, solids, sports, standards, stats, stresses, surfaces, surgeries, suschem, sustainability, symmetry, systems, taxonomy, technologies, telecom, textiles, thermo, tourismhosp, toxics, toxins, transplantology, traumas, tropicalmed, universe, urbansci, uro, vaccines, vehicles, vetsci, vibration, viruses, vision, water, wevj, women, world 
+
+
+%---------
+% article
+%---------
+% The default type of manuscript is "article", but can be replaced by: 
+% abstract, addendum, article, book, bookreview, briefreport, casereport, comment, commentary, communication, conferenceproceedings, correction, conferencereport, entry, expressionofconcern, extendedabstract, datadescriptor, editorial, essay, erratum, hypothesis, interestingimage, obituary, opinion, projectreport, reply, retraction, review, perspective, protocol, shortnote, studyprotocol, systematicreview, supfile, technicalnote, viewpoint, guidelines, registeredreport, tutorial
+% supfile = supplementary materials
+
+%----------
+% submit
+%----------
+% The class option "submit" will be changed to "accept" by the Editorial Office when the paper is accepted. This will only make changes to the frontpage (e.g., the logo of the journal will get visible), the headings, and the copyright information. Also, line numbering will be removed. Journal info and pagination for accepted papers will also be assigned by the Editorial Office.
+
+%------------------
+% moreauthors
+%------------------
+% If there is only one author the class option oneauthor should be used. Otherwise use the class option moreauthors.
+
+%---------
+% pdftex
+%---------
+% The option pdftex is for use with pdfLaTeX. If eps figures are used, remove the option pdftex and use LaTeX and dvi2pdf.
+
+%=================================================================
+% MDPI internal commands
+\firstpage{1} 
+\makeatletter 
+\setcounter{page}{\@firstpage} 
+\makeatother
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{0}
+\pubyear{2021}
+\copyrightyear{2021}
+%\externaleditor{Academic Editor: Firstname Lastname} % For journal Automation, please change Academic Editor to "Communicated by"
+\datereceived{} 
+\dateaccepted{} 
+\datepublished{} 
+\hreflink{https://doi.org/} % If needed use \linebreak
+%------------------------------------------------------------------
+% The following line should be uncommented if the LaTeX file is uploaded to arXiv.org
+\pdfoutput=1
+
+\usepackage{graphicx}
+
+%=================================================================
+% Add packages and commands here. The following packages are loaded in our class file: fontenc, inputenc, calc, indentfirst, fancyhdr, graphicx, epstopdf, lastpage, ifthen, lineno, float, amsmath, setspace, enumitem, mathpazo, booktabs, titlesec, etoolbox, tabto, xcolor, soul, multirow, microtype, tikz, totcount, changepage, paracol, attrib, upgreek, cleveref, amsthm, hyphenat, natbib, hyperref, footmisc, url, geometry, newfloat, caption
+
+%=================================================================
+%% Please use the following mathematics environments: Theorem, Lemma, Corollary, Proposition, Characterization, Property, Problem, Example, ExamplesandDefinitions, Hypothesis, Remark, Definition, Notation, Assumption
+%% For proofs, please use the proof environment (the amsthm package is loaded by the MDPI class).
+
+%=================================================================
+% Full title of the paper (Capitalized)
+\Title{Stochastic Properties of EIP-1559 Basefees}
+
+% MDPI internal command: Title for citation in the left column
+\TitleCitation{Stochastic Properties of EIP-1559 Basefees}
+
+% Author Orchid ID: enter ID or remove command
+\newcommand{\orcidauthorA}{0000-0000-0000-000X} % Add \orcidA{} behind the author's name
+
+% Authors, for the paper (add full first names)
+\Author{Ian C. Moore $^{1,\dagger,}$* \orcidA{} and Jagdeep Sidhu $^{2,\dagger}$}
+
+% MDPI internal command: Authors, for metadata in PDF
+\AuthorNames{Ian C. Moore and Jagdeep Sidhu}
+
+% MDPI internal command: Authors, for citation in the left column
+\AuthorCitation{Moore, I.C.; Sidhu, S.}
+
+% Affiliations / Addresses (Add [1] after \address if there is only one affiliation.)
+\address{%
+$^{1}$ \quad Affiliation 1; imoore@syscoin.org\\
+$^{2}$ \quad Affiliation 2; jsidhu@blockchainfoundry.co}
+
+% Contact information of the corresponding author
+\corres{Correspondence: ic3moore@gmail.com}
+
+% Current address and/or shared authorship
+\firstnote{Current address: 2300 Yonge Street, Suite 1600, Toronto, ON  M4P 1E4} 
+
+% Abstract (Do not insert blank lines, i.e. \\) 
+\abstract{EIP-1559 is a new proposed pricing mechanism for the Ethereum protocol developed to mitigate short-term volatility in demand for transactions. To properly understand this as a stochastic process, it is necessary to develop the mathematical foundations to understand under what conditions the base fee gas price outcomes behave as a stationary process, and when it does not. We believe understanding these mathematical fundamentals is critical to engineering a well-designed system.}
+
+% Keywords
+\keyword{(EIP-1559; Base Fees ; Stochastic Processes; Stationarity)} 
+
+% The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
+%\PACS{J0101}
+%\MSC{}
+%\JEL{}
+
+%\datasetlicense{license under which the data set is made available (CC0, CC-BY, CC-BY-SA, CC-BY-NC, etc.)}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\setcounter{section}{-1} %% Remove this when starting to work on the template.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+
+The current Ethereum pricing mechanism employs the price auction model where high-value use cases are prioritized over lower ones. The problem with this approach is that as Ethereum has grown more popular, users have difficulty estimating optimal gas fees. In 2018, EIP-1559 was  proposed by Ethereum Founder, Vitalik Buterin, as a major change to Ethereum's transaction fee mechanism, and introduces two different types of fees, which is the base fee and inclusion fee \cite{But19,Rou20}. The idea is to have the base fee relatively stable while the inclusion fee serves as an additional tip offered to compensate miners. This mechanism allows for the base fee to be adjusted after every block in accordance to demand. Hence, when demand for gas is higher than the target gas price, the block size is adjusted upwards, and when demand for gas is lower than the target gas, the block size is adjusted downwards. Blocks are allowed to grow as large as double the target block size.
+
+In this study, we investigate the stochastic properties of EIP-1559 base fees. As the main motivation behind EIP-1559 is to address the volatility and uncertainty associated with gas fees, we look at the mathematical conditions that this mechanism must have to achieve stationarity. We open up this discussion in Section \ref{section:eip_1559} where we go over the EIP-1559 pricing mechanism. Using simulated gas demands, we analyse the stationary properties in Section \ref{section:analyze_stationarity}. In Section \ref{section:gas_demand} we simulate  gas demands.  In Section \ref{section:gas_fees} we analyse stochastic properties of gas fee simulations.  Finally, we close off with our conclusions in Section \ref{section:conclusion}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{EIP-1559 Pricing Mechanism}
+\label{section:eip_1559}
+
+The basic premise of the new EIP-1559 proposal begins with setting the base fee which increases when the network capacity exceeds the target per-block gas usage, and decreases when the capacity is below the target. The calculation of the updated basefee, $b_{k+1}$ at the $k+1^{th}$ block, is as follows:
+
+\begin{equation}
+b_{k+1} = b_{k}f_{k}
+\label{eq:eip1559} 
+\end{equation}
+
+\begin{equation}
+f_{k} = 1 + \frac{\delta_{k}}{c}
+\label{eq:fk} 
+\end{equation}
+where $\delta_{k} = demand_{k} - Target~Gas~Fee$ and $c = Target ~*~ Base~Fee~Max~Change$; for the purpose of this study, we applied the setup from Table 1, and assumed $\delta_{k}$ to be a normal stationary process. However before we do that, we run the \textit{abm1559} simulator \cite{Mon21} to show that this is the case, under the assumption that new users are Poisson distributed.
+
+\begin{specialtable}[H] 
+\caption{EIP-1559 constants}
+\begin{tabular}{ ll } 
+\toprule
+ Constant & Value \\
+\midrule
+Target Gas Fee & 12,500,000 \\
+Base Fee Max Change & 50 \\
+Initial Basefee & 10,000,000,000\\
+\bottomrule
+\end{tabular}
+\end{specialtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Analyse Stationarity}
+\label{section:analyze_stationarity}
+
+\textbf{Definition:} A time series $\{x_{t}\}$ is said to be strictly stationary if random vectors $(x_{t_{1}} , ... , x_{t_{n}} )^T $ and $(x_{t_{1}+\tau} , ... , x_{t_{n}+\tau} )^T$ have the same joint distribution for all $\{t \in \mathbb{N}^{0}\}$ and $n,\tau \in \mathbb{N}^{+}$. This is defined as:
+\begin{equation}
+(x_{t_{1}} , ... , x_{t_{n}})^T \stackrel{d}{=} (x_{t_{1}+\tau} , ... , x_{t_{n}+\tau} )^T,
+\label{eq:ar1} 
+\end{equation}
+where $\stackrel{d}{=}$ means equivalence in distribution.
+
+\subsection{Augmented Dickey Fuller Test}
+\label{section:adf}
+
+Given the following higher-order autoregressive processes:
+
+\begin{equation}
+\Delta y_{t} = \alpha y_{t-1} + \theta_{1} \Delta y_{t-1}  + ... + \theta_{p} \Delta y_{t-p} + \epsilon_{t},
+\label{eq:ar1} 
+\end{equation}
+the Augmented Dickey Fuller (ADF) test checks the existence of a unit root $\alpha = 1$ (ie, H0: $\alpha = 1$) where the null hypothesis is non-stationary. The unit root in (\ref{eq:ar1}) is characteristic of a time series that makes it non-stationary.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Gas Demand Simulations}
+\label{section:gas_demand}
+
+To simulate gas demand $\delta_{k}$ in (\ref{eq:fk}) we use the \textit{abm1559}  simulator \cite{Mon21} where the following assumptions were made: (a) users are Poisson distributed; and (b) every TX consumes 21,000 Gas. For our analysis, we are interested in simulating a year's worth of gas costs, which is infeasible as running the full Ethereum chain simulator consumes a lot of overhead.
+
+Hence, we used the simulator to generate a sample, which was analysed using Exploratory Data Analysis (EDA) techniques, as shown in Figure \ref{fig:eda}. As we can see, the gas demand is behaving as a normal random sample. 
+
+\begin{figure}
+\centering
+\includegraphics[width=12 cm]{gas.eps}
+\caption{Simulations of; (top) gas demands using random samples from a normal distribution; and (bottom) gas costs using (\ref{eq:eip1559}). As we can see, the gas cost simulations (bottom) are behaving like a random walk process} 
+\label{fig:gas}
+\end{figure} 
+
+\begin{figure}
+\centering
+\includegraphics[width=12 cm]{gaussian_analysis.eps}
+\caption{Testing normality of gas demands (top image of Fig. \ref{fig:gas}) using; (left) histogram with normal distribution fit of demands; and (right) Normal Q-Q plot indicates sample and theoretical quantiles match} 
+\label{fig:eda}
+\end{figure} 
+
+We also applied the ADF test to the simulated gas demands, shown in top image of Figure \ref{fig:gas}, and found it to be statistically significant (ie, p-val = 2.33e-29). Hence, rejecting HO, which indicate simulated gas demands to be stationary. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Analyse Gas Fees}
+\label{section:gas_fees}
+
+In Section \ref{section:gas_demand} we simulated gas demand  $\delta_{k}$ in (\ref{eq:fk}) and found them to be stationary and normally distributed with $\mu$ = 1.36e7, and variance $\sigma^2$ = 5.51e5. To simulate gas prices using EIP-1559 we used these parameter estimates to model a year's worth of gas demands and fed it through the system described in (\ref{eq:eip1559}) and (\ref{eq:fk}). These simulations can be seen in Figure \ref{fig:basefee_simulations}.
+
+\begin{figure}
+\centering
+\includegraphics[width=12 cm]{basefee_simulations.eps}
+\caption{Gas cost simulations using EIP-1559; we can visual see the non-stationary behaviour in price over time, which is indicative of a random walk.}  
+\label{fig:basefee_simulations}
+\end{figure} 
+
+We tested gas demands for stationarity. In Table \ref{fig:basefee_simulations} we fail to reject to H0 for all tests indicating insufficient evidence to conclude that the effect of stationarity exists in the gas fee simulations. 
+ 
+\begin{specialtable}[H] 
+\centering
+\begin{tabular}{llll} 
+\toprule
+ Simulation & ADF Statistic & p-value & Outcome \\
+\midrule
+1 & -1.506 & 0.531 & not stationary \\
+2 & -1.260 & 0.647 & not stationary \\
+3 & -2.170 & 0.217 & not stationary \\
+4 & -2.432 & 0.133 & not stationary \\
+5 & -1.844 & 0.359 & not stationary \\
+6 & -1.323 & 0.618 & not stationary \\
+7 & -1.645 & 0.459 & not stationary \\
+8 & -1.662 & 0.451 & not stationary \\
+9 & -1.124 & 0.705 & not stationary \\
+10 & -1.930 & 0.318 & not stationary \\
+\bottomrule
+\end{tabular}
+\caption{ADF test on basefee simulations from Figure \ref{fig:basefee_simulations} to test null hypothesis (H0) that a unit root is present; when unit root is present, then sample is considered to be non-stationary. As we can see, we fail to reject H0 for all tests indicating insufficient evidence to conclude that the effect of stationarity exists.}
+\label{table:pow_vs_pos}
+\end{specialtable}
+
+\subsection{Problem Statement}
+\label{section:problem_statement}
+For sake of comparison, let's look at the stationarity for a standard first-order auto-regressive process  (ie, AR(1)) defined as:
+
+\begin{equation}
+x_{t} = \mu + \alpha (x_{t-1} -\mu) + \epsilon_{t-1} ~~~~~~~~ \epsilon_{t} \sim IID~N(0,\sigma^2)
+\label{eq:ar1} 
+\end{equation}
+The above process is stationary when $|\alpha|$<1, hence has a single root 1/$\alpha$ outside the unit circle. The asymptotic stationary distribution can be shown to be:
+\begin{equation}
+x_{\infty} \sim N(\mu,\frac{\sigma^2}{1-\alpha^2}),
+\label{eq:x_infinity} 
+\end{equation}
+when $\sigma$>0. Considering the (state space like) simularities to the AR(1) process to the system of the system of (\ref{eq:eip1559}) and (\ref{eq:fk}); the question is what are the constraints (if any) that time varying process $\delta_{t}$ must meet to ensure stationary outcomes for the basefees.
+
+\subsection{Random Coefficient Autoregressive Models}
+\label{section:rca}
+
+Considering the problem statement in the previous section, we look to another relative to the AR(1) process, namely the Random Coefficient Autoregressive of order 1, or RCA(1) process. The RCA(1) is similar to the AR(1) process in the sense that the parameter $\alpha$ is allowed to vary with time. This is quite similar to the EIP-1559 system of (\ref{eq:eip1559}) and (\ref{eq:fk}). The RCA(1) model is given by:
+
+\begin{equation}
+x_{t} = \alpha + \beta_{t}x_{t-1} + \epsilon_{t},
+\label{eq:rca1}
+\end{equation}
+where ${\epsilon_{t}}$ is an independent sequence of random variables with 0 mean and variance $\sigma^2 > 0$; ${\beta_{t}}$ is an independent sequence of random variables with mean $\mu_{\beta}$ and variance $\sigma_{\beta}^2$ of the random coefficient $\beta_{t}$, and variance $\sigma^2$ of the error $\epsilon_{t}$. Given (3) and (4) it is obvious that when $\sigma_{\beta}^2 = 0$, the RCA(1) in (5) becomes a AR series, and becomes a random walk when $\mu_{\beta} = 1$ and $\sigma_{\beta}^2 = 0$, hence non-stationary. 
+
+EIP-1559 (1) fits into the framework of a Random Coefficient Autoregressive (RCA) model when $\epsilon$ is negligibly small. This is good news, as it allows us to apply the body of work on RCA processes to this problem. The next question is; under what conditions does an RCA(1) process exhibit stationary behaviour. If we know this, then we can apply this understanding to the EIP-1559 mechanism. To help with our understanding regarding this, we apply Wang's Theorem \cite{Wan03}; see Figure \ref{fig:strict_stationarity}.
+
+\begin{Theorem}
+Consider RCA(1) model (5) with ${\beta_{k},\epsilon_{k}}$, which is identically normally distributed.  Then the sufficient condition for the existence of a strictly stationary and ergodic solution is that:
+
+\begin{equation}
+\ln(\sigma_{\beta}^2) < \varsigma + \ln(2) - 2 \int_{0}^{1}\frac{1 - \exp[-\lambda(1-w^2)]}{1-w^2}dw,
+\label{eq:thm} 
+\end{equation}
+where $\varsigma$ $\approx$ 0.57721, denotes Euler’s constant and $\lambda$ = $\mu_{\beta}^2$/ $2\sigma_{\beta}^2$
+\end{Theorem}
+
+\begin{proof}[Proof of Theorem 1]
+See Theorem 2 in \cite{Wan03}.
+\end{proof}
+
+\begin{figure}
+\centering
+\includegraphics[width = 12 cm]{strict_stationarity.eps}
+\caption{Region of strict stationarity and ergodicity for RCA(1) determined via (\ref{eq:thm}). The annotated red dot represents where our setup (Table 1) is in relation to the region where an RCA(1) process behaves as a strictly stationary process. Based on this, we can see that our setup was non-stationary.} 
+\label{fig:strict_stationarity}
+\end{figure}  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Discussion}
+\label{section:discussion}
+
+In Section \ref{section:gas_fees}, we analysed  the stationarity of our simulated output using the EIP-1559 system described in (\ref{eq:eip1559}) and (\ref{eq:fk}). We studied its stochastic behaviour by applying the theory behind RCA processes and  also by applying the ADF test on each of our simulations. 
+
+We made a strong assumption of $\delta_{k}$ being normal and strictly stationary which is a direct fallout of assuming users pay 21,000 gas per transaction and are Poisson distributed, as per \textit{abm1559} simulator. In a real-world setting, we see this as being one of the most rudimentary of all scenarios, where Ethereum transactions are experiencing a state of non-congestion and the expectation of usage is constant. Hence, we call this the \textit{base case assumption} and see this as a first-step to mathematically understanding this system, when investigating as a stochastic process. 
+
+A more realistic setting could involve modelling $\delta_{k}$ as a linear system to include other non-stationary terms such as trend, seasonality and other forms of idiosyncratic volatility to capture a collection of scenarios that may be modelled after the real-world. A good strategy could begin with the simple framework described here, then successively include various structural components much like is done when working with the Linear Gaussian Model described in \cite{Dur12}. Once determined, batch simulations can be run to act as stress tests to study how this system would behave under various conditions. We see this as necessary when designing a robust system to help capture various edge cases prior to deployment,  so that the number of updates and patches are minimized prior to release. However, this more challenging level of analysis involving various non-stationary assumptions for $\delta_{k}$, is the subject of future work. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusion}
+\label{section:conclusion}
+
+The purpose of this study was to understand under what conditions the EIP-1559 pricing mechanism would behave as a stationary process. We believe this as a critical first step to understanding the constraints to engineering a well-designed system. Given the enormity of the Ethereum project, understanding these fundamentals are needed for setting up well-designed simulation experiments.
+
+It was determined that under the parameter setting used in this study, that the outcomes behaved as a random walk, which is a non-stationary process. The RCA(1) was used as the mathematical framework to help understand this, as we can go to the literature to help guide our understanding of this kind of process. This conclusion was based on a series of simulations which we tested using the ADF, and Wang's Theorem indicating the region of stationarity for an RCA(1) process. 
+
+Ideally, we would like EIP-1559 to behave as a stationary process under the base case assumption of $\delta_{k}$ being normal and strictly stationary. Hence, more investigation is required to understand the setup that is necessary to achieve these conditions before proper simulation studies are implemented.
+
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\authorcontributions{``Conceptualization, I.M. and J.S.; methodology, I.M.; software, I.M..; validation, I.M. and J.S.; formal analysis, I.M.; investigation, I.M.; resources, J.S.; data curation, I.M.; writing---original draft preparation, I.M.; writing---review and editing, I.M. and J.S.; visualization, I.M.; supervision, I.M.; project administration, J.S. ; funding acquisition, J.S. All authors have read and agreed to the published version of the manuscript.''}
+
+\funding{This research received no external funding}
+
+\institutionalreview{Not applicable}
+
+\informedconsent{Not applicable}
+
+\conflictsofinterest{The authors declare no conflict of interest} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{paracol}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\reftitle{References}
+
+%=====================================
+% References, variant B: internal bibliography
+%=====================================
+\begin{thebibliography}{999}
+% Reference 1
+\bibitem[Buterin(2019)]{But19}
+Buterin, V. Blockchain Resource Pricing, Apr 2019. Accessed on: May 2021. [Online]. Available: https://github.com/ethereum/research/blob/master/papers/pricing/ethpricing.pdf
+% Reference 2
+\bibitem[Roughgarden(2020)]{Rou20}
+Roughgarden, T. Transaction Fee Mechanism Design for the Ethereum Blockchain: An Economic Analysis of EIP-1559, Dec 2020. Accessed on: Apr 2021. [Online]. Available: https://arxiv.org/abs/2012.00854
+% Reference 3
+\bibitem[Monnot(2021)]{Mon21}
+Monnot, B. Agent-based Simulation Environment for EIP-1559, Apr 2019. Accessed on: Apr 2021. [Online]. Available: hhttps://github.com/barnabemonnot/abm1559
+% Reference 4
+\bibitem[Trapani(2019)]{Tra19}
+Trapani, L. Testing for Strict Stationarity in a Random Coefficient Autoregressive Model, Jan 2019. Accessed on: Apr 2021. [Online]. Available: https://arxiv.org/abs/1901.01077
+% Reference 5
+\bibitem[Chatfield(1989)]{Cha89}
+Chatfield, C. \textit{The Analysis of Time Series: An Introduction}, 4th ed.; Chapman and Hall: New York, US, 1989.
+% Reference 6
+\bibitem[Nicholls(1982)]{Nic82}
+Nicholls, D.; Quinn, D. \textit{Random Coefficient Autoregressive Models: An Introduction};  Springer-Verlag: Berlin, Germany, 1982.
+
+\bibitem[Durbin(2012)]{Dur12}
+Durbin, J.; Koopman, S. \textit{Time Series Analysis by State Space Methods}, 2nd ed.;  Oxford University Press, Oxford, England, 2012.
+
+% Reference 7
+\bibitem[Wang(2003)]{Wan03}
+Wang, D. Coefficient Autoregressive Models. PhD Dissertation, North Carolina State University, North Carolina, 2003.
+\end{thebibliography}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% for journal Sci
+%\reviewreports{\\
+%Reviewer 1 comments and authors’ response\\
+%Reviewer 2 comments and authors’ response\\
+%Reviewer 3 comments and authors’ response
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+
