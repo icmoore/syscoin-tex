@@ -1,0 +1,82 @@
+\documentclass{article}
+
+\usepackage{arxiv}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{lipsum}		% Can be removed after putting your text content
+\usepackage{graphicx}
+\usepackage{doi}
+
+
+
+\title{Carbon Renaissance Proposed Design}
+
+\author{ \href{https://orcid.org/0000-0000-0000-0000}{\includegraphics[scale=0.06]{orcid.pdf}\hspace{1mm}Ian C. Moore, PhD}\\
+	Syscoin Researcher\\
+	\texttt{imoore@syscoin.org} \\
+	\And
+	\href{https://orcid.org/0000-0000-0000-0000}{\includegraphics[scale=0.06]{orcid.pdf}\hspace{1mm}Jagdeep Sidhu, MSc} \\
+	Syscoin Core Developer\\
+	Blockchain Foundry Inc.\\
+	\texttt{jsidhu@blockchainfoundry.co} \\
+}
+
+\renewcommand{\shorttitle}{EIP-1559 Basefees}
+
+\hypersetup{
+pdftitle={Stochastic Properties of EIP-1559 Basefees},
+pdfsubject={q-bio.NC, q-bio.QM},
+pdfauthor={Ian C. Moore, Jagdeep Sidhu},
+pdfkeywords={EIP 1559, Base Fees, Stochastic Processes, Stationarity},
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+EIP-1559 is a new proposed pricing mechanism for the Ethereum protocol developed to mitigate short-term volatility in demand for transactions. To properly understand this as a stochastic process, it is necessary to develop the mathematical foundations to understand under what conditions the base fee gas price outcomes behave as a stationary process, and when it does not. We believe understanding these mathematical fundamentals is critical to engineering a well-designed system.
+\end{abstract}
+
+\keywords{EIP 1559  \and Base Fees  \and Stochastic Processes  \and Stationarity}
+
+\section{Introduction}
+xxx
+
+
+
+
+\section{Conclusion}
+\label{section:conclusion}
+
+xxx
+
+\begin{thebibliography}{1}
+
+\bibitem{But19} V. Buterin,  \textit{Blockchain Resource Pricing}, Apr 2019. Accessed on: May 2021. [Online]. Available: https://github.com/ethereum/research/blob/master/papers/pricing/ethpricing.pdf
+
+\bibitem{Rou20} T. Roughgarden, \textit{Transaction Fee Mechanism Design for the Ethereum Blockchain: An Economic Analysis of EIP-1559}, Dec 2020. Accessed on: Apr 2021. [Online]. Available: https://arxiv.org/abs/2012.00854
+
+\bibitem{Mon21} B. Monnot, \textit{Agent-based Simulation Environment for EIP 1559}, Accessed on: Apr 2021.  [Online]. Available:  https://github.com/barnabemonnot/abm1559
+
+\bibitem{Rou20} L. Trapani, \textit{Testing for Strict Stationarity in a Random Coefficient Autoregressive Model}, Jan 2019. Accessed on: Apr 2021. [Online]. Available: https://arxiv.org/abs/1901.01077
+
+\bibitem{Cha89} C. Chatfield, \textit{The Analysis of Time Series: An Introduction. 4th Edition}, Chapman and Hall, New York, 1989
+
+\bibitem{Nic82} D. Nicholls and B. Quinn , \textit{Random Coefficient Autoregressive Models: An Introduction}, Springer-Verlag, 1982
+
+\bibitem{Wan03} D. Wang, Frequentist and Bayesian Analysis of Random Coefficient Autoregressive Models, North Carolina State University PhD Dissertation, 2003
+
+
+
+\end{thebibliography}
+
+
+
+\end{document}
