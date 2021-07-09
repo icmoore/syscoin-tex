@@ -1,5 +1,6 @@
 \documentclass{article}
 
+\usepackage{multirow}
 \usepackage{arxiv}
 
 \usepackage[utf8]{inputenc} % allow utf-8 input
@@ -49,7 +50,38 @@ EIP-1559 is a new proposed pricing mechanism for the Ethereum protocol developed
 \section{Introduction}
 xxx
 
+\section{Token Model}
+\label{section:token_model}
 
+\begin{figure}
+\centering
+\includegraphics[width=4in]{state_diagram.png}
+\caption{xxx} 
+\label{fig:eda}
+\end{figure} 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c c|c|c|c| } 
+\hline
+ & \multicolumn{4}{ c |}{ Next State } \\
+ &  & Green & NFT & Burned \\
+\hline
+\multirow{ 3}{*}{Current State} & Green & $P(X_{n+1} = g | X_{n} = g )$ & $P(X_{n+1} = r | X_{n} = g )$ & $P(X_{n+1} = b | X_{n} = g )$ \\
+& NFT & $P(X_{n+1} = g | X_{n} = r )$ & $P(X_{n+1} = r | X_{n} = r )$ & $P(X_{n+1} = b | X_{n} = r )$ \\
+& Burned & $P(X_{n+1} = g | X_{n} = b )$ & $P(X_{n+1} = r | X_{n} = b )$ & $P(X_{n+1} = b | X_{n} = b )$ \\
+\hline
+\end{tabular}
+\caption{Comparing PoW to PoS consensus mechanism; plus sign (+) indicates vulnerability; see \cite{Bit15}. As shown, PoW system has the least number of vulnerabilities}
+\label{table:pow_vs_pos}
+\end{table}
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{token_supply_sims.png}
+\caption{xxx} 
+\label{fig:eda}
+\end{figure} 
 
 
 \section{Conclusion}
