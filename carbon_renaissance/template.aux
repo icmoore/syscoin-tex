@@ -16,23 +16,53 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\citation{Bit15}
-\citation{Bit15}
-\bibcite{But19}{1}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces xxx}}{1}{figure.1}\protected@file@percent }
-\newlabel{fig:eda}{{1}{1}{xxx}{figure.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2}Token Model}{1}{section.2}\protected@file@percent }
-\newlabel{section:token_model}{{2}{1}{Token Model}{section.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Conclusion}{1}{section.3}\protected@file@percent }
-\newlabel{section:conclusion}{{3}{1}{Conclusion}{section.3}{}}
-\bibcite{Rou20}{2}
-\bibcite{Mon21}{3}
-\bibcite{Rou20}{4}
-\bibcite{Cha89}{5}
-\bibcite{Nic82}{6}
-\bibcite{Wan03}{7}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Comparing PoW to PoS consensus mechanism; plus sign (+) indicates vulnerability; see \cite  {Bit15}. As shown, PoW system has the least number of vulnerabilities}}{2}{table.1}\protected@file@percent }
-\newlabel{table:pow_vs_pos}{{1}{2}{Comparing PoW to PoS consensus mechanism; plus sign (+) indicates vulnerability; see \cite {Bit15}. As shown, PoW system has the least number of vulnerabilities}{table.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces xxx}}{2}{figure.2}\protected@file@percent }
-\newlabel{fig:eda}{{2}{2}{xxx}{figure.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Executive Summary}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Mission and Vision}{1}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Problem Statement and Strategy}{1}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.1}NFT Tokens}{2}{subsubsection.1.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Solutions: Social Credit}{2}{subsection.1.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces State transition diagram for Markov chain token model illustrating the probability of a token transitioning between states (ie, Green, NFT, and Burned) over a unit of time.}}{3}{figure.1}\protected@file@percent }
+\newlabel{fig:state_diagram}{{1}{3}{State transition diagram for Markov chain token model illustrating the probability of a token transitioning between states (ie, Green, NFT, and Burned) over a unit of time}{figure.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Proposed Design}{3}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Overview}{3}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Benefits}{4}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Revenue Models}{4}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Tokenized Company Shares}{4}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Tokenomics}{5}{subsection.2.5}\protected@file@percent }
+\newlabel{section:token_model}{{2.5}{5}{Tokenomics}{subsection.2.5}{}}
+\newlabel{e:transition_matrix}{{1}{5}{Tokenomics}{equation.2.1}{}}
+\newlabel{e:pow_vs_pos}{{2}{5}{Tokenomics}{equation.2.2}{}}
+\newlabel{e:token_supply}{{3}{5}{Tokenomics}{equation.2.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.1}Token Model Simulation}{5}{subsubsection.2.5.1}\protected@file@percent }
+\newlabel{e:token_supply_simulation}{{6}{5}{Token Model Simulation}{equation.2.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces xxx}}{6}{figure.2}\protected@file@percent }
+\newlabel{fig:issue_redeem_green}{{2}{6}{xxx}{figure.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces xxx}}{6}{figure.3}\protected@file@percent }
+\newlabel{fig:red_green}{{3}{6}{xxx}{figure.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces xxx}}{6}{figure.4}\protected@file@percent }
+\newlabel{fig:green_black}{{4}{6}{xxx}{figure.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Markov Chain Token model simulations assuming stationary transition probabilities applying the Beta distribution at each time point at a monthly frequency. The expectations of the transition probability matrix was selected based on business targets. The simulation begins with 100M Green tokens, the bulk of which will transition to red and black tokens over time and eventually reach a state of equilibrium. When the system reaches steady-state the expected supply of each of the three tokens will remain constant.}}{7}{figure.5}\protected@file@percent }
+\newlabel{fig:token_supply_sims}{{5}{7}{Markov Chain Token model simulations assuming stationary transition probabilities applying the Beta distribution at each time point at a monthly frequency. The expectations of the transition probability matrix was selected based on business targets. The simulation begins with 100M Green tokens, the bulk of which will transition to red and black tokens over time and eventually reach a state of equilibrium. When the system reaches steady-state the expected supply of each of the three tokens will remain constant}{figure.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Newly minted green and burned tokens resulting from simulation model (\ref  {e:token_supply_simulation}). Simulations of: (TOP) number of daily minted tokens; and (BOTTOM) cumulative number of daily minted tokens.}}{7}{figure.6}\protected@file@percent }
+\newlabel{fig:burned_minted}{{6}{7}{Newly minted green and burned tokens resulting from simulation model (\ref {e:token_supply_simulation}). Simulations of: (TOP) number of daily minted tokens; and (BOTTOM) cumulative number of daily minted tokens}{figure.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Transition state matrix for token model detailing probabilities of transitioning from current to next state over a unit of time. The token states are denoted by Green $\rightarrow $ g, NFT $\rightarrow $ r, and Burred $\rightarrow $ b.}}{8}{table.1}\protected@file@percent }
+\newlabel{table:pow_vs_pos}{{1}{8}{Transition state matrix for token model detailing probabilities of transitioning from current to next state over a unit of time. The token states are denoted by Green $\rightarrow $ g, NFT $\rightarrow $ r, and Burred $\rightarrow $ b}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Simulated number of sequestered tons of Carbon assuming transition matrix (\ref  {e:transition_matrix}) as business targets}}{8}{table.2}\protected@file@percent }
+\newlabel{table:pow_vs_pos}{{2}{8}{Simulated number of sequestered tons of Carbon assuming transition matrix (\ref {e:transition_matrix}) as business targets}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Revenue Model}{8}{subsection.2.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.7}Token Architecture}{8}{subsection.2.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Open Issues}{8}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Jurisdictional Requirements}{8}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Competition}{9}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Speculative vs Stable}{9}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}Speculative}{9}{subsubsection.3.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Summary}{9}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Research To-dos}{9}{section.5}\protected@file@percent }
+\bibcite{Ali21}{1}
+\bibcite{SolarCoin}{2}
+\bibcite{AirCarbon}{3}
+\bibcite{Carbonx}{4}
+\bibcite{Nori}{5}
+\bibcite{Microsoft21}{6}
+\bibcite{Pan19}{7}
+\newlabel{section:summary}{{5}{10}{Research To-dos}{section.5}{}}

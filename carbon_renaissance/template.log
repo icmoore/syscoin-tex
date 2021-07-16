@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  8 JUL 2021 17:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  15 JUL 2021 22:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -73,10 +73,68 @@ s
 \@abovecaptionskip=\skip60
 \@belowcaptionskip=\skip61
 )
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip62
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen144
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen145
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count179
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count180
+\leftroot@=\count181
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count182
+\DOTSCASE@=\count183
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen146
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count184
+\c@MaxMatrixCols=\count185
+\dotsspace@=\muskip16
+\c@parentequation=\count186
+\dspbrk@lvl=\count187
+\tag@help=\toks18
+\row@=\count188
+\column@=\count189
+\maxfields@=\count190
+\andhelp@=\toks19
+\eqnshift@=\dimen147
+\alignsep@=\dimen148
+\tagshift@=\dimen149
+\tagwidth@=\dimen150
+\totwidth@=\dimen151
+\lineht@=\dimen152
+\@envbody=\toks20
+\multlinegap=\skip63
+\multlinetaggap=\skip64
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks17
-\inpenc@posthook=\toks18
+\inpenc@prehook=\toks22
+\inpenc@posthook=\toks23
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
@@ -124,9 +182,9 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
-\@linkdim=\dimen144
-\Hy@linkcounter=\count179
-\Hy@pagecounter=\count180
+\@linkdim=\dimen153
+\Hy@linkcounter=\count191
+\Hy@pagecounter=\count192
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
@@ -139,7 +197,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count181
+\Hy@SavedSpaceFactor=\count193
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -147,14 +205,14 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count182
+\c@Hy@tempcnt=\count194
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip16
+\Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen145
+\XeTeXLinkMargin=\dimen154
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -163,9 +221,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count183
-\Field@Width=\dimen146
-\Fld@charsize=\dimen147
+\Fld@menulength=\count195
+\Field@Width=\dimen155
+\Fld@charsize=\dimen156
 Package hyperref Info: Hyper figures OFF on input line 6430.
 Package hyperref Info: Link nesting OFF on input line 6435.
 Package hyperref Info: Hyper index ON on input line 6438.
@@ -179,9 +237,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/usr/local/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count184
-\c@Item=\count185
-\c@Hfootnote=\count186
+\Hy@abspage=\count196
+\c@Item=\count197
+\c@Hfootnote=\count198
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -192,8 +250,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
 )
-\Fld@listcount=\count187
-\c@bookmark@seq@number=\count188
+\Fld@listcount=\count199
+\c@bookmark@seq@number=\count266
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -204,30 +262,29 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip62
+\Hy@SectionHShift=\skip65
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen148
-\lightrulewidth=\dimen149
-\cmidrulewidth=\dimen150
-\belowrulesep=\dimen151
-\belowbottomsep=\dimen152
-\aboverulesep=\dimen153
-\abovetopsep=\dimen154
-\cmidrulesep=\dimen155
-\cmidrulekern=\dimen156
-\defaultaddspace=\dimen157
-\@cmidla=\count189
-\@cmidlb=\count190
-\@aboverulesep=\dimen158
-\@belowrulesep=\dimen159
-\@thisruleclass=\count191
-\@lastruleclass=\count192
-\@thisrulewidth=\dimen160
+\heavyrulewidth=\dimen157
+\lightrulewidth=\dimen158
+\cmidrulewidth=\dimen159
+\belowrulesep=\dimen160
+\belowbottomsep=\dimen161
+\aboverulesep=\dimen162
+\abovetopsep=\dimen163
+\cmidrulesep=\dimen164
+\cmidrulekern=\dimen165
+\defaultaddspace=\dimen166
+\@cmidla=\count267
+\@cmidlb=\count268
+\@aboverulesep=\dimen167
+\@belowrulesep=\dimen168
+\@thisruleclass=\count269
+\@lastruleclass=\count270
+\@thisrulewidth=\dimen169
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks19
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
@@ -236,28 +293,28 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
-\L@UnitsRaiseDisplaystyle=\skip63
-\L@UnitsRaiseTextstyle=\skip64
-\L@UnitsRaiseScriptstyle=\skip65
+\L@UnitsRaiseDisplaystyle=\skip66
+\L@UnitsRaiseTextstyle=\skip67
+\L@UnitsRaiseScriptstyle=\skip68
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ))
 (/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
-\MT@toks=\toks20
-\MT@count=\count193
+\MT@toks=\toks24
+\MT@count=\count271
 LaTeX Info: Redefining \textls on input line 790.
-\MT@outer@kern=\dimen161
+\MT@outer@kern=\dimen170
 LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
-\MT@listname@count=\count194
+\MT@listname@count=\count272
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2019/11/18 v2.7d Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 914.
 LaTeX Info: Redefining \lslig on input line 914.
-\MT@outer@space=\skip66
+\MT@outer@space=\skip69
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
@@ -270,14 +327,14 @@ Package: expl3 2020-03-06 L3 programming layer (loader)
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count195
-\l__pdf_internal_box=\box45
+\l__kernel_color_stack_int=\count273
+\l__pdf_internal_box=\box47
 )) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2020-03-06 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count196
-\g__xparse_grabber_int=\count197
-\l__xparse_m_args_int=\count198
-\l__xparse_v_nesting_int=\count199
+\l__xparse_current_arg_int=\count274
+\g__xparse_grabber_int=\count275
+\l__xparse_m_args_int=\count276
+\l__xparse_v_nesting_int=\count277
 )
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 
@@ -301,37 +358,34 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen162
-\Gin@req@width=\dimen163
+\Gin@req@height=\dimen171
+\Gin@req@width=\dimen172
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/doi/doi.sty
 Package: doi 2018/09/09 handle doi numbers
 ) (./template.aux
 
-LaTeX Warning: Label `Rou20' multiply defined.
-
-
-LaTeX Warning: Label `fig:eda' multiply defined.
+LaTeX Warning: Label `table:pow_vs_pos' multiply defined.
 
 )
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -399,8 +453,8 @@ LaTeX Font Info:    ... okay on input line 41.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box46
-Package hyperref Info: Link coloring OFF on input line 41.
+\AtBeginShipoutBox=\box48
+Package hyperref Info: Link coloring OFF on input line 52.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -411,23 +465,23 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count266
+\c@section@level=\count278
 )
-LaTeX Info: Redefining \ref on input line 41.
-LaTeX Info: Redefining \pageref on input line 41.
-LaTeX Info: Redefining \nameref on input line 41.
+LaTeX Info: Redefining \ref on input line 52.
+LaTeX Info: Redefining \pageref on input line 52.
+LaTeX Info: Redefining \nameref on input line 52.
  (./template.out) (./template.out)
 \@outlinefile=\write3
 \openout3 = `template.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 41.
+LaTeX Info: Redefining \microtypecontext on input line 52.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 41.
+LaTeX Info: Redefining \showhyphens on input line 52.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -437,17 +491,17 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count267
-\scratchdimen=\dimen164
-\scratchbox=\box47
-\nofMPsegments=\count268
-\nofMParguments=\count269
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count270
-\MPscratchDim=\dimen165
-\MPnumerator=\count271
-\makeMPintoPDFobject=\count272
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count279
+\scratchdimen=\dimen173
+\scratchbox=\box49
+\nofMPsegments=\count280
+\nofMParguments=\count281
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count282
+\MPscratchDim=\dimen174
+\MPnumerator=\count283
+\makeMPintoPDFobject=\count284
+\everyMPtoPDFconversion=\toks26
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -461,7 +515,7 @@ e
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -470,7 +524,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -479,13 +533,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<orcid.pdf, id=17, 102.3825pt x 102.3825pt>
+<orcid.pdf, id=89, 102.3825pt x 102.3825pt>
 File: orcid.pdf Graphic file (type pdf)
 <use orcid.pdf>
-Package pdftex.def Info: orcid.pdf  used on input line 43.
+Package pdftex.def Info: orcid.pdf  used on input line 54.
 (pdftex.def)             Requested size: 6.14267pt x 6.14267pt.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
-3.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
+4.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
@@ -496,53 +550,84 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 File: orcid.pdf Graphic file (type pdf)
 <use orcid.pdf>
-Package pdftex.def Info: orcid.pdf  used on input line 43.
+Package pdftex.def Info: orcid.pdf  used on input line 54.
 (pdftex.def)             Requested size: 6.14267pt x 6.14267pt.
-<state_diagram.png, id=19, 656.4525pt x 360.34625pt>
+File: orcid.pdf Graphic file (type pdf)
+<use orcid.pdf>
+Package pdftex.def Info: orcid.pdf  used on input line 54.
+(pdftex.def)             Requested size: 6.14267pt x 6.14267pt.
+File: orcid.pdf Graphic file (type pdf)
+<use orcid.pdf>
+Package pdftex.def Info: orcid.pdf  used on input line 54.
+(pdftex.def)             Requested size: 6.14267pt x 6.14267pt.
+ [1
+
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./orcid
+.pdf>] [2]
+<state_diagram.png, id=115, 656.4525pt x 360.34625pt>
 File: state_diagram.png Graphic file (type png)
 <use state_diagram.png>
-Package pdftex.def Info: state_diagram.png  used on input line 58.
+Package pdftex.def Info: state_diagram.png  used on input line 147.
 (pdftex.def)             Requested size: 289.07999pt x 158.6848pt.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
+55.
 
+(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Citation `Bit15' on page 1 undefined on input line 75.
+ [3 <./state_diagram.png>] [4]
 
-
-LaTeX Warning: Citation `Bit15' on page 1 undefined on input line 75.
+LaTeX Warning: Reference `fig:gas' on page 5 undefined on input line 263.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<token_supply_sims.png, id=21, 867.24pt x 722.7pt>
+<issue_redeem_green.png, id=128, 726.715pt x 465.74pt>
+File: issue_redeem_green.png Graphic file (type png)
+<use issue_redeem_green.png>
+Package pdftex.def Info: issue_redeem_green.png  used on input line 314.
+(pdftex.def)             Requested size: 289.07999pt x 185.26935pt.
+<red_green.png, id=129, 738.76pt x 455.7025pt>
+File: red_green.png Graphic file (type png)
+<use red_green.png>
+Package pdftex.def Info: red_green.png  used on input line 321.
+(pdftex.def)             Requested size: 289.07999pt x 178.31429pt.
+<green_black.png, id=130, 712.6625pt x 435.6275pt>
+File: green_black.png Graphic file (type png)
+<use green_black.png>
+Package pdftex.def Info: green_black.png  used on input line 328.
+(pdftex.def)             Requested size: 289.07999pt x 176.7007pt.
+<token_supply_sims.png, id=131, 867.24pt x 722.7pt>
 File: token_supply_sims.png Graphic file (type png)
 <use token_supply_sims.png>
-Package pdftex.def Info: token_supply_sims.png  used on input line 81.
+Package pdftex.def Info: token_supply_sims.png  used on input line 337.
 (pdftex.def)             Requested size: 289.07999pt x 240.89572pt.
+<burned_minted.png, id=132, 867.24pt x 578.16pt>
+File: burned_minted.png Graphic file (type png)
+<use burned_minted.png>
+Package pdftex.def Info: burned_minted.png  used on input line 344.
+(pdftex.def)             Requested size: 289.07999pt x 192.71658pt.
 
-Underfull \hbox (badness 2020) in paragraph at lines 94--95
-[]\T1/ptm/m/n/10 (+20) V. Bu-terin, \T1/ptm/m/it/10 (+20) Blockchain Re-source 
-Pric-ing\T1/ptm/m/n/10 (+20) , Apr 2019. Ac-cessed on: May 2021. [On-line]. Ava
-il-able:
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5] [6 <./issue_redeem_green.png> <./red_green.png> <./green_black.png>]
+[7 <./token_supply_sims.png> <./burned_minted.png>] [8] [9]
+Underfull \hbox (badness 3240) in paragraph at lines 507--508
+[]\T1/ptm/m/it/10 (+20) Microsoft Bought Car-bon Cred-its Through Cos-mos Block
+chain\T1/ptm/m/n/10 (+20) , Ac-cessed on: Jul 2021. [On-line].
  []
 
-[1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
- <./state_diagram.png> <./orcid.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 114.
- [2pdfTeX warning (ext4): destination with the same identifier (name{cite.Rou20
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.114 \end{document}
-                     <./token_supply_sims.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 515.
+[10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 515.
  (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 515.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 515.
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: A1AFDEEA72C03E152F42D0AF342AA62E;138.
+(rerunfilecheck)             Checksum: C58E3C91031C57D2A48C9D89F05CCA4B;1335.
 
 
 LaTeX Warning: There were undefined references.
@@ -550,32 +635,35 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 114.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 515.
  ) 
 Here is how much of TeX's memory you used:
- 8588 strings out of 480608
- 143181 string characters out of 5903631
- 602510 words of memory out of 5000000
- 24222 multiletter control sequences out of 15000+600000
- 577435 words of font info for 90 fonts, out of 8000000 for 9000
+ 9407 strings out of 480608
+ 152836 string characters out of 5903631
+ 621571 words of memory out of 5000000
+ 24877 multiletter control sequences out of 15000+600000
+ 583061 words of font info for 160 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,12n,49p,496b,433s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,49p,1383b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
 exlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
-ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texliv
-e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
-2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020
-/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2020/t
-exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/
-fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
-e1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/tim
-es/utmri8a.pfb>
-Output written on template.pdf (2 pages, 293795 bytes).
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texl
+ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texli
+ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texliv
+e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/20
+20/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2020/texmf
+-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/font
+s/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/u
+rw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on template.pdf (10 pages, 646590 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
- 25640 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 253 PDF objects out of 1000 (max. 8388607)
+ 210 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 27852 words of extra memory for PDF output out of 29859 (max. 10000000)
 
