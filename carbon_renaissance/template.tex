@@ -15,6 +15,7 @@
 \usepackage{lipsum}		% Can be removed after putting your text content
 \usepackage{graphicx}
 \usepackage{doi}
+\usepackage{gensymb}
 
 
 
@@ -53,27 +54,23 @@ pdfkeywords={Carbon Sequestration, Carbon Offsetting, Social Credit, NFT},
 \maketitle
 
 \begin{abstract}
-We propose a Carbon offset design that creates natural economic incentives through business
-processes tied to NFT tokens issued from enterprise to participating companies which connect
-to Carbon offsetting processes. Upon audits of work, a fungible token (Green token) is issued to
-companies involved based on a pre-negotiated ratio of tokens dispersed based on the quality of
-the work and quality of the credit-worthiness of the companies involved. Green token supply
-represents a collection and aggregation of all pollution prevention value that has happened thus
-far.
+
+We introduce a Carbon offsetting program through the tokenization of work done (ie, via Green tokens) on a blockchain. We utilize Non-fungible tokens as IOU contracts to facilitate engagement between stakeholders interested in pollution prevention and those performing the Carbon offsetting. To incentivize adoption, a Black reward token is offered for those who utilize the system, which can be staked to acquire  Green tokens introduced to the supply
+
 \end{abstract}
 
 \keywords{Carbon Sequestration \and Carbon Offsetting  \and Social Credit \and NFT}
 
 \section{Executive Summary}
+
 \subsection{Mission and Vision}
 
 We propose a Carbon offset design that creates natural economic incentives through business
 processes tied to NFT tokens issued from enterprise to participating companies which connect
 to Carbon offsetting processes. Upon audits of work, a fungible token (Green token) is issued to
 companies involved based on a pre-negotiated ratio of tokens dispersed based on the quality of
-the work and quality of the credit-worthiness of the companies involved. Green token supply
-represents a collection and aggregation of all pollution prevention value that has happened thus
-far.
+the work and quality of the credit-worthiness of the companies involved. Green tokens
+represents auditing work done for carbon offsetting.
 
 We extrapolate that this will not only allow for incentives to modify spending behaviour of
 consumers but also produce an easy vehicle for companies to adhere to Carbon quotas by
@@ -82,23 +79,65 @@ assert that perhaps this essentially facilitates a Universal Basic Income model 
 to leverage blockchain for fair exchange of carbon tokens in auditable and censorship
 resistance mediums.
 
-\subsection{Problem Statement and Strategy}
+\subsection{Background}
 
-There are a number of benefits that this Carbon offset model can provide. 
+Climate change is a defined as global warming stemming from greenhouse gas emissions resulting from major shifts in weather patterns. As a result, this issue has recently garnered much attention on the world stage. According to \cite{Glo21}, it is estimated that human activity accounts for 1.0 $^\circ$C of global warming above pre-industrial levels, and estimate that global warming is likely to reach 1.5$^\circ$C between 2030 and 2052. The Edgar time series set shows that since the beginning of the 21$^{st}$ \cite{EDGAR19}, fossil CO$_{2}$ emissions have increased compared to the three previous decades; see Fig \ref{fig:edgars_co2_emissions}. It also shows that, as of 2018, global fossil CO$_{2}$ emissions have reached a total of \# Gt CO$_{2}$. However, according to \cite{Liu20}, emissions have fallen \~ 1,900 MtCO$_{2}$ from 2019 to 2020 mainly in the aviation and shipping sector due to the slowing of economic activity stemming from the 2020 pandemic. To combat this, carbon offsetting is the process by which many players are handling this issue. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=5in]{edgars_co2_emissions.png}
+\caption{Global Greenhouse Gas (GHG) emission per sector; see \cite{EDGAR19}. We can see the Power industry account for a large portion of global emissions, which provides insight as to where the largest opportunity for carbon reduction is found.} 
+\label{fig:edgars_co2_emissions}
+\end{figure} 
+
+Carbon offsetting is done via sequestration which is the process where atmospheric carbon dioxide is captured and stored for the purpose of abating climate change. After carbon is captured, it goes mainly one of two ways \cite{CBC19}: (a) permanently stored underground; or (b) converted into a carbon-containing product. Currently, the market for corporate procurement for carbon removal is very undeveloped. However, there are currently a number of organizations that have made strides to address this issue; which include Amazon, Apple, BCG, Delta, Facebook, Google, Mars, Shopify, Stripe, Swiss Re, United and Velux \cite{Mic21}. Of the aforementioned, Shopify, Stripe and Microsoft are making carbon removal a core focus in their business. More specifically Microsoft has a plan to remove carbon that they emit, and came to key conclusions. Namely, they can not meet current carbon negative commitments and estimate that they need to remove 6 Million Tons of carbon in 2030. Hence, an RFP was sent out in 2020 and 79 applications were received and 15 organizations were selected representing 1.3 Million metric tons of carbon removal. Their project selection process was based on several criteria: (a) Global carbon removal potential; (b) Affordability targeting \$15 per mtCO$_{2}$; (c) climate equity; (d) technology innovation; and (e) other sustainability dimensions. 
+
+In 2019, the National Academies of Sciences, Engineering, and Medicine investigated the likely market size for Negative Emissions Technologies (NET) \cite{NET19}, where they discuss how much Carbon uptake is needed to meet Paris Agreement goals. They estimate that \~ 10 GtCO$_{2}$ / yr is required globally by midcentury and \~ 20 GtCO$_{2}$ / yr globally by centuries end to meet these goals. Six key sequestration technologies are identified which are: (a) Coastal carbon blue; (b) Terrestrial carbon removal and sequestration; (c) Bioenergy with carbon capture and sequestration (BECCS); (d) Geological sequestration; (e) Direct air capture;  and (f) Carbon mineralization. Of these aforementioned technologies, the former four are ready for large-scale deployment; see Table \ref{table:net} for estimated potential rates across US and the Globe.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{ |c|c|c|c| } 
+\hline
+ Negative Emission Technology & Estimated Cost (\$/tCo$_{2}$) &\multicolumn{2}{ c |}{ Upper Bound for Safe Potential rate of CO$_{2}$ (GtCO$_{2}$/y)}  \\
+  & & US & Global \\
+\hline
+Coastal blue carbon & L & 0.02 & 0.13  \\
+Afforestation / Reforestation & L & 0.15 & 1  \\
+Forest management & L & 0.1 & 1.5  \\
+Agricultural soils & L to M & 0.25 & 3  \\
+BECCS & M & 0.5 & 3.5-5.2  \\
+Direct air capture & H & 0 & 0  \\
+Carbon mineralization & M to H & unknown & unknown \\
+Total &  & 1.02 & 9.13-10.83 \\
+\hline
+\end{tabular}
+\caption{Estimated potential rates of CO$_{2}$ removal for various Negative Emission Technologies (measured in GtCO$_{2}$ / y) for the US and across the globe; see \cite{NET19}, we see BECCS offer the best opportunity.}
+\label{table:net}
+\end{table}
+
+\subsection{Problem Statement and Strategy}
 
 Token supply creation requires work, which include Carbon sequestration followed by an auditing process working with various stakeholders that are involved in the process. This minting of new token supply can be compared to Bitcoin's Proof-of-Work (PoW) process popularily described an \emph{mining}, which is a completely automated and trustless process. However, the CR token minting process is governed by a regulatory work-flow process working through various stakeholders. Many of the market dynamics that we know which drive price discovery via the Bitcoin miner network can be utilized to understand the market dynamics with this project. Such dynamics include: (a) geographical advantages characteristic to the local environment; (b) regulations particular to certain jurisdictions that allow for more cost effective sequestration; and (c) technological advancements.
 
 The token supply can work in both a inflation/deflation environment depending on the system setup. Whereas other projects are either strictly deflationary or inflationary. For instance, we show via simulation that it is possible to have the supply reach a state of equilibrium where supply is constant.  This economic feature can make it attractive for large corporate organizations and governments to work with.
 
-The CR process works in a cycle where the token can move to one of three different states over time (ie, statetokens). These states are: (a) Green; (b) Red; and (c) Black, and are usecase dependant. Green tokens (otherwise refereed as base tokens) are purchased on exchanges and represent the potential of what can be utilized for Carbon sequestration and are required to enter into the auditing process. Red tokens are non-tradable Non-Fungible Tokens (NFT) and represent unique IOU contracts between stakeholders who have intentions to sequester Carbon and those who offer the Carbon sequestration service; see Fig. \ref{fig:issue_redeem_green}. NFTs are unique digital assets that are stored on a blockchain and cannot be exchanged for one another, hence non-fungible. Finally, Black tokens represent sequestered Carbon. For instance, 100 Black tokens represent proof of 100 units of sequestered Carbon. These tokens are created when either Red or Green tokens are burned. Black tokens can be either held privately or can be publicly purchased on exchanges. Holding these tokens over time have the advantage of generating Green tokens which can generate additional revenue by being sold and recycled back into the system. We will be expounding further into the dynamics and utility behind these statetokens throughout this whitepaper.
+The CR process works in a cycle where the token can move to one of three different states over time (ie, statetokens). These states are: (a) Green; (b) Red; and (c) Black, and are usecase dependant. Green tokens (otherwise refereed as base tokens) are purchased on exchanges and represent the potential of what can be utilized for Carbon sequestration and are required to enter into the auditing process. Red tokens are non-tradable Non-Fungible Tokens (NFT) and represent unique IOU contracts between stakeholders who have intentions to sequester Carbon and those who offer the Carbon sequestration service; see Fig. \ref{fig:red_to_green}. NFTs are unique digital assets that are stored on a blockchain and cannot be exchanged for one another, hence non-fungible. Finally, Black tokens represent sequestered Carbon. For instance, 100 Black tokens represent proof of 100 units of sequestered Carbon. These tokens are created when either Red or Green tokens are burned. Black tokens can be either held privately or can be publicly purchased on exchanges. Holding these tokens over time have the advantage of generating Green tokens which can generate additional revenue by being sold and recycled back into the system. We will be expounding further into the dynamics and utility behind these statetokens throughout this whitepaper.
  
 \subsubsection{NFT Tokens}
+\label{section:nft_tokens}
 
-NFT tokens represent legal contracts and partnership with NFT issuances. They have the ability to white and black list those issuances to control the conversions and have the authority to issue monetary redemptions of those NFT’s if they are breaking contract rules. Bundling these NFTs into these promissory contracts helps decouple concerns between pollution prevention companies and users of the credits. This idea allows stakeholders to seamlessly enable onboarding of partners without upfront costs. This disruptive technology allows for the seamless onboarding of partners without upfront costs and regulatory pressures that would otherwise slow down the workflow process using traditional means. Not requiring upfront investment and low barrier of entry for existing pollution prevention services will greatly increase the chance of network effects. Participants can target businesses by offering them the NFT and liquidity on the open market in exchange for their services. 
+NFT tokens represent legal contracts and partnership with NFT issuances, see Fig \ref{fig:red_green_issue}. They have the ability to white and black list those issuances to control the conversions and have the authority to issue monetary redemptions of those NFT’s if they are breaking contract rules. Bundling these NFTs into these promissory contracts helps decouple concerns between pollution prevention companies and users of the credits. This idea allows stakeholders to seamlessly enable onboarding of partners without upfront costs. This disruptive technology allows for the seamless onboarding of partners without upfront costs and regulatory pressures that would otherwise slow down the workflow process using traditional means. Not requiring upfront investment and low barrier of entry for existing pollution prevention services will greatly increase the chance of network effects. Participants can target businesses by offering them the NFT and liquidity on the open market in exchange for their services. 
 
 There is no responsiveness required on behave of pollution prevention service providers as they can do as little or as much work as they want. Hence, no queues needed and no required customer acquisitions. All provided services are compensated (ie, as long as it's audited and verified) and are motivated to be efficient by decoupling prevention of pollution from customer demand.
 
 NFT tokens are minted upon the creation of each new contract which is a promissory note to sequester a pre-determined amount of Carbon. Once the obligation of NFT contract is fulfilled, Green tokens are issued in exchange for service provided which in turn increase Green token supply. However, overall Green supply increases when NFTs are minted, but not tradable Green tokens themselves. Hence, by definition total Green supply includes the aggregation of tradable Green tokens and non-tradable NFTs. Pre-negotiated rates (even in non-token values if needed) are possible between stakeholders and CR for NFT to Green coin exchange. This will give the ability to offload speculative concerns on the sequestration services part to CR. These speculative concerns can also be abated via raising capital to offer liquidity on the markets (ie, to buy Green tokens) when needed as well.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=4in]{red_green_issue.png}
+\caption{Flow of NFT issuances and redemptions between pollution prevention stakeholders and sequesterors, which is all managed by CR and marks stakeholder relationship when burning Red tokens in exchange for Green} 
+\label{fig:red_green_issue}
+\end{figure} 
 
 \subsection{Solutions: Social Credit}
 
@@ -120,7 +159,7 @@ reduce taxes to those that inhibit green spending habits such as buying local an
 over their carbon footprint quota per person. A positive reinforcement model will always be
 unanimously acceptable to both the wealthy and the poor. Creating a positive feedback loop
 to incentivize people to adapt their spending habits is a great way to find new efficiencies
-and invent “greener” technologies due to the higher demand for such technologies and
+and invent \emph{greener} technologies due to the higher demand for such technologies and
 services. The work here will be to assign carbon scores to goods and services and also
 assign spending against carbon ratings of goods and services. People that have a negative
 carbon footprint can be paid in Green tokens creating a powerful driver to reduce pollution
@@ -133,106 +172,71 @@ actual production and verified work.
 
 In the CR process, tokens move through a series of three states in an acyclic fashion. When the token is in a particular state, it can otherwise be defined as a Statetoken, and (as discussed in the previous section) can take on the characteristics of one of three forms (ie, Green, Red, and Black). Upon initial issuance, 100M Green tokens are issued by CR, and over time this supply is set to decrease, while the supply of Red and Black tokens rise from zero to some steady-state equilibrium over time. Fig \ref{fig:state_diagram} illustrates the state transition diagram where the nodes represent tokens and the arcs represent the direction and probability of a token transitioning to another over a unit of time.
 
-Once the initial issuance of 100M Green tokens has occurred, then pollution prevention stakeholders are issued one NFT asset for each partner, with assigned value based on their risk profile. The assigned value of the NFTs is denominated in Green basecoins in the form of debt. This assigned value denominated Green tokens is based on the risk profile of the NFT holder (ie, akin to credit worthiness) which can be dynamically adjusted. These  pollution prevention stakeholders can assign tokens to various sequesters competing in various markets for those contract NFTs. Those NFTs, which have a unique value based on jurisdiction or cost, are sent to these sequesters and audited based on circumstances with those issuers and partner stakeholders.
-
-The NFT stays in the possession of the sequesterer until the work has been performed and verified via the auditing process. Once complete, the NFT is burned and exchanged for both Black tokens as proof of sequestration and Green tokens which can be sold for revenue. Further to that, Black tokens can be held by sequesterer which when held over time slowly burn back into Green tokens. Each NFT may have its
-own rules, regulations and even sequestering costs factoring in base asset to NFT cost ratios.
-
-Burning Green directly tokens can also result Black tokens directly by entering into the auditing process to apply credit to the pollution prevention stakeholder. Once Green tokens are burned the holder will receive Black tokens. Holding these tokens is advantageous over extended periods of time, which will result in the minting or new Green tokens. For instance, if the state transition probability from Black to Green is 0.01, then 100 Black tokens will produce 1 Green token and 99 Black tokens when the state transitions across one unit of time.
-
-Green token supply increases as sequestering happens and decreases as companies accumulate and burn Green tokens as proof that they have credits. If the rate of seqestration is exceeds the rate of credit consumed by companies then the Green token supply is inflationary and is deflationary if sequestering doesn’t adequately satisfy the burning of credits to black. For the deflationaray case, sequestering services will naturally start to fill the demand and organically find equilibrium.
-
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[width=4in]{state_diagram.png}
 \caption{State transition diagram for Markov chain token model illustrating the probability of a token transitioning between states (ie, Green, NFT, and Burned) over a unit of time.} 
 \label{fig:state_diagram}
 \end{figure} 
 
-\subsection{Benefits}
+Once the initial issuance of 100M Green tokens has occurred, then pollution prevention stakeholders are issued one NFT asset for each partner, with assigned value based on their risk profile. The assigned value of the NFTs is denominated in Green basecoins in the form of debt. This assigned value denominated Green tokens is based on the risk profile of the NFT holder (ie, akin to credit worthiness) which can be dynamically adjusted. These  pollution prevention stakeholders can assign tokens to various sequesters competing in various markets for those contract NFTs. Those NFTs, which have a unique value based on jurisdiction or cost, are sent to these sequesters and audited based on circumstances with those issuers and partner stakeholders.
 
-\begin{itemize}
-\item Creates an analogous “miner” network, localized to jurisdiction or to company. Tap into
-the work of others by infiltrating different geographic and types of sequestering for you,
-even letting others race to acquire better sequestering techniques (like how bitcoin
-miners raced to create asics). The more sequestoring they can do the more profits they
-achieve.
-\item Creates an inflation/deflation environment for Basecoin for a healthy market which is
-realistic. One way deflationary markets suffer from utility concerns (first come first serve
-won’t work here) and inflationary markets have little demand. One monetary instrument
-for the entire system that simplifies economics and buy-in from government/enterprises
-\item Allows separation of concerns between sequestoring companies and users of the
-credits
-\item Enabled onboarding of partners without upfront costs. Allows you as a company
-facilitating the NFT to Basecoin conversions to issue new NFT’s strategically to
-countries, businesses etc without requiring an upfront investment from those companies
-(you can hold a deposit externally to avoid deadbeat companies that do not follow
-through). Not requiring upfront investment and low barrier of entry for existing
-sequestorers will greatly increase the chance of network effects. You can target any
-business doing something like this and offer them the NFT and liquidity on the open
-market in exchange for their services
-\item Legal contracts and partnership with NFT issuances with ability to white/black list those
-issuances to control the conversions and thus monetary redemptions of those NFT’s if
-they are breaking contract rules
-\item There is no responsiveness required on the sequestorers part. They can do as little or as
-much work as they want, no queues needed and no required customer acquisitions. For
-any work they do they should be paid (as long as it's audited and verified). The more
-efficient their work becomes the more they can sequester and thus more they get paid.
-The act of decoupling sequestoring from customer demand, makes the whole system
-more efficient and greener
-\item Works with any type of sequestoring model, each NFT can be uniquely identified in
-terms of costs of base coin to NFT valuations based on the capture models storage vs
-utility vs other
-\item In order to mint new NFT’s, Basecoin supply increases but not the available supply (as
-the NFT is not tradeable only the base coin is and thus the market cap of the base coin rises on issuances. The available supply increases when an NFT is burned in exchange
-for Basecoin
-\item Pre-negotiated rates (even in non-token values if needed) are possible between
-partners/sequestorers and CR for NFT to Basecoin exchange. This will give ability to
-offload speculative concerns on the sequestorer's part to CR, however CR can also raise
-capital to offer liquidity on the markets as needed as well.
-\end{itemize}
+The NFT stays in the possession of the sequesterer until the work has been performed and verified via the auditing process, see Fig \ref{fig:red_to_green}. Once complete, the NFT is burned and exchanged for both Black tokens as proof of sequestration and Green tokens which can be sold for revenue. Further to that, Black tokens can be held by sequesterer which when held over time slowly burn back into Green tokens. Each NFT may have its
+own rules, regulations and even sequestering costs factoring in base asset to NFT cost ratios.
 
-\subsection{Revenue Models}
+\begin{figure}[h]
+\centering
+\includegraphics[width=4in]{red_to_green.png}
+\caption{ Process workflow illustrating how Green tokens are minted through the auditing of Red NFT contracts } 
+\label{fig:red_to_green}
+\end{figure} 
 
-\begin{itemize}
-\item Percentage of profits on the NFT to Basecoin conversions for recurring revenue as a
-platform as a service
-\item CR sequestoring and earning Basecoin. Hold or sell
-\item Value added services on top, softwares, wallets and other things some
-companies/partners may pay extra for.
-\end{itemize}
+Burning Green directly tokens can also result Black tokens directly by entering into the auditing process to apply credit to the pollution prevention stakeholder. Once Green tokens are burned the holder will receive Black tokens. Holding these tokens is advantageous over extended periods of time, which will result in the minting or new Green tokens. For instance, if the state transition probability from Black to Green is 0.01, then 100 Black tokens will produce 1 Green token and 99 Black tokens when the state transitions across one unit of time.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=4in]{green_to_black.png}
+\caption{ Process workflow illustrating how Green tokens are burned to mint Black tokens } 
+\label{fig:green_to_black}
+\end{figure} 
+
+Green token supply increases as sequestering happens and decreases as companies accumulate and burn Green tokens as proof that they have credits. If the rate of seqestration is exceeds the rate of credit consumed by companies then the Green token supply is inflationary and is deflationary if sequestering doesn’t adequately satisfy the burning of credits to black. For the deflationaray case, sequestering services will naturally start to fill the demand and organically find equilibrium.
+
+
+
+
 
 \subsection{Tokenized Company Shares}
 
-It was requested that we create a fungible token for the purpose of share allocations in a
-company represented as a token product on blockchain. Also these shares should not be
-transferable unless explicitly allowed by CR. We can enable this functionality on Syscoin
-through Notary services which will allow a case by case basis for transaction authorization
-between P2P transfers. See spec:
-https://github.com/syscoin/sips/blob/master/sip-0002.mediawiki
+It was requested that we create a fungible token for the purpose of share allocations in a company represented as a token product on blockchain. Also, these shares should not be transferable unless explicitly allowed by CR. We can enable this functionality on Syscoin through Notary services which will allow a case-by-case basis for transaction authorization between P2P transfers. Here are the following token specifications:
 
-We should define the Maximum supply and precision as well as token symbol.
-Token to sell to raise funds:
+Token to sell to raise funds
 \begin{itemize}
-\item Max supply: 100m
-\item Precision: 8
-\item Total raise: sell 10m upfront @ \$10
-\item Token symbol: GCX
+\item \textbf{Max supply}: 100m
+\item \textbf{Precision}: 8
+\item \textbf{Total raise}: sell 10m upfront @ \$10
+\item \textbf{Token symbol}: GCX
 \end{itemize}
 
 Token to issue as NFT for companies
 \begin{itemize}
-\item Max supply: MAX
-\item Precision: 8
-\item Token symbol: CX
+\item \textbf{Max supply}: MAX
+\item \textbf{Precision}: 8
+\item \textbf{Token symbol}: CX
+\end{itemize}
+
+Token received from burning GCX or CX
+\begin{itemize}
+\item \textbf{Max supply}: MAX
+\item \textbf{Precision}: 8
+\item \textbf{Token symbol}: BCX
 \end{itemize}
 
 Individual NFT:
 \begin{itemize}
-\item Precision: 8
-\item Max supply: MAX
+\item \textbf{Precision}: 8
+\item \textbf{Max supply}: MAX
 \end{itemize}
-
 
 \subsection{Tokenomics}
 \label{section:token_model}
@@ -260,7 +264,7 @@ P_{\mu} =
 \end{bmatrix}
 \label{e:transition_matrix}
 \end{equation}
-where the frequency is monthly, and the states are represented as green, NFT, burned respectively. In Fig \ref{fig:gas}, we represent this Markov process as a directed graph with edges labelled by the transition probabilities in (\ref{e:transition_matrix}).
+where the frequency is monthly, and the states are represented as green, NFT, burned respectively. In Fig \ref{fig:state_diagram}, we represent this Markov process as a directed graph with edges labelled by the transition probabilities in (\ref{e:transition_matrix}).
 
 Let's assume $\{X_{t}\}$ is a Markov chain with stochastic matrix $P$, and the distribution of $X_{t}$ to be $\psi_{t}$. Hence, if we let the initial distribution of $\psi_{0} = [1,0,0]$, the probability distribution of $X_{t}$ can be determined via:
 
@@ -292,7 +296,6 @@ where $P_{m,n,t}$ represents the an element of $\mathbf{P}_{t}$ at time $t$. The
 \label{e:token_supply_simulation}
 \end{equation}
 
-
 \begin{table}[h!]
 \centering
 \begin{tabular}{|c c|c|c|c| } 
@@ -306,29 +309,10 @@ where $P_{m,n,t}$ represents the an element of $\mathbf{P}_{t}$ at time $t$. The
 \hline
 \end{tabular}
 \caption{Transition state matrix for token model detailing probabilities of transitioning from current to next state over a unit of time. The token states are denoted by Green $\rightarrow$ g, NFT $\rightarrow$ r, and Burred $\rightarrow$ b.}
-\label{table:pow_vs_pos}
+\label{table:trans_state_matrix}
 \end{table}
 
-\begin{figure}
-\centering
-\includegraphics[width=4in]{issue_redeem_green.png}
-\caption{xxx} 
-\label{fig:issue_redeem_green}
-\end{figure} 
 
-\begin{figure}
-\centering
-\includegraphics[width=4in]{red_green.png}
-\caption{xxx} 
-\label{fig:red_green}
-\end{figure} 
-
-\begin{figure}
-\centering
-\includegraphics[width=4in]{green_black.png}
-\caption{xxx} 
-\label{fig:green_black}
-\end{figure} 
 
 
 
@@ -346,13 +330,23 @@ where $P_{m,n,t}$ represents the an element of $\mathbf{P}_{t}$ at time $t$. The
 \label{fig:burned_minted}
 \end{figure} 
 
+\begin{figure}
+\centering
+\includegraphics[width=4in]{burned_tokens.png}
+\caption{Plot of simulated number of sequestered tons of Carbon } 
+\label{fig:burned_tokens}
+\end{figure} 
+
 \subsection{Revenue Model}
+
+Both Green and Black tokens are fungible hence tradable on exchanges, but serve different ways to generate revenue. Green tokens are earned from sequestoring Carbon (through NFT to Green token conversions) which can be sold for profit. Black tokens are earned through burning NFT or Green tokens. These Black tokens can be held privately which burn slowly over time (at a pre-determined rate) producing Green tokens that can sold for profit or reintegrated into the system. Aside from the tokens themselves, value added services such as softwares, wallets that companies may pay services for.
+
 
 \begin{table}[h]
 \centering
 \begin{tabular}{ |c|c|c|c| } 
 \hline
- Year & median & lwr 5\% & upr 5\% \\
+ Year & median & lwr 5\% & upr 95\% \\
 \hline
 1 & 4,730,000 & 3,080,000 & 6,230,000 \\
 2 & 7,960,000 & 7,040,000 & 9,690,000 \\
@@ -365,128 +359,59 @@ where $P_{m,n,t}$ represents the an element of $\mathbf{P}_{t}$ at time $t$. The
 \label{table:pow_vs_pos}
 \end{table}
 
-\subsection{Token Architecture}
 
-\section{Open Issues}
 
-\subsection{Jurisdictional Requirements}
 
-\begin{itemize}
-\item What if companies need jurisdictional guarantees on sequestration to fulfill local
-government driven quota’s.
-\begin{itemize}
-\item Companies can buy directly from a local sequestration provider, and buy their
-NFT’s for a premium (to jump in front of a queue) and convert into Basecoin from
-CR (pay requisite small fees for doing so) and then burn tokens through standard
-means as discussed in the proposal. The deals would be directly with NFT
-partners and sequestration companies and so are localized based on company
-jurisdiction.
-\item Companies alternatively can buy directly from CR to jump ahead of the audit trail
-(aforementioned queue), which will put more demand on those jurisdictions to
-produce more sequestration. This would be an option if enough sequestration is
-available for example.
-\item The premiums paid for these higher demands are not factored into the Basecoin
-market unless the drivers of these markets push up price naturally as global
-aggregate prices go up based on these drivers if they are big enough.
-\end{itemize}
-\item There would be a timestamped sequestration audit trail that goes on the blockchain and
-accessible publicly (through hyperlink in the asset public data field). This would be a live
-document that would update with signatures of auditors registered with Digital Identities
-and timestamps of where/when they happened.
-\item If companies require localized sequestration in exchange for burning Basecoin then
-upon burn when the time stamped audit trail is updated to reflect “consumed”
-sequestrations CR can simply pick and choose which sequestration’s to qualify for that
-particular carbon credit application. Ie: if MSFT needs 100 tons American sequestration
-only, and we have 100 tons of American sequestration in the audit trail, we can choose those sequestrations and label them as consumed. Future American sequestration
-requests either need to pay the American sequestors or wait for more sequestrations to
-register from American sequestors. Under normal circumstances the audit trail can be
-consumed chronologically.
-\item It would be ideal to have this a global thing under l'accord de Paris so that there are no
-jurisdictional requirements because otherwise there is incentive to strike side-deals with
-companies directly, if the sequestration is fungible it makes for more clear and
-understandable usage of the system and a more stable supply/demand curve of Basecoin. It
-is almost like the Euro currency, where multiple countries each with their own policies use a
-single currency, it is not a total failure but better to have one policy that is applicable to avoid
-chances of corruption. However it may not be up to us, and so we can employ this strategy
-based on market research if required.
-\item The timestamped log will bring about transparency between consumed sequestrations, the
-actual registered audited sequestrations and allow one to audit that the supply of Basecoin’s
-accurately represents the audited sequestration amounts since 1 Basecoin can represent a
-certain amount of sequestration (per ton?). It will allow companies to know what is available
-for consumption should there be requirements around jurisdictional consumption.
-\end{itemize}
+\section{Management on Jurisdictional Level}
+
+From time to time, companies may need cooperation with local governments who have requirements to fulfill quotas for its jurisdiction, which can be managed using a number of strategies. First, companies can buy directly from a local sequestration provider, and buy their NFT’s for a premium (ie, move to front of queue) which can been converted to Green tokens from CR (ie, pay requisite small fees for doing so). Upon fulfilling the needs of the NFT contract, tokens are then burned as described in Section \ref{section:nft_tokens}. Contracts would be directly with NFT partners and sequestration companies, hence localized based on jurisdiction. Alternatively, companies can skip the auditing process and buy directly from CR via the aforementioned queue. Doing this puts more demand on those jurisdictions to produce more sequestration and would be an option if enough sequestration is available. Finally, premiums paid for these higher demands are not factored into the Green token market unless larger market players drive prices upwards as global aggregate prices go up.
+
+Evidence of the sequestration audit trail would need to be timestamped and recorded on the blockchain, which would be publicly accessible through hyperlink in the asset public data field. This would be a live document that would update with signatures of auditors registered with Digital Identities and along with any associated metadata. The timestamped log will bring about transparency between consumed sequestrations, the actual registered audited sequestrations and allow one to audit that the supply of Basecoin’s accurately represents the audited sequestration amounts since 1 Basecoin can represent a certain amount of Carbon sequestration tonnage. It will allow companies to know what is available for consumption should there be requirements around jurisdictional consumption.
+
+If companies require localized sequestration in exchange for burning Green tokens, then CR can select which sequestration’s to qualify for that particular carbon credit application. Upon completion, tokens are burned and the time stamped audit trail is updated to reflect \emph{consumed} sequestrations. For instance, say MSFT requires 100 tons of American sequestration, and we have 100 tons of American sequestration in the audit trail, we can then choose those sequestrations and label them as consumed. Future American sequestration requests either need to pay the American sequestors, or wait for more sequestrations to register from American sequestors. However, under normal circumstances, the audit trail can be processed sequentially.
+
+It would be ideal to manage such an effort at the global level (eg, under L'Accord de Paris) so that there are no jurisdictional requirements. Otherwise, the incentive would be to negotiate with companies directly; if the sequestration is fungible, the system can be more effectively managed through better stable supply and demand dynamics. For instance, this can be analogous to the Euro currency, where multiple countries, each with their own policies, utilize a single currency. This may be less ideal, but a having this managed under a single policy may help avoid chances of corruption. However, we may not have control over this, and so we can employ this strategy upon further investigation, if need be.
 
 \subsection{Competition}
 
-\subsection{Speculative vs Stable}
-
-Proposed design is a mix of speculative for companies requiring credits (Basecoin) and Stable
-(can set rates and offload speculative risks for companies dealing with sequestoring). While at
-the same time allowing for parallelization of sequestoring for faster more responsive supply side
-mechanics of Basecoin (carbon credits).
+\subsection{Sequestration Costs}
 
 \begin{itemize}
-\item 1 ton of carbon assigned amount of tokens (based on cost in \$)
-\item Start 1 for 1 but over time as tokens become burned the ratio will change, 1 ton of
-carbon will be less than 1 token
-\item This model adds speculation and thus enterprises may buy and hoard tokens to reduce
-their own costs over time and also for potential gains. The cost in \$ should remain
-consistent however as the ratio drops on how many tokens required for 1 ton of carbon
-emissions.
-\item Is deflationary only and so has a supply/demand equilibrium problem
+\item A Marginal Abatement Cost Curve (MAC curve or MACC) is a succinct and straightforward tool for presenting carbon emissions abatement options relative to a baseline (typically a business-as-usual pathway); \cite{Mck09}
+\item Fossil fuel power plants with carbon capture and storage cost an estimated $43 to $95 US per tonne, a 2018 study by Harvard and Yale researchers found; \cite{Gil18}
+\item 
 \end{itemize}
 
-\subsubsection{Speculative}
 
-\begin{itemize}
-\item 1:1 ratio constant
-\item Need to mint new tokens according to how many tons exist in the world, if amount being
-sequestered globally is > than new pollution then tokens become deflationary, otherwise
-it's inflationary
-\item Can pollution be determined through census information that is dependable enough?
-\item Over time the goal is for pollution to drop and thus supply to reduce. As the pollution
-drops the cost per carbon to cleanup reduces?
-\item So this removes speculation play on the token to make it friendly for enterprises to use
-and buy only as required (not have to purchase in advance due to speculation
-concerns).
-\item This model assumes all global carbon credits are modelled in the supply/demand market
-of the token. If global pollution is not modelled it is not 1:1 at scale.
-\end{itemize}
+\subsection{Carbon Exchange Rate: Speculative vs Stable}
 
+Regarding the Green token to Carbon exchange rate, we adopt a hybrid model. That is offering both a fixed and floating speculative rate to users of the system. This is done by allowing a floating speculative rate for companies requiring credits (ie, Green Tokens), while at the same time allowing for the setting of stable rates through the offloading of speculative risks for companies dealing with sequestering. Doing this allows for more responsive supply side mechanics of Green tokens (ie, carbon credits).
+
+Regarding the stable component we keep the ratio as a constant 1:1; that is one Green token for one one ton of sequestered Carbon. Doing this removes the need for governments and large enterprises to have to make speculative purchases, hence make the system more usable. The number of new minted tokens depends on the number of new tons of carbon that are being introduced into the atmosphere. If the amount of new Carbon being sequestered globally is greater than new pollution then Green tokens become deflationary, otherwise it's inflationary.
+
+Alternatively, regarding the speculative component, we begin the process with a 1:1 ratio, however the ratio changes as tokens are burned over time. Hence, making one ton of carbon to be less than one Green token. This model adds speculation enticing enterprises to purchase and remove tokens from the supply which reduce costs over time and also for potential gains. While the dollars cost value remains consistent, the number of tokens required for one ton of carbon emissions drops. Hence putting deflationary pressures on the supply.
 
 \section{Summary}
 
-Bitcoin miners themselves are under alot of pressure for polluting the environment to secure the
-Bitcoin network. They can use such a system which is actually using Bitcoin’s PoW indirectly to
-secure such a system but decreasing their carbon footprint. This may be something that miners
-would be interested in consuming driving adoption and awareness.
+In this whitepaper we propose a Carbon offset design program using blockchain Tokenization. The advantages to using such technology are: (a) minimizes red tape allowing for improved accessibility; (b) improves efficiency by allowing for direct peer-to-peer transactions eliminating third part involvement; (c) provides transparency and trust on an immutable public ledger database; (d) provides global access across various jurisdictions; and (e) drives new payment innovations that go beyond the limitations of current fiat money system. Our proposal is comprised of three tokens (Green, Red, and Black tokens); the action of transitioning from one token state to another is called burning. Green tokens are required to enter into the Carbon offsetting process directly and are awarded as work done via the auditing process. Next, NFT tokens serve as IOU contracts to sequester Carbon. Finally, Black tokens serve as proof of burn which can be staked to gain more Green tokens as incentives.  
 
-Creating a standards body to work with stakefish/f2pool and other miners to find a way to
-specify how carbon offsets can be applied to the industry effectively. How can “green”
-tokenization work with existing market initiatives related to NFT and maybe even FT tokens?
-
-Better understand AMM model pertaining to a more distributed system where sequestorers can
-be direct to market. Understand the need for differing markets based on quality metrics.
-
-Green purchase, burn to goto Red where there is a Queue in response to physical sequestoring
-and Black once sequestering happens and Red is burned. In this model there is a direct relation
-between purchase of green and sequestering. Is this a requirement? In the proposed design we
-establish a more frictionless system but do not assume that there is a direct relation between
-green Basecoin and sequestering (It is indirectly related through the network of sequestorers
-that get paid Basecoin to do work). A queue system inherently decreases efficiency
-exponentially to the number of parallel sequestorers as there needs to be coordination, and
-delays as well as mapping of which sequestering is for who adds complexity overall.
-
-
-\section{Research To-dos}
+\section{To-dos: Research, Analysis and Presentation}
 
 \begin{itemize}
+\item Some education background on the Carbon sequestration process (literature review)
+\item Carbon sequestration work/costs is akin to electricity costs and different jurisdictions will have different sequestration costs
 \item \$10 per token to 1 ton of Carbon: needs research to determine costs
 \item Carbon sequestration is subjective and no trust-less  as whole thing can be corrupted by few auditors
 \begin{itemize}
 \item need to think about concessions to be put in place to thwart these potential bad actors
 \end{itemize}
-\item Carbon sequestration work/costs is akin to electricity costs and different jurisdictions will have different sequestration costs
+\item Creating a standards body to work with stakefish/f2pool and other miners to find a way to
+specify how carbon offsets can be applied to the industry effectively
+\item Understand Automated Market Maker (AMM) model pertaining to a more distributed system where sequestorers can be direct to market
+\item Potential market avenues (ie, Bitcoin miners )
+\item Come up with plan for potential simulation or some other quantitative analysis around carbon exchange rate
+\item Re-work existing presentation
+\item Missing: software architecture of the token project
 \end{itemize}
 
 
@@ -496,17 +421,52 @@ delays as well as mapping of which sequestering is for who adds complexity overa
 
 \bibitem{Ali21} Ian Alison, \textit{Blockchain Coalition Launches Tradable Carbon Credit Token}, Accessed on: Jul 2021. [Online]. https://www.coindesk.com/blockchain-coalition-launches-tradable-carbon-credit-token
 
+\bibitem{Syscoin} \textit{Syscoin: Network-enforced Business Rulesets}, Accessed on: Jul 2021. [Online]. https://github.com/syscoin/sips/blob/master/sip-0002.mediawiki
+
 \bibitem{SolarCoin} \textit{SolarCoin is a cryptocurrency that incentivizes a solar-powered planet}, Accessed on: Jul 2021. [Online]. https://solarcoin.org/
+
 
 \bibitem{AirCarbon} \textit{A digital exchange focused on eliminating market friction in a carbon constrained economy.}, Accessed on: Jul 2021. [Online]. https://www.aircarbon.co/
 
-\bibitem{Carbonx} \textit{APersonal Carbon Trading Inc.}, Accessed on: Jul 2021. [Online]. hhttps://www.carbonx.ca/
+\bibitem{Carbonx} \textit{A Personal Carbon Trading Inc.}, Accessed on: Jul 2021. [Online]. hhttps://www.carbonx.ca/
 
 \bibitem{Nori} \textit{The Nori Carbon Removal Marketplace}, Accessed on: Jul 2021. [Online]. https://nori.com/
 
 \bibitem{Microsoft21} \textit{Microsoft Bought Carbon Credits Through Cosmos Blockchain}, Accessed on: Jul 2021. [Online]. https://thecoinshark.net/blockchain-news/microsoft-bought-carbon-credits-through-cosmos-blockchain
 
 \bibitem{Pan19} Y. Pan, X. Zhanga, Y. Wanga, J. Yan, S. Zhou, G. Li, J. Bao, \textit{Application of Blockchain in Carbon Trading}, \emph{Energy Procedia}., vol. 1588, no. 7, Feb. 2019.
+
+\bibitem{NET19} National Academies of Sciences, Engineering, and Medicine, \textit{Negative Emissions Technologies and Reliable Sequestration: A Research Agenda (2019)}, The National Academies Press, Washington, DC, 2019 
+
+\bibitem{Mic21}  \textit{Microsoft carbon removal: Lessons from an early corporate purchase}, Accessed on: Jul 2021. [Online]. https://www.microsoft.com/en-us/corporate-responsibility/sustainability/carbon-removal-program
+
+\bibitem{Glo21} \textit{Global Warming of 1.5 ºC}, Accessed on: Jul 2021. [Online]. https://www.ipcc.ch/sr15/
+
+\bibitem{DOE16} \textit{Carbon Capture, Utilization, and Storage: Climate Change, Economic Competitiveness, and Energy Security}, US Department of Energy, 2016, Accessed on: Jul 2021. [Online]. https://www.energy.gov/fe/downloads/doe-white-paper-carbon-capture-utilization-and-storage
+
+\bibitem{Cri20} M. Crippa, D. Guizzardi, M. Muntean, and E. Schaaf, \textit{Fossil CO2 emissions of all world countries - 2020 Report}, Publications Office of the European Union, Luxembourg, Sept 2020.
+
+\bibitem{Liu20} Z. Liu et al.,  \textit{Global energy review: CO2 emissions in 2020}, Dec 2021. Accessed on: Dec 2020 [Online]. Available: https://arxiv.org/abs/2012.00854
+
+\bibitem{CDCS05} \textit{Carbon Dioxide Capture and Storage}, Intergovernmental Panel on Climate Change, Cambridge University Press, 2005.
+
+\bibitem{EDGAR19} \textit{European Commission, Joint Research Centre (EC-JRC)/Netherlands Environmental Assessment Agency (PBL)}. Emissions Database for Global Atmospheric Research
+(EDGAR), release EDGAR v5.0 (1970 - 2015) of November 2019.
+
+\bibitem{Sch20} W. Schmelz, G. Hochman, K. Miller, \textit{Total cost of carbon capture and storage implemented at a regional scale: northeastern and midwestern United States}. In Interface Focus. 10 (5), p. 20190065, 2020
+
+\bibitem{Dav00} J. David, H. Herzog, \textit{The cost of carbon capture}, Paper presented at the Fifth International Conference on Greenhouse Gas Control Technologies (GHGT-5), Cairns, Australia, Aug 13–16, 2000.
+
+\bibitem{CBC19} E. Chung, \textit{Carbon capture: What you need to know about catching CO2 to fight climate change}, CBC Science, Sep 2019, Accessed on: Jul 2021. [Online]. https://www.cbc.ca/news/science/carbon-capture-faq-1.5250140
+
+\bibitem{Gil18} K. Gillingham and J. H. Stock \textit{The Cost of Reducing Greenhouse Gas Emissions}
+Journal of Economic Perspectives—Vol. 32, No. 4, Fall 2018, pp. 53–72
+
+\bibitem{Mck09} McKinsey \& Company, \textit{Impact of the Financial Crisis on Carbon Economics: Version 2.1 of the Global Greenhouse Gas Abatement Cost Curve}, 2009. 
+
+https://ember-climate.org/data/carbon-price-viewer/
+
+https://carbonpricingdashboard.worldbank.org/map_data
 
 \end{thebibliography}
 
