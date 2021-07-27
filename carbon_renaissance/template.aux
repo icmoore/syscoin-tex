@@ -16,6 +16,9 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{Kal96}
+\citation{Ten00}
+\citation{Hij05}
 \citation{Glo21}
 \citation{EDGAR19}
 \citation{Liu20}
@@ -29,14 +32,14 @@
 \citation{NET19}
 \citation{NET19}
 \citation{NET19}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Global Greenhouse Gas (GHG) emission per sector; see \cite  {EDGAR19}. We can see the Power industry account for a large portion of global emissions, which provides insight as to where the largest opportunity for carbon reduction is found.}}{2}{figure.1}\protected@file@percent }
-\newlabel{fig:edgars_co2_emissions}{{1}{2}{Global Greenhouse Gas (GHG) emission per sector; see \cite {EDGAR19}. We can see the Power industry account for a large portion of global emissions, which provides insight as to where the largest opportunity for carbon reduction is found}{figure.1}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Estimated potential rates of CO$_{2}$ removal for various Negative Emission Technologies (measured in GtCO$_{2}$ / y) for the US and across the globe; see \cite  {NET19}, we see BECCS offer the best opportunity.}}{2}{table.1}\protected@file@percent }
-\newlabel{table:net}{{1}{2}{Estimated potential rates of CO$_{2}$ removal for various Negative Emission Technologies (measured in GtCO$_{2}$ / y) for the US and across the globe; see \cite {NET19}, we see BECCS offer the best opportunity}{table.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Global Greenhouse Gas (GHG) emission per sector; see \cite  {EDGAR19}. We can see the Power industry account for a large portion of global emissions, which provides insight as to where the largest opportunity for carbon reduction may be found.}}{2}{figure.1}\protected@file@percent }
+\newlabel{fig:edgars_co2_emissions}{{1}{2}{Global Greenhouse Gas (GHG) emission per sector; see \cite {EDGAR19}. We can see the Power industry account for a large portion of global emissions, which provides insight as to where the largest opportunity for carbon reduction may be found}{figure.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Estimated potential rates of CO$_{2}$ removal for various Negative Emission Technologies (measured in GtCO$_{2}$ / y) for the US and across the globe (see \cite  {NET19} for source), we see BECCS offer the best opportunity.}}{2}{table.1}\protected@file@percent }
+\newlabel{table:net}{{1}{2}{Estimated potential rates of CO$_{2}$ removal for various Negative Emission Technologies (measured in GtCO$_{2}$ / y) for the US and across the globe (see \cite {NET19} for source), we see BECCS offer the best opportunity}{table.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Problem Statement and Strategy}{2}{subsection.1.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.1}NFT Tokens}{3}{subsubsection.1.3.1}\protected@file@percent }
 \newlabel{section:nft_tokens}{{1.3.1}{3}{NFT Tokens}{subsubsection.1.3.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Solutions: Social Credit}{3}{subsection.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Social Credit Component to UBI}{3}{subsection.1.4}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Flow of NFT issuances and redemptions between pollution prevention stakeholders and sequesterors, which is all managed by CR and marks stakeholder relationship when burning Red tokens in exchange for Green}}{4}{figure.2}\protected@file@percent }
 \newlabel{fig:red_green_issue}{{2}{4}{Flow of NFT issuances and redemptions between pollution prevention stakeholders and sequesterors, which is all managed by CR and marks stakeholder relationship when burning Red tokens in exchange for Green}{figure.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Proposed Design}{4}{section.2}\protected@file@percent }
@@ -51,47 +54,76 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Tokenomics}{6}{subsection.2.3}\protected@file@percent }
 \newlabel{section:token_model}{{2.3}{6}{Tokenomics}{subsection.2.3}{}}
 \newlabel{e:transition_matrix}{{1}{6}{Tokenomics}{equation.2.1}{}}
-\newlabel{e:pow_vs_pos}{{2}{6}{Tokenomics}{equation.2.2}{}}
+\newlabel{e:pow_vs_pos}{{2}{7}{Tokenomics}{equation.2.2}{}}
 \newlabel{e:token_supply}{{3}{7}{Tokenomics}{equation.2.3}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Token Model Simulation}{7}{subsubsection.2.3.1}\protected@file@percent }
 \newlabel{e:token_supply_simulation}{{6}{7}{Token Model Simulation}{equation.2.6}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Transition state matrix for token model detailing probabilities of transitioning from current to next state over a unit of time. The token states are denoted by Green $\rightarrow $ g, NFT $\rightarrow $ r, and Burred $\rightarrow $ b.}}{7}{table.2}\protected@file@percent }
 \newlabel{table:trans_state_matrix}{{2}{7}{Transition state matrix for token model detailing probabilities of transitioning from current to next state over a unit of time. The token states are denoted by Green $\rightarrow $ g, NFT $\rightarrow $ r, and Burred $\rightarrow $ b}{table.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Revenue Model}{7}{subsection.2.4}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Simulated number of sequestered tons of Carbon assuming transition matrix (\ref  {e:transition_matrix}) as business targets}}{7}{table.3}\protected@file@percent }
-\newlabel{table:pow_vs_pos}{{3}{7}{Simulated number of sequestered tons of Carbon assuming transition matrix (\ref {e:transition_matrix}) as business targets}{table.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Simulated number of sequestered tons of Carbon assuming transition matrix (\ref  {table:revenue_model}) as business targets}}{7}{table.3}\protected@file@percent }
+\newlabel{table:pow_vs_pos}{{3}{7}{Simulated number of sequestered tons of Carbon assuming transition matrix (\ref {table:revenue_model}) as business targets}{table.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Management on Jurisdictional Level}{7}{section.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Markov Chain Token model simulations assuming stationary transition probabilities applying the Beta distribution at each time point at a monthly frequency. The expectations of the transition probability matrix was selected based on business targets. The simulation begins with 100M Green tokens, the bulk of which will transition to red and black tokens over time and eventually reach a state of equilibrium. When the system reaches steady-state the expected supply of each of the three tokens will remain constant.}}{8}{figure.6}\protected@file@percent }
-\newlabel{fig:token_supply_sims}{{6}{8}{Markov Chain Token model simulations assuming stationary transition probabilities applying the Beta distribution at each time point at a monthly frequency. The expectations of the transition probability matrix was selected based on business targets. The simulation begins with 100M Green tokens, the bulk of which will transition to red and black tokens over time and eventually reach a state of equilibrium. When the system reaches steady-state the expected supply of each of the three tokens will remain constant}{figure.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Markov Chain Token model simulations assuming stationary transition probabilities applying the Beta distribution at each time point at a monthly frequency. The expectations of the transition probability matrix (\ref  {e:transition_matrix}) was selected based on business targets. The simulation begins with 100M Green tokens, the bulk of which will transition to red and black tokens over time and eventually reach a state of equilibrium. When the system reaches steady-state, the expected supply of each of the three tokens will remain constant.}}{8}{figure.6}\protected@file@percent }
+\newlabel{fig:token_supply_sims}{{6}{8}{Markov Chain Token model simulations assuming stationary transition probabilities applying the Beta distribution at each time point at a monthly frequency. The expectations of the transition probability matrix (\ref {e:transition_matrix}) was selected based on business targets. The simulation begins with 100M Green tokens, the bulk of which will transition to red and black tokens over time and eventually reach a state of equilibrium. When the system reaches steady-state, the expected supply of each of the three tokens will remain constant}{figure.6}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Newly minted green and burned tokens resulting from simulation model (\ref  {e:token_supply_simulation}). Simulations of: (TOP) number of daily minted tokens; and (BOTTOM) cumulative number of daily minted tokens.}}{8}{figure.7}\protected@file@percent }
 \newlabel{fig:burned_minted}{{7}{8}{Newly minted green and burned tokens resulting from simulation model (\ref {e:token_supply_simulation}). Simulations of: (TOP) number of daily minted tokens; and (BOTTOM) cumulative number of daily minted tokens}{figure.7}{}}
+\citation{AirCarbon}
+\citation{Carbonx}
+\citation{SolarCoin}
+\citation{Nori}
 \citation{Mck09}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Plot of simulated number of sequestered tons of Carbon }}{9}{figure.8}\protected@file@percent }
-\newlabel{fig:burned_tokens}{{8}{9}{Plot of simulated number of sequestered tons of Carbon}{figure.8}{}}
+\citation{Gil18}
+\citation{Mck21}
+\citation{Sch20}
+\citation{Dav00}
+\citation{Rub15}
+\citation{Rub07}
+\citation{Rub15}
+\citation{Dav00}
+\citation{Rub07}
+\citation{Rub15}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Plot of simulated number of sequestered tons of carbon; this is determined bytaking the cumulative sum of Black tokens overtime }}{9}{figure.8}\protected@file@percent }
+\newlabel{fig:burned_tokens}{{8}{9}{Plot of simulated number of sequestered tons of carbon; this is determined bytaking the cumulative sum of Black tokens overtime}{figure.8}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Competition}{9}{subsection.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Sequestration Costs}{9}{subsection.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Carbon Exchange Rate: Speculative vs Stable}{9}{subsection.3.3}\protected@file@percent }
-\bibcite{Ali21}{1}
-\bibcite{Syscoin}{2}
-\bibcite{SolarCoin}{3}
-\bibcite{AirCarbon}{4}
-\bibcite{Carbonx}{5}
-\bibcite{Nori}{6}
-\bibcite{Microsoft21}{7}
-\bibcite{Pan19}{8}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Summary}{10}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}To-dos: Research, Analysis and Presentation}{10}{section.5}\protected@file@percent }
-\newlabel{section:summary}{{5}{10}{To-dos: Research, Analysis and Presentation}{section.5}{}}
-\bibcite{NET19}{9}
-\bibcite{Mic21}{10}
-\bibcite{Glo21}{11}
-\bibcite{DOE16}{12}
-\bibcite{Cri20}{13}
-\bibcite{Liu20}{14}
-\bibcite{CDCS05}{15}
-\bibcite{EDGAR19}{16}
-\bibcite{Sch20}{17}
-\bibcite{Dav00}{18}
-\bibcite{CBC19}{19}
-\bibcite{Gil18}{20}
-\bibcite{Mck09}{21}
+\citation{Mck09}
+\citation{Sch20}
+\citation{Gil18}
+\citation{Mck21}
+\citation{WBank}
+\citation{WBank}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Cost of CO$_{2}$ Capture and Storage}{10}{subsection.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces National carbon tax prices for 2021; source can be found in \cite  {WBank}. We can see large between the various jurisdictions, and provides some insight as to which jurisdiction that may offer the best operating costs. This is akin to the variations in cost of electricity for various regions which serves as the base cost for Bitcoin's PoW .}}{10}{figure.9}\protected@file@percent }
+\newlabel{figure:nation_carbon_taxes}{{9}{10}{National carbon tax prices for 2021; source can be found in \cite {WBank}. We can see large between the various jurisdictions, and provides some insight as to which jurisdiction that may offer the best operating costs. This is akin to the variations in cost of electricity for various regions which serves as the base cost for Bitcoin's PoW }{figure.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Carbon Exchange Rate: Speculative vs Stable}{10}{subsection.3.3}\protected@file@percent }
+\bibcite{Kal96}{1}
+\bibcite{Ten00}{2}
+\bibcite{Hij05}{3}
+\bibcite{Ali21}{4}
+\bibcite{Syscoin}{5}
+\bibcite{SolarCoin}{6}
+\bibcite{AirCarbon}{7}
+\bibcite{Carbonx}{8}
+\bibcite{Nori}{9}
+\bibcite{Microsoft21}{10}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Summary}{11}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}To-dos: Research, Analysis and Presentation}{11}{section.5}\protected@file@percent }
+\newlabel{section:summary}{{5}{11}{To-dos: Research, Analysis and Presentation}{section.5}{}}
+\bibcite{Pan19}{11}
+\bibcite{NET19}{12}
+\bibcite{Mic21}{13}
+\bibcite{Glo21}{14}
+\bibcite{DOE16}{15}
+\bibcite{Cri20}{16}
+\bibcite{Liu20}{17}
+\bibcite{CDCS05}{18}
+\bibcite{EDGAR19}{19}
+\bibcite{Mck09}{20}
+\bibcite{Gil18}{21}
+\bibcite{Sch20}{22}
+\bibcite{Dav00}{23}
+\bibcite{Rub15}{24}
+\bibcite{Rub07}{25}
+\bibcite{CBC19}{26}
+\bibcite{WBank}{27}
+\bibcite{Mck21}{28}
