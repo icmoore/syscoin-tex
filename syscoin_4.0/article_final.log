@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  1 DEC 2021 09:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  1 DEC 2021 09:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -570,11 +570,11 @@ Package xcolor Warning: Incompatible color definition on input line 101.
 
 Package xcolor Warning: Incompatible color definition on input line 104.
 
-<Logo.png, id=4, 355.3275pt x 86.3225pt>
+<Logo.png, id=4, 401.5pt x 120.45pt>
 File: Logo.png Graphic file (type png)
 <use Logo.png>
 Package pdftex.def Info: Logo.png  used on input line 104.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
+(pdftex.def)             Requested size: 91.32pt x 27.39598pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
 []
@@ -621,11 +621,11 @@ Package xcolor Warning: Incompatible color definition on input line 131.
 
 Underfull \vbox (badness 1314) has occurred while \output is active []
 
-<notaglineLogo.png, id=18, 355.3275pt x 86.3225pt>
+<notaglineLogo.png, id=18, 401.5pt x 120.45pt>
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
 Package pdftex.def Info: notaglineLogo.png  used on input line 133.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
+(pdftex.def)             Requested size: 91.32pt x 27.39598pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
 []
@@ -665,7 +665,7 @@ Overfull \hbox (2.04439pt too wide) in paragraph at lines 156--157
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
 Package pdftex.def Info: notaglineLogo.png  used on input line 159.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
+(pdftex.def)             Requested size: 91.32pt x 27.39598pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
 []
@@ -700,7 +700,7 @@ Package xcolor Warning: Incompatible color definition on input line 177.
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
 Package pdftex.def Info: notaglineLogo.png  used on input line 180.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
+(pdftex.def)             Requested size: 91.32pt x 27.39598pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
 []
@@ -729,7 +729,7 @@ Package xcolor Warning: Incompatible color definition on input line 210.
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
 Package pdftex.def Info: notaglineLogo.png  used on input line 213.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
+(pdftex.def)             Requested size: 91.32pt x 27.39598pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
 []
@@ -789,7 +789,7 @@ Underfull \vbox (badness 1968) has occurred while \output is active []
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
 Package pdftex.def Info: notaglineLogo.png  used on input line 258.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
+(pdftex.def)             Requested size: 91.32pt x 27.39598pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
 []
@@ -819,7 +819,7 @@ Overfull \hbox (3.04399pt too wide) in paragraph at lines 263--265
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
 Package pdftex.def Info: notaglineLogo.png  used on input line 271.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
+(pdftex.def)             Requested size: 91.32pt x 27.39598pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
 []
@@ -851,7 +851,7 @@ Package xcolor Warning: Incompatible color definition on input line 288.
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
 Package pdftex.def Info: notaglineLogo.png  used on input line 293.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
+(pdftex.def)             Requested size: 91.32pt x 27.39598pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
 []
@@ -887,7 +887,7 @@ Package xcolor Warning: Incompatible color definition on input line 334.
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
 Package pdftex.def Info: notaglineLogo.png  used on input line 337.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
+(pdftex.def)             Requested size: 91.32pt x 27.39598pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
 []
@@ -964,7 +964,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
 Package pdftex.def Info: notaglineLogo.png  used on input line 403.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
+(pdftex.def)             Requested size: 91.32pt x 27.39598pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
 []
@@ -990,7 +990,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
 Package pdftex.def Info: notaglineLogo.png  used on input line 409.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
+(pdftex.def)             Requested size: 91.32pt x 27.39598pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
 []
@@ -1050,7 +1050,7 @@ Package xcolor Warning: Incompatible color definition on input line 469.
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
 Package pdftex.def Info: notaglineLogo.png  used on input line 474.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
+(pdftex.def)             Requested size: 91.32pt x 27.39598pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
 []
@@ -1090,7 +1090,7 @@ Package xcolor Warning: Incompatible color definition on input line 528.
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
 Package pdftex.def Info: notaglineLogo.png  used on input line 531.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
+(pdftex.def)             Requested size: 91.32pt x 27.39598pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
 []
@@ -1151,7 +1151,7 @@ Package xcolor Warning: Incompatible color definition on input line 586.
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
 Package pdftex.def Info: notaglineLogo.png  used on input line 595.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
+(pdftex.def)             Requested size: 91.32pt x 27.39598pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
 []
@@ -1187,7 +1187,7 @@ Package xcolor Warning: Incompatible color definition on input line 653.
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
 Package pdftex.def Info: notaglineLogo.png  used on input line 656.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
+(pdftex.def)             Requested size: 91.32pt x 27.39598pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
 []
@@ -1290,7 +1290,7 @@ le:
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
 Package pdftex.def Info: notaglineLogo.png  used on input line 739.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
+(pdftex.def)             Requested size: 91.32pt x 27.39598pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
 []
@@ -1511,7 +1511,7 @@ Package pdftex.def Info: bullet.png  used on input line 829.
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
 Package pdftex.def Info: notaglineLogo.png  used on input line 831.
-(pdftex.def)             Requested size: 91.32pt x 22.18513pt.
+(pdftex.def)             Requested size: 91.32pt x 27.39598pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
 []
@@ -1564,7 +1564,7 @@ elvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic
 /uhvro8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.p
 fb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/l
 ocal/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on article_final.pdf (17 pages, 1166592 bytes).
+Output written on article_final.pdf (17 pages, 1139870 bytes).
 PDF statistics:
  181 PDF objects out of 1000 (max. 8388607)
  106 compressed objects within 2 object streams
