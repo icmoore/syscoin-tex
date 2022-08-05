@@ -1,0 +1,1292 @@
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.2.3)  5 AUG 2022 12:42
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**article_final.tex
+(./article_final.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18>
+(/usr/local/texlive/2021/texmf-dist/tex/latex/ctex/ctexart.cls
+(/usr/local/texlive/2021/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
+File: ctexbackend.cfg 2021/03/14 v2.5.6 Backend configuration file (CTEX)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-02-18 L3 programming layer (loader) 
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2021-03-18 L3 backend support: XeTeX
+
+(|extractbb --version)
+\c__kernel_sys_dvipdfmx_version_int=\count175
+\l__color_backend_stack_int=\count176
+\g__color_backend_stack_int=\count177
+\g__graphics_track_int=\count178
+\l__pdf_internal_box=\box47
+\g__pdf_backend_object_int=\count179
+\g__pdf_backend_annotation_int=\count180
+\g__pdf_backend_link_int=\count181
+))
+Document Class: ctexart 2021/03/14 v2.5.6 Chinese adapter for class article (CT
+EX)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-
+01.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.
+tex)))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2021-03-12 LaTeX2e option processing using LaTeX3 keys
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/ctex/ctexhook.sty
+Package: ctexhook 2021/03/14 v2.5.6 Document and package hooks (CTEX)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/ctex/ctexpatch.sty
+Package: ctexpatch 2021/03/14 v2.5.6 Patching commands (CTEX)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/everysel/everysel.sty
+Package: everysel 2021/01/20 v2.1 EverySelectfont Package (MS)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/everysel/everysel-2011-10-28.sty)
+)
+\l__ctex_tmp_int=\count182
+\l__ctex_tmp_box=\box48
+\l__ctex_tmp_dim=\dimen138
+\g__ctex_section_depth_int=\count183
+\g__ctex_font_size_int=\count184
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
+File: ctexopts.cfg 2021/03/14 v2.5.6 Option configuration file (CTEX)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen139
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
+File: ctex-engine-xetex.def 2021/03/14 v2.5.6 XeLaTeX adapter (CTEX)
+(/usr/local/texlive/2021/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+Package: xeCJK 2020/10/19 v3.8.6 Typesetting CJK scripts with XeLaTeX
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.st
+y
+Package: xtemplate 2021-03-12 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen140
+\l__xtemplate_tmp_int=\count193
+\l__xtemplate_tmp_muskip=\muskip16
+\l__xtemplate_tmp_skip=\skip49
+)
+\l__xeCJK_tmp_int=\count194
+\l__xeCJK_tmp_box=\box49
+\l__xeCJK_tmp_dim=\dimen141
+\l__xeCJK_tmp_skip=\skip50
+\g__xeCJK_space_factor_int=\count195
+\l__xeCJK_begin_int=\count196
+\l__xeCJK_end_int=\count197
+\c__xeCJK_CJK_class_int=\XeTeXcharclass1
+\c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
+\c__xeCJK_FullRight_class_int=\XeTeXcharclass3
+\c__xeCJK_HalfLeft_class_int=\XeTeXcharclass4
+\c__xeCJK_HalfRight_class_int=\XeTeXcharclass5
+\c__xeCJK_NormalSpace_class_int=\XeTeXcharclass6
+\c__xeCJK_CM_class_int=\XeTeXcharclass7
+\c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
+\l__xeCJK_last_skip=\skip51
+\g__xeCJK_node_int=\count198
+\c__xeCJK_CJK_node_dim=\dimen142
+\c__xeCJK_CJK-space_node_dim=\dimen143
+\c__xeCJK_default_node_dim=\dimen144
+\c__xeCJK_default-space_node_dim=\dimen145
+\c__xeCJK_CJK-widow_node_dim=\dimen146
+\c__xeCJK_normalspace_node_dim=\dimen147
+\l__xeCJK_ccglue_skip=\skip52
+\l__xeCJK_ecglue_skip=\skip53
+\l__xeCJK_punct_kern_skip=\skip54
+\l__xeCJK_last_penalty_int=\count199
+\l__xeCJK_last_bound_dim=\dimen148
+\l__xeCJK_last_kern_dim=\dimen149
+\l__xeCJK_widow_penalty_int=\count266
+
+Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
+(xtemplate)             argument(s) on line 2341.
+
+\l__xeCJK_fixed_punct_width_dim=\dimen150
+\l__xeCJK_mixed_punct_width_dim=\dimen151
+\l__xeCJK_middle_punct_width_dim=\dimen152
+\l__xeCJK_fixed_margin_width_dim=\dimen153
+\l__xeCJK_mixed_margin_width_dim=\dimen154
+\l__xeCJK_middle_margin_width_dim=\dimen155
+\l__xeCJK_bound_punct_width_dim=\dimen156
+\l__xeCJK_bound_margin_width_dim=\dimen157
+\l__xeCJK_margin_minimum_dim=\dimen158
+\l__xeCJK_kerning_total_width_dim=\dimen159
+\l__xeCJK_same_align_margin_dim=\dimen160
+\l__xeCJK_different_align_margin_dim=\dimen161
+\l__xeCJK_kerning_margin_width_dim=\dimen162
+\l__xeCJK_kerning_margin_minimum_dim=\dimen163
+\l__xeCJK_bound_dim=\dimen164
+\l__xeCJK_reverse_bound_dim=\dimen165
+\l__xeCJK_margin_dim=\dimen166
+\l__xeCJK_minimum_bound_dim=\dimen167
+\l__xeCJK_kerning_margin_dim=\dimen168
+\g__xeCJK_family_int=\count267
+\l__xeCJK_fam_int=\count268
+\g__xeCJK_fam_allocation_int=\count269
+\l__xeCJK_verb_case_int=\count270
+\l__xeCJK_verb_exspace_skip=\skip55
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count271
+\l__fontspec_language_int=\count272
+\l__fontspec_strnum_int=\count273
+\l__fontspec_tmp_int=\count274
+\l__fontspec_tmpa_int=\count275
+\l__fontspec_tmpb_int=\count276
+\l__fontspec_tmpc_int=\count277
+\l__fontspec_em_int=\count278
+\l__fontspec_emdef_int=\count279
+\l__fontspec_strong_int=\count280
+\l__fontspec_strongdef_int=\count281
+\l__fontspec_tmpa_dim=\dimen169
+\l__fontspec_tmpb_dim=\dimen170
+\l__fontspec_tmpc_dim=\dimen171
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/usr/local/texlive/2021/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+File: xeCJK.cfg 2020/10/19 v3.8.6 Configuration file for xeCJK package
+))
+\ccwd=\dimen172
+\l__ctex_ccglue_skip=\skip56
+)
+\l__ctex_ziju_dim=\dimen173
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+Package: zhnumber 2020/05/01 v2.8 Typesetting numbers with Chinese glyphs
+\l__zhnum_scale_int=\count282
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
+File: zhnumber-utf8.cfg 2020/05/01 v2.8 Chinese numerals with UTF8 encoding
+))
+\l__ctex_heading_skip=\skip57
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-a
+rticle.def
+File: ctex-scheme-chinese-article.def 2021/03/14 v2.5.6 Chinese scheme for arti
+cle (CTEX)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg
+File: ctex-name-utf8.cfg 2021/03/14 v2.5.6 Caption with encoding UTF-8 (CTEX)
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/ctex/ctex-c5size.clo
+File: ctex-c5size.clo 2021/03/14 v2.5.6 c5size option (CTEX)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-mac.def
+File: ctex-fontset-mac.def 2021/03/14 v2.5.6 macOS fonts definition (CTEX)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-macnew.
+def
+File: ctex-fontset-macnew.def 2021/03/14 v2.5.6 macOS fonts definition for El C
+apitan or later version (CTEX)
+
+
+Package fontspec Warning: Font "Songti SC Light" does not contain requested
+(fontspec)                Script "CJK".
+
+
+Package fontspec Info: Font family 'SongtiSCLight(0)' created for font 'Songti
+(fontspec)             SC Light' with options
+(fontspec)             [Script={CJK},BoldItalicFont={Kaiti SC
+(fontspec)             Bold},BoldFont={Songti SC Bold},ItalicFont={Kaiti SC}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Songti SC
+(fontspec)             Light/OT:language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Songti SC
+(fontspec)             Bold/OT:language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Kaiti
+(fontspec)             SC/OT:language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Kaiti SC
+(fontspec)             Bold/OT:language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+))) (/usr/local/texlive/2021/texmf-dist/tex/latex/ctex/config/ctex.cfg
+File: ctex.cfg 2021/03/14 v2.5.6 Configuration file (CTEX)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip58
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen174
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen175
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count283
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count284
+\leftroot@=\count285
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count286
+\DOTSCASE@=\count287
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen176
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count288
+\c@MaxMatrixCols=\count289
+\dotsspace@=\muskip17
+\c@parentequation=\count290
+\dspbrk@lvl=\count291
+\tag@help=\toks16
+\row@=\count292
+\column@=\count293
+\maxfields@=\count294
+\andhelp@=\toks17
+\eqnshift@=\dimen177
+\alignsep@=\dimen178
+\tagshift@=\dimen179
+\tagwidth@=\dimen180
+\totwidth@=\dimen181
+\lineht@=\dimen182
+\@envbody=\toks18
+\multlinegap=\skip59
+\multlinetaggap=\skip60
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+\c@ALC@unique=\count295
+\c@ALC@line=\count296
+\c@ALC@rem=\count297
+\c@ALC@depth=\count298
+\ALC@tlm=\skip61
+\algorithmicindent=\skip62
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip63
+\enit@outerparindent=\dimen183
+\enit@toks=\toks21
+\enit@inbox=\box52
+\enit@count@id=\count299
+\enitdp@description=\count300
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen184
+\captionmargin@=\dimen185
+\captionwidth=\dimen186
+\caption@tempdima=\dimen187
+\caption@indent=\dimen188
+\caption@parindent=\dimen189
+\caption@hangindent=\dimen190
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count301
+\c@continuedfloat=\count302
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2021/03/18 v5.0k Graphics/color driver for xetex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 105.
+)
+\Gin@req@height=\dimen191
+\Gin@req@width=\dimen192
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip64
+\multirow@cntb=\count303
+\multirow@dima=\skip65
+\bigstrutjot=\dimen193
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/preprint/authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip66
+\@affilsep=\skip67
+\c@Maxaffil=\count304
+\c@authors=\count305
+\c@affil=\count306
+)
+(./article_final.aux)
+\openout1 = `article_final.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+ ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 20.
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 20.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 20.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 20.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 20.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 20.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 20.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 20.
+LaTeX Font Info:    Redeclaring math accent \check on input line 20.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 20.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 20.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 20.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 20.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 20.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 20.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 20.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 20.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 20.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 20.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 20.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 20.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 20.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 20.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 20.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 20.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 20.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
+
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
+
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+LaTeX Warning: Citation `Sida18' on page 1 undefined on input line 31.
+
+
+LaTeX Warning: Reference `table:ugrades' on page 1 undefined on input line 31.
+
+[1
+
+]
+
+LaTeX Warning: Citation `But19' on page 2 undefined on input line 33.
+
+
+LaTeX Warning: Citation `Sig21' on page 2 undefined on input line 33.
+
+
+LaTeX Warning: Reference `sec:protocol' on page 2 undefined on input line 35.
+
+
+LaTeX Warning: Reference `section:roadmap' on page 2 undefined on input line 35
+.
+
+
+LaTeX Warning: Reference `section:specs' on page 2 undefined on input line 35.
+
+
+LaTeX Warning: Reference `section:summary' on page 2 undefined on input line 35
+.
+
+LaTeX Font Info:    Font shape `TU/SongtiSCLight(0)/m/sl' in size <10.53937> no
+t available
+(Font)              Font shape `TU/SongtiSCLight(0)/m/it' tried instead on inpu
+t line 36.
+[2] [3]
+
+LaTeX Warning: Citation `Sida18' on page 4 undefined on input line 83.
+
+File: img/current_vs_zdag.png Graphic file (type bmp)
+<img/current_vs_zdag.png>
+
+LaTeX Warning: Reference `fig:current_vs_zdag' on page 4 undefined on input lin
+e 92.
+
+
+Overfull \hbox (2.26175pt too wide) in paragraph at lines 92--93
+[]\TU/lmr/m/n/10.53937 Figure [] shows the difference between a regular blockch
+ain and Syscoin\TU/SongtiSCLight(0)/m/n/10.53937 ’|
+ []
+
+[4] [5]
+
+LaTeX Warning: Citation `Som18' on page 6 undefined on input line 100.
+
+
+LaTeX Warning: Citation `Som15' on page 6 undefined on input line 100.
+
+[6]
+
+LaTeX Warning: Citation `Bre12' on page 7 undefined on input line 107.
+
+[7] [8]
+
+LaTeX Warning: Citation `DID' on page 9 undefined on input line 126.
+
+[9]
+
+LaTeX Warning: Citation `Eya18' on page 10 undefined on input line 130.
+
+[10]
+
+LaTeX Warning: Citation `Blo18' on page 11 undefined on input line 134.
+
+
+LaTeX Warning: Citation `Val19' on page 11 undefined on input line 134.
+
+
+LaTeX Warning: Citation `Blo18' on page 11 undefined on input line 136.
+
+
+LaTeX Warning: Citation `Bon18' on page 11 undefined on input line 136.
+
+[11]
+
+LaTeX Warning: Citation `Dra18' on page 12 undefined on input line 138.
+
+
+LaTeX Warning: Citation `Bow17' on page 12 undefined on input line 138.
+
+
+LaTeX Warning: Citation `Blo18' on page 12 undefined on input line 138.
+
+
+LaTeX Warning: Citation `Poon16' on page 12 undefined on input line 141.
+
+
+LaTeX Warning: Citation `LN' on page 12 undefined on input line 141.
+
+[12]
+
+LaTeX Warning: Citation `BitCore' on page 13 undefined on input line 145.
+
+[13] [14] [15] [16]
+
+LaTeX Warning: Citation `Dry19' on page 17 undefined on input line 160.
+
+[17]
+
+LaTeX Warning: Citation `Hot19' on page 18 undefined on input line 166.
+
+
+LaTeX Warning: Citation `Hot19' on page 18 undefined on input line 166.
+
+[18]
+
+LaTeX Warning: Citation `Bow18' on page 19 undefined on input line 187.
+
+[19] [20] [21]
+
+LaTeX Warning: Citation `Nai19' on page 22 undefined on input line 203.
+
+
+LaTeX Warning: Citation `Nas19' on page 22 undefined on input line 205.
+
+[22]
+
+LaTeX Warning: Citation `Bit15' on page 23 undefined on input line 217.
+
+[23]
+Overfull \hbox (5.09726pt too wide) in paragraph at lines 219--220
+\TU/lmr/m/n/10.53937 checking instead of re-execution of complex transactions v
+ia zk-STARKs
+ []
+
+File: img/4_layer.png Graphic file (type bmp)
+<img/4_layer.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24]
+File: img/fig_5.png Graphic file (type bmp)
+<img/fig_5.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[25] [26]
+File: img/fig_6.png Graphic file (type bmp)
+<img/fig_6.png>
+
+! Misplaced alignment tab character &.
+l.266 ...哈希都是有效的。 block - > evmblock == evmblock &
+                                                  & block - > prev == evmblo...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.266 ...希都是有效的。 block - > evmblock == evmblock &&
+                                                   block - > prev == evmbloc...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[27]
+
+LaTeX Warning: Citation `But17' on page 28 undefined on input line 268.
+
+
+LaTeX Warning: Citation `Neu21' on page 28 undefined on input line 268.
+
+[28] [29]
+
+LaTeX Warning: Citation `Sta20b' on page 30 undefined on input line 283.
+
+
+LaTeX Warning: Citation `matter21' on page 30 undefined on input line 283.
+
+
+LaTeX Warning: Citation `hermez21' on page 30 undefined on input line 283.
+
+
+LaTeX Warning: Citation `aleo21' on page 30 undefined on input line 285.
+
+
+LaTeX Warning: Citation `Glu20' on page 30 undefined on input line 285.
+
+Missing character: There is no ​ (U+200B) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no ​ (U+200B) in font [lmroman10-regular]:mapping=t
+ex-text;!
+[30]
+
+LaTeX Warning: Citation `NFT21' on page 31 undefined on input line 289.
+
+
+LaTeX Warning: Citation `Bhu21' on page 31 undefined on input line 289.
+
+[31] [32]
+
+LaTeX Warning: Citation `matter21' on page 33 undefined on input line 291.
+
+[33]
+
+LaTeX Warning: Citation `But20' on page 34 undefined on input line 300.
+
+
+LaTeX Warning: Citation `Al20' on page 34 undefined on input line 301.
+
+File: img/nevm.png Graphic file (type bmp)
+<img/nevm.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[34] [35]
+
+LaTeX Warning: Citation `Sta19' on page 36 undefined on input line 331.
+
+
+Overfull \hbox (0.375pt too wide) in paragraph at lines 331--332
+[]\TU/lmr/m/n/10.53937 Contrasting benefits between fraud proofs (optimistic) v
+s validity proofs
+ []
+
+[36] [37]
+
+LaTeX Warning: Citation `Sta20a' on page 38 undefined on input line 359.
+
+[38]
+
+LaTeX Warning: Citation `Sta20b' on page 39 undefined on input line 363.
+
+[39]
+File: img/eth_gas_costs.png Graphic file (type bmp)
+<img/eth_gas_costs.png>
+File: img/eth_usd_density.png Graphic file (type bmp)
+<img/eth_usd_density.png>
+
+
+LaTeX Warning: Reference `fig:eth_gas_costs' on page 40 undefined on input line
+ 379.
+
+
+LaTeX Warning: Reference `fig:eth_gas_costs' on page 40 undefined on input line
+ 379.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `table:gas_cost_estimates' on page 40 undefined on inp
+ut line 383.
+
+
+LaTeX Warning: Reference `fig:eth_gas_costs' on page 40 undefined on input line
+ 383.
+
+
+LaTeX Warning: Reference `fig:eth_usd_density' on page 40 undefined on input li
+ne 383.
+
+[40]
+File: img/sysx_gas_costs_eip_1559.png Graphic file (type bmp)
+<img/sysx_gas_costs_eip_1559.png>
+File: img/sysx_usd_density.png Graphic file (type bmp)
+<img/sysx_usd_density.png>
+
+
+LaTeX Warning: Reference `fig:sysx_gas_costs_eip_1559' on page 41 undefined on 
+input line 395.
+
+
+LaTeX Warning: Reference `fig:sysx_gas_costs_eip_1559' on page 41 undefined on 
+input line 395.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:sysx_gas_costs_eip_1559' on page 41 undefined on 
+input line 399.
+
+
+LaTeX Warning: Reference `fig:bloc' on page 41 undefined on input line 399.
+
+[41]
+Overfull \hbox (87.21031pt too wide) in paragraph at lines 403--419
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `fig:eth_gas_costs' on page 42 undefined on input line
+ 419.
+
+
+LaTeX Warning: Reference `fig:sysx_gas_costs_eip_1559' on page 42 undefined on 
+input line 419.
+
+
+LaTeX Warning: Reference `fig:eth_gas_costs' on page 42 undefined on input line
+ 419.
+
+
+LaTeX Warning: Reference `fig:sysx_gas_costs_eip_1559' on page 42 undefined on 
+input line 419.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (80.30704pt too wide) in paragraph at lines 425--441
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `fig:eth_gas_costs' on page 42 undefined on input line
+ 441.
+
+
+LaTeX Warning: Reference `fig:sysx_gas_costs_eip_1559' on page 42 undefined on 
+input line 441.
+
+
+LaTeX Warning: Reference `fig:eth_gas_costs' on page 42 undefined on input line
+ 441.
+
+
+LaTeX Warning: Reference `fig:sysx_gas_costs_eip_1559' on page 42 undefined on 
+input line 441.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `Che17' on page 42 undefined on input line 445.
+
+
+LaTeX Warning: Reference `appendix:block_resize' on page 42 undefined on input 
+line 447.
+
+[42] [43] [44] [45] [46] [47]
+
+LaTeX Warning: Reference `fig:tx_burn' on page 48 undefined on input line 473.
+
+
+LaTeX Warning: Reference `appendix:tx_fee_burn' on page 48 undefined on input l
+ine 473.
+
+[48]
+File: img/eth_daily_tx_fee.png Graphic file (type bmp)
+<img/eth_daily_tx_fee.png>
+
+
+LaTeX Warning: Reference `fig:tx_delay' on page 49 undefined on input line 482.
+
+
+File: img/syscoin_daily_supply.png Graphic file (type bmp)
+<img/syscoin_daily_supply.png>
+
+LaTeX Warning: Reference `fig:tx_burn' on page 49 undefined on input line 487.
+
+
+LaTeX Warning: Reference `fig:tx_burn' on page 49 undefined on input line 487.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[49]
+
+LaTeX Warning: Text page 50 contains only floats.
+
+[50] [51] [52]
+! Undefined control sequence.
+l.564 \appendices
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[53]
+
+LaTeX Warning: Reference `table:pow_vs_pos' on page 54 undefined on input line 
+568.
+
+
+LaTeX Warning: Citation `Bit15' on page 54 undefined on input line 586.
+
+
+LaTeX Warning: Citation `Bit15' on page 54 undefined on input line 586.
+
+
+LaTeX Warning: Reference `fig:dag_tx' on page 54 undefined on input line 592.
+
+
+LaTeX Warning: Citation `Sidb18' on page 54 undefined on input line 592.
+
+[54]
+File: img/dag_tx.png Graphic file (type bmp)
+<img/dag_tx.png>
+ [55]
+
+LaTeX Warning: Reference `fig:tx_delay' on page 56 undefined on input line 619.
+
+
+File: img/transmission_delay.png Graphic file (type bmp)
+<img/transmission_delay.png>
+
+Underfull \hbox (badness 1237) in paragraph at lines 624--624
+[]\TU/SongtiSCLight(0)/m/n/10.53937 图 \TU/lmr/m/n/10.53937 13: |Probability of 
+Tx arrival after $\OT1/cmr/m/n/10.53937 5$ \TU/lmr/m/n/10.53937 hops modelled v
+ia $\OML/cmm/m/it/10.53937 X \OMS/cmsy/m/n/10.53937 ^^X
+ []
+
+[56]
+File: img/zkp.png Graphic file (type bmp)
+<img/zkp.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[57]
+Overfull \hbox (52.25354pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10.53937 9 BLOCK OCCUPANCY COST (BLOC) FUNCTION \TU/SongtiSCLight(
+0)/m/it/10.53937 区 块 占 用 成 本 \TU/lmr/m/sl/10.53937 (BLOC) \TU/SongtiSCLight(0)/
+m/it/10.53937 函 数 \TU/lmr/m/n/10.53937 58
+ []
+
+[58]
+
+LaTeX Warning: Reference `fig:bloc' on page 59 undefined on input line 677.
+
+Missing character: There is no γ (U+03B3) in font [lmroman10-regular]:mapping=t
+ex-text;!
+File: img/blk_occupancy_cost_fn.png Graphic file (type bmp)
+<img/blk_occupancy_cost_fn.png>
+Missing character: There is no α (U+03B1) in font [lmroman10-regular]:mapping=t
+ex-text;!
+
+Overfull \hbox (25.93675pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10.53937 10 BLOCK OCCUPANCY AND GAS SIMULATIONS \TU/SongtiSCLight(
+0)/m/it/10.53937 区 块 占 用 和 \TU/lmr/m/sl/10.53937 GAS \TU/SongtiSCLight(0)/m/it/
+10.53937 模 拟 \TU/lmr/m/n/10.53937 59
+ []
+
+[59] [60] [61]
+Overfull \hbox (4.18387pt too wide) in paragraph at lines 760--762
+\TU/lmr/m/n/10.53937 where $\OML/cmm/m/it/10.53937 ^^N[] \OT1/cmr/m/n/10.53937 
+= \OML/cmm/m/it/10.53937 usage[] \OMS/cmsy/m/n/10.53937 ^^@ \OML/cmm/m/it/10.53
+937 target []gas []fee$\TU/lmr/m/n/10.53937 , and $\OML/cmm/m/it/10.53937 c \OT
+1/cmr/m/n/10.53937 = (\OML/cmm/m/it/10.53937 target\OT1/cmr/m/n/10.53937 ) \OMS
+/cmsy/m/n/10.53937 ^^C \OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 basefee []
+max []change\OT1/cmr/m/n/10.53937 )$\TU/lmr/m/n/10.53937 .
+ []
+
+Missing character: There is no δ (U+03B4) in font [lmroman10-regular]:mapping=t
+ex-text;!
+[62]
+Missing character: There is no δ (U+03B4) in font [lmroman10-regular]:mapping=t
+ex-text;!
+ [63]
+
+LaTeX Warning: Citation `Fon20' on page 64 undefined on input line 799.
+
+
+Overfull \hbox (15.83292pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10.53937 14 TOKENOMICS: TRANSACTION FEE BURN \TU/SongtiSCLight(0)/
+m/it/10.53937 代 币 经 济 学：|  交 易 费 燃 烧 \TU/lmr/m/n/10.53937 64
+ []
+
+[64]
+Underfull \hbox (badness 3803) in paragraph at lines 813--814
+[]\TU/lmr/m/n/10.53937 J. Sidhu, \TU/lmr/m/it/10.53937 A Design For An Efficien
+t Coordinated Financial
+ []
+
+
+Underfull \hbox (badness 1867) in paragraph at lines 813--814
+\TU/lmr/m/it/10.53937 Computing Platform\TU/lmr/m/n/10.53937 , Feb 2021, Access
+ed on: Sep 2021. [On-
+ []
+
+
+Underfull \hbox (badness 2556) in paragraph at lines 815--816
+[]\TU/lmr/m/n/10.53937 J. Sidhu, \TU/lmr/m/it/10.53937 Syscoin 3.0: A Peer-to-P
+eer Electronic Cash Sys-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 815--816
+\TU/lmr/m/it/10.53937 tem Built For Business Applications\TU/lmr/m/n/10.53937 ,
+ Blockchain Foundry
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 815--816
+\TU/lmr/m/n/10.53937 Inc, Feb. 2018. Accessed on: Dec 2020. [Online]. Available
+:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--820
+[]\TU/lmr/m/n/10.53937 V. Buterin, \TU/lmr/m/it/10.53937 Blockchain Resource Pr
+icing\TU/lmr/m/n/10.53937 , Apr
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--820
+\TU/lmr/m/n/10.53937 2019. Accessed on: May 2021. [Online]. Available:
+ []
+
+
+Overfull \hbox (59.24179pt too wide) in paragraph at lines 819--820
+\TU/lmr/m/n/10.53937 https://github.com/ethereum/research/blob/master/papers/pr
+icing/ethpricing.pdf 
+ []
+
+
+Underfull \hbox (badness 3803) in paragraph at lines 829--830
+[]\TU/lmr/m/n/10.53937 N. Word, \TU/lmr/m/it/10.53937 UTXO vs Global State\TU/l
+mr/m/n/10.53937 , Nov. 2019. Accessed on:
+ []
+
+[65]
+Underfull \hbox (badness 10000) in paragraph at lines 831--832
+[]\TU/lmr/m/n/10.53937 P. Sztorc \TU/lmr/m/it/10.53937 Nothing is Cheaper than 
+Proof of Work\TU/lmr/m/n/10.53937 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 831--832
+\TU/lmr/m/n/10.53937 Aug. 2015. Accessed on: Jan 2021. [Online]. Available:
+ []
+
+
+Underfull \hbox (badness 6110) in paragraph at lines 840--841
+[]\TU/lmr/m/n/10.53937 G., \TU/lmr/m/it/10.53937 Proof of Stake Versus Proof of
+ Work. Technical Re-
+ []
+
+
+Underfull \hbox (badness 2165) in paragraph at lines 840--841
+\TU/lmr/m/it/10.53937 port\TU/lmr/m/n/10.53937 , BitFury Group, 2015. Accessed 
+on: Jan 2021. [Online].
+ []
+
+
+Underfull \hbox (badness 3514) in paragraph at lines 840--841
+\TU/lmr/m/n/10.53937 Available: http://bitfury.com/content/5-white-papers-resea
+rch/pos-
+ []
+
+
+Underfull \hbox (badness 2564) in paragraph at lines 846--847
+[]\TU/lmr/m/n/10.53937 ] A. Block, \TU/lmr/m/it/10.53937 Mitigating 51% attacks
+ with LLMQ-based Chain-
+ []
+
+
+Underfull \hbox (badness 2150) in paragraph at lines 846--847
+\TU/lmr/m/it/10.53937 Locks\TU/lmr/m/n/10.53937 . Accessed on: Feb 2021. [Onlin
+e], Nov 2018. Available:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 846--847
+\TU/lmr/m/n/10.53937 https://blog.dash.org/mitigating-51-attacks-with-llmq-base
+d-
+ []
+
+[66]
+Underfull \hbox (badness 10000) in paragraph at lines 850--851
+[]\TU/lmr/m/n/10.53937 D. Boneh, M. Drijvers, and G. Neven, \TU/lmr/m/it/10.539
+37 BLS
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 850--851
+\TU/lmr/m/it/10.53937 Multi-Signatures With Public-Key Aggregation\TU/lmr/m/n/1
+0.53937 , Mar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 850--851
+\TU/lmr/m/n/10.53937 2018. Accessed on: Feb 2021. [Online]. Available:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 852--853
+[]\TU/lmr/m/n/10.53937 J. Drake. \TU/lmr/m/it/10.53937 Pragmatic signature aggr
+egation with BLS\TU/lmr/m/n/10.53937 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 852--853
+\TU/lmr/m/n/10.53937 May 2018. Accessed on: Feb 2021. [Online]. Available:
+ []
+
+
+Underfull \hbox (badness 3179) in paragraph at lines 854--855
+\TU/lmr/m/it/10.53937 tion\TU/lmr/m/n/10.53937 , Mar 2017. Accessed on: Feb 202
+1. [Online]. Available:
+ []
+
+
+Underfull \hbox (badness 7433) in paragraph at lines 858--859
+[]\TU/lmr/m/n/10.53937 S. de la Rouvier. \TU/lmr/m/it/10.53937 Interplanetary L
+inked Computing: Sep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--859
+\TU/lmr/m/it/10.53937 arating Merkle Computing from Blockchain Computational
+ []
+
+
+Underfull \hbox (badness 1629) in paragraph at lines 858--859
+\TU/lmr/m/it/10.53937 Courts\TU/lmr/m/n/10.53937 , Jan 2017. Accessed on: Feb 2
+021. [Online]. Available:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--859
+\TU/lmr/m/n/10.53937 https://media.consensys.net/interplanetary-linked-computin
+g-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--859
+\TU/lmr/m/n/10.53937 separating-merkle-computing-from-blockchain-computational-
+courts-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 860--861
+[]\TU/lmr/m/n/10.53937 Anonymous Kid, Why the fuck did Satoshi implement
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 860--861
+\TU/lmr/m/n/10.53937 the 1 MB blocksize limit? [Online forum comment],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 860--861
+\TU/lmr/m/n/10.53937 Jan 2018, Accessed on: Feb 2021. [Online]. Available:
+ []
+
+[67]
+Underfull \hbox (badness 10000) in paragraph at lines 868--869
+[]\TU/lmr/m/n/10.53937 G.I. Hotchkiss, \TU/lmr/m/it/10.53937 The 1.x Files: The
+ State of Stateless
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 868--869
+\TU/lmr/m/n/10.53937 https://blog.ethereum.org/2019/12/30/eth1x-files-state-of-
+stateless-
+ []
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 874--875
+[]\TU/lmr/m/n/10.53937 C. Nelson, \TU/lmr/m/it/10.53937 Zero-Knowledge Proofs: 
+Privacy-Preserving Digital
+ []
+
+
+Underfull \hbox (badness 3701) in paragraph at lines 874--875
+\TU/lmr/m/it/10.53937 Identity\TU/lmr/m/n/10.53937 , Oct 2018. Feb 2021. Access
+ed on: [Online]. Avail-
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 874--875
+\TU/lmr/m/n/10.53937 able: https://www.slideshare.net/SSIMeetup/zeroknowledge-p
+roofs-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 876--877
+[]\TU/lmr/m/n/10.53937 D. Boneh, \TU/lmr/m/it/10.53937 Discrete Log based Zero-
+Knowledge Proofs\TU/lmr/m/n/10.53937 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 876--877
+\TU/lmr/m/n/10.53937 Apr 2019, Accessed on: Feb 2021 [Online]. Available:
+ []
+
+[68]
+Underfull \hbox (badness 1242) in paragraph at lines 884--885
+[]\TU/lmr/m/n/10.53937 V. Buterin and V. Griffith, Casper the Friendly Finality
+ Gad-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 884--885
+\TU/lmr/m/n/10.53937 get. CoRR, Vol. abs/1710.09437, 2017. arxiv: 1710.09437,
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 894--895
+\TU/lmr/m/it/10.53937 proofs acceleration\TU/lmr/m/n/10.53937 , Jul 2020, Acces
+sed on: Feb 2021 [Online].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 894--895
+\TU/lmr/m/n/10.53937 Available: https://medium.com/matter-labs/worlds-first-pra
+ctical-
+ []
+
+
+Underfull \hbox (badness 1675) in paragraph at lines 900--901
+\TU/lmr/m/n/10.53937 2021. [Online]. Available: https://ethresear.ch/t/with-fra
+ud-proof-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 900--901
+\TU/lmr/m/n/10.53937 free-data-availability-proofs-we-can-have-scalable-data-ch
+ains-without-
+ []
+
+[69]
+Underfull \hbox (badness 10000) in paragraph at lines 904--905
+[]\TU/lmr/m/it/10.53937 MatterLabs\TU/lmr/m/n/10.53937 , Accessed on: Sep 2021.
+ [Online]. Available:
+ []
+
+
+Underfull \hbox (badness 5036) in paragraph at lines 910--911
+\TU/lmr/m/n/10.53937 able: https://ethresear.ch/t/with-fraud-proof-free-data-av
+ailability-
+ []
+
+
+Underfull \hbox (badness 7030) in paragraph at lines 914--915
+[]\TU/lmr/m/n/10.53937 C. Fonnesbeck, \TU/lmr/m/it/10.53937 Advanced Statistica
+l Computing, Bios 8366\TU/lmr/m/n/10.53937 ,
+ []
+
+
+Underfull \hbox (badness 5652) in paragraph at lines 914--915
+\TU/lmr/m/n/10.53937 Vanderbilt University’s Department of Biostatistics, Nashv
+ille,
+ []
+
+
+Underfull \hbox (badness 1348) in paragraph at lines 914--915
+\TU/lmr/m/n/10.53937 TN, May 2020, , Accessed on: Mar 2021. [Online]. Available
+:
+ []
+
+
+Overfull \hbox (40.20772pt too wide) in paragraph at lines 914--915
+\TU/lmr/m/n/10.53937 https://github.com/fonnesbeck/Bios8366/blob/master/noteboo
+ks/Section5_1-
+ []
+
+[70] [71] (./article_final.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 10910 strings out of 476919
+ 279563 string characters out of 5821841
+ 607143 words of memory out of 5000000
+ 30719 multiletter control sequences out of 15000+600000
+ 411210 words of font info for 94 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 101i,11n,104p,3059b,380s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on article_final.pdf (71 pages).
